@@ -126,7 +126,7 @@ fn short_date(lang: &str, t: DateTime) -> String {
     }
     match primary {
         "fr" | "es" | "it" | "pt" | "el" | "ca" | "vi" => format!("{d:02}/{m:02}/{y}"),
-        "de" | "ru" | "pl" | "cs" | "sk" | "tr" | "fi" | "nb" | "nn" | "no" | "da" | "uk" | "ro" => format!("{d:02}.{m:02}.{y}"),
+        "de" | "ru" | "pl" | "cs" | "sk" | "tr" | "fi" | "nb" | "nn" | "no" | "da" | "uk" | "ro" | "ka" => format!("{d:02}.{m:02}.{y}"),
         "nl" => format!("{d}-{m}-{y}"),
         "ja" | "zh" => format!("{y}/{m}/{d}"),
         "ko" | "sv" | "lt" => format!("{y}-{m:02}-{d:02}"),
@@ -168,6 +168,7 @@ mod tests {
     fn language_orders_numeric_dates_and_keeps_names_english_only() {
         assert_eq!(field_text("datetime1", Some("en-GB"), FRI).as_deref(), Some("09/10/2026"));
         assert_eq!(field_text("datetimeFigureOut", Some("de-DE"), FRI).as_deref(), Some("09.10.2026"));
+        assert_eq!(field_text("datetime1", Some("ka-GE"), FRI).as_deref(), Some("09.10.2026"));
         assert_eq!(field_text("datetime1", Some("ja-JP"), FRI).as_deref(), Some("2026/10/9"));
         assert_eq!(field_text("datetime1", Some("sv-SE"), FRI).as_deref(), Some("2026-10-09"));
         assert_eq!(field_text("datetime10", Some("fr-FR"), FRI).as_deref(), Some("20:05"));
