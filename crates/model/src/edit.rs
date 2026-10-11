@@ -361,6 +361,13 @@ pub fn end(body: &TextBody) -> Pos {
     (pi, body.paragraphs.get(pi).map(Paragraph::char_len).unwrap_or(0))
 }
 
+/// Does `c` belong to a script that capitalises the first letter of sentences and words?
+/// Georgian doesn't: Unicode maps Mkhedruli to Mtavruli capitals, but those are only for
+/// all-caps text, never for a sentence's or a title's first letter.
+pub fn capitalizes(c: char) -> bool {
+    !matches!(c, '\u{10A0}'..='\u{10FF}' | '\u{1C90}'..='\u{1CBF}' | '\u{2D00}'..='\u{2D2F}')
+}
+
 /// Change case: `upper`, `lower`, `sentence`, `title`, `toggle`.
 pub fn change_case(s: &str, mode: &str) -> String {
     match mode {
@@ -372,7 +379,11 @@ pub fn change_case(s: &str, mode: &str) -> String {
             let mut start = true;
             for c in s.chars() {
                 if start && c.is_alphabetic() {
-                    out.extend(c.to_uppercase());
+                    if capitalizes(c) {
+                        out.extend(c.to_uppercase());
+                    } else {
+                        out.extend(c.to_lowercase());
+                    }
                     start = false;
                 } else {
                     out.extend(c.to_lowercase());
@@ -389,7 +400,11 @@ pub fn change_case(s: &str, mode: &str) -> String {
             let mut start = true;
             for c in s.chars() {
                 if start && c.is_alphabetic() {
-                    out.extend(c.to_uppercase());
+                    if capitalizes(c) {
+                        out.extend(c.to_uppercase());
+                    } else {
+                        out.extend(c.to_lowercase());
+                    }
                     start = false;
                 } else {
                     out.extend(c.to_lowercase());
@@ -462,6 +477,10 @@ mod tests {
         assert_eq!(char_move(&b, (0, 17), true), (0, 17));
         assert_eq!(change_case("hello world. again", "sentence"), "Hello world. Again");
         assert_eq!(change_case("hello world", "title"), "Hello World");
+        // Georgian has no sentence or title capitals; UPPERCASE still gives Mtavruli.
+        assert_eq!(change_case("გამარჯობა. როგორ ხარ?", "sentence"), "გამარჯობა. როგორ ხარ?");
+        assert_eq!(change_case("ᲒᲐᲛᲐᲠᲯᲝᲑᲐ ᲛᲡᲝᲤᲚᲘᲝ", "title"), "გამარჯობა მსოფლიო");
+        assert_eq!(change_case("გამარჯობა", "upper"), "ᲒᲐᲛᲐᲠᲯᲝᲑᲐ");
     }
 
     #[test]
