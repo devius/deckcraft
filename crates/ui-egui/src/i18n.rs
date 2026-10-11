@@ -172,7 +172,7 @@ pub fn count(
 }
 
 /// Ukrainian/Russian integer forms: 1/21; 2–4/22–24; 0/5–19.
-fn slavic<'a>(n: usize, forms: [&'a str; 3]) -> &'a str {
+fn slavic(n: usize, forms: [&str; 3]) -> &str {
     match (n % 10, n % 100) {
         (1, last) if last != 11 => forms[0],
         (2..=4, last) if !(12..=14).contains(&last) => forms[1],
