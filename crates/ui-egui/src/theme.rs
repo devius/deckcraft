@@ -178,7 +178,43 @@ pub fn install_fonts(ctx: &egui::Context) {
     let mut bold: Vec<String> = names.iter().filter(|(fam, st, _)| *fam == "Inter" && *st == "SemiBold").map(|(_, _, n)| n.clone()).collect();
     bold.extend(defs.families.get(&FontFamily::Proportional).cloned().unwrap_or_default());
     defs.families.insert(FontFamily::Name("bold".into()), bold);
+    // Georgian: no bundled face has it, so an installed one fills in (the language list shows
+    // "ქართული" whatever the interface language).
+    if let Some(bytes) = system_georgian_font() {
+        defs.font_data.insert("system-georgian".into(), std::sync::Arc::new(FontData::from_static(bytes)));
+        for family in [FontFamily::Proportional, FontFamily::Name("bold".into()), FontFamily::Monospace] {
+            if let Some(list) = defs.families.get_mut(&family) {
+                list.push("system-georgian".into());
+            }
+        }
+    }
     ctx.set_fonts(defs);
+}
+
+/// An installed Georgian font (small files, about 0.1–1 MB), read once. None on wasm.
+pub fn system_georgian_font() -> Option<&'static [u8]> {
+    static BYTES: std::sync::OnceLock<Option<Vec<u8>>> = std::sync::OnceLock::new();
+    BYTES
+        .get_or_init(|| {
+            let names: &[&str] = if cfg!(windows) {
+                &["sylfaen.ttf"]
+            } else if cfg!(target_os = "macos") {
+                &["SFGeorgian.ttf", "Supplemental/Arial Unicode.ttf"]
+            } else {
+                &[
+                    "truetype/noto/NotoSansGeorgian-Regular.ttf",
+                    "noto/NotoSansGeorgian-Regular.ttf",
+                    "google-noto/NotoSansGeorgian-Regular.ttf",
+                    "truetype/dejavu/DejaVuSans.ttf",
+                    "dejavu/DejaVuSans.ttf",
+                    "dejavu-sans-fonts/DejaVuSans.ttf",
+                    "TTF/DejaVuSans.ttf",
+                ]
+            };
+            let dirs = deckcraft_fonts::system_font_dirs();
+            names.iter().flat_map(|name| dirs.iter().map(move |dir| dir.join(name))).find_map(|path| std::fs::read(path).ok())
+        })
+        .as_deref()
 }
 
 pub fn bold(size: f32) -> egui::FontId {
