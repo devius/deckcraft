@@ -1,6 +1,6 @@
 # Localization parity with PowerPoint
 
-> **Last reviewed:** 2026-10-10 · **Last updated:** 2026-10-10 · **Change:** minor (Ukrainian UI catalog and language selection) · **Target:** Microsoft PowerPoint for Mac 16.113 (Microsoft 365)
+> **Last reviewed:** 2026-10-10 · **Last updated:** 2026-10-10 · **Change:** minor (Georgian UI catalog) · **Target:** Microsoft PowerPoint for Mac 16.113 (Microsoft 365)
 
 DeckCraft's interface supports English and Ukrainian through `crates/ui-egui/src/i18n/uk.tsv`.
 Preferences offers the system language or an explicit choice; desktop choices persist across
@@ -29,6 +29,7 @@ support partly there), **55–90 h** to parity plus native-speaker review.
 |---|---|---|---|---|---|---|---|---|
 | English | en | ~1,050 / ~1,050 (100%) | yes / yes / no help | full | yes | **full** | yes | 0 |
 | Ukrainian | uk | UI catalog; coverage checked by tests | UI captions; diagnostics retain original wording | Cyrillic; bundled UI fonts tested | no | available; English fallback | no | — |
+| Georgian | ka | 1,232 / 1,232 catalog strings (100%) | UI captions; diagnostics retain original wording | Mkhedruli through system fonts; UI uses an installed Georgian face (none bundled; the web build has none); Change Case keeps Georgian lower case | in progress | available; English fallback | no | — |
 | Simplified Chinese (Mandarin) | zh-Hans | 0 (0%) | no | renders with system CJK fonts (asset policy excludes Noto CJK from builds); UAX #14 breaking; **no IME composition**; no true vertical layout | no | none | yes | 6–10 (incl. IME) |
 | Spanish | es | 0 (0%) | no | full (Latin) | no | none | yes (es, es-MX) | 3–5 |
 | Hindi | hi | 0 (0%) | no | Devanagari shaping through HarfRust, untested; no bundled Devanagari font | no | none | **no** (Windows only) | 4–7 |
@@ -41,7 +42,7 @@ support partly there), **55–90 h** to parity plus native-speaker review.
 | Korean | ko | 0 (0%) | no | system Hangul fonts; no IME composition | no | none | yes | 4–7 |
 | Vietnamese | vi | 0 (0%) | no | stacked diacritics through HarfRust | no | none | **no** (Windows only) | 3–5 |
 
-Other languages shipped: **1 (Ukrainian)**. PowerPoint for Mac ships 16 more
+Other languages shipped: **2 (Ukrainian, Georgian)**. PowerPoint for Mac ships 16 more
 than the twelve above: Czech, Danish, Greek, Finnish, Hebrew, Hungarian, Italian, Dutch, Norwegian,
 Polish, Russian, Slovak, Swedish, Thai, Turkish and Traditional Chinese.
 
@@ -59,5 +60,6 @@ common misspellings (`crates/engine/src/cmd/review.rs`); see [gaps.md](gaps.md#p
 
 | Date | Change | Summary |
 |---|---|---|
+| 2026-10-12 | minor | Added Georgian catalog, `ka` locale detection, installed-font UI fallback, Georgian-safe Change Case and dd.mm.yyyy dates |
 | 2026-10-10 | minor | Added Ukrainian catalog, language selection, English fallback, preserved custom prompts and bundled-font coverage |
 | 2026-10-10 | major | Created: twelve-language table, ~1,050 UI strings measured, PowerPoint for Mac's 26 languages from its bundle |
