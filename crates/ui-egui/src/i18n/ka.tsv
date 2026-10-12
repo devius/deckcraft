@@ -306,9 +306,9 @@ Design Ideas	დიზაინის იდეები
 Design\nIdeas	დიზაინის\nიდეები
 Deutsch	Deutsch
 Diagonal Stripe	დიაგონალური ზოლი
-Diamond	რომბი
-Diamond In	რომბი შიგნით
-Diamond Out	რომბი გარეთ
+Diamond	ბრილიანტი
+Diamond In	ბრილიანტი შიგნით
+Diamond Out	ბრილიანტი გარეთ
 Direction	მიმართულება
 Disappear	გაქრობა
 Discard Recovered Presentations	აღდგენილი პრეზენტაციების უარყოფა
@@ -329,10 +329,10 @@ Dodecagon	თორმეტკუთხედი
 Don't Save	არ შეინახო
 Don't show on title slide	სათაურის სლაიდზე არ ჩანდეს
 Done	მზადაა
-Donut	რგოლი
+Donut	წრიული
 Doors	კარები
 Double Brace	ორმაგი ფიგურული ფრჩხილი
-Double Bracket	ორმაგი ფრჩხილი
+Double Bracket	ორმაგი კვადრატული ფრჩხილი
 Double Wave	ორმაგი ტალღა
 Doughnut	რგოლოვანი
 Down	ქვემოთ
@@ -539,7 +539,7 @@ Hierarchy	იერარქია
 High	მაღალი
 Highlighter	მარკერი
 Histogram	ჰისტოგრამა
-Home	მთავარი
+Home	საწყისი ეკრანი
 Honeycomb	ფიჭა
 Horizontal	ჰორიზონტალური
 Horz In	ჰორიზონტალურად შიგნით
@@ -604,7 +604,7 @@ Learn\nMore	დაწვრილებით
 Ledger Paper (11x17 in)	Ledger ქაღალდი (11x17 ინჩი)
 Left	მარცხნივ
 Left Brace	მარცხენა ფიგურული ფრჩხილი
-Left Bracket	მარცხენა ფრჩხილი
+Left Bracket	მარცხენა კვადრატული ფრჩხილი
 Letter Paper (8.5x11 in)	Letter ქაღალდი (8.5x11 ინჩი)
 Liberation Serif	Liberation Serif
 Light Blue	ღია ლურჯი
@@ -742,7 +742,7 @@ Outline View	სტრუქტურის რეჟიმი
 Outline\nView	სტრუქტურის\nრეჟიმი
 Oval	ოვალი
 Oval ends	ოვალური ბოლოები
-Overhead	ოვერჰედი
+Overhead	გრაფოპროექტორი
 PDF document (.pdf)	PDF დოკუმენტი (.pdf)
 PNG images (all slides)	PNG სურათები (ყველა სლაიდი)
 PNG images (current slide)	PNG სურათი (მიმდინარე სლაიდი)
@@ -759,14 +759,14 @@ Parallelogram	პარალელოგრამი
 Pareto	პარეტო
 Partial Circle	ნაწილობრივი წრე
 Particles	ნაწილაკები
-Paste	ჩაწებება
-Paste (⌘V)	ჩაწებება (⌘V)
-Paste Formatting	ფორმატის ჩაწებება
-Paste and Match Formatting	ჩაწებება ფორმატირების შეთავსებით
-Paste or type an outline. Unindented lines become slide titles; tab-indented lines become bullets.	ჩააწებეთ ან აკრიფეთ სტრუქტურა. შეწევის გარეშე სტრიქონები სლაიდების სათაურები გახდება, ტაბით შეწეული სტრიქონები კი — ბურთულიანი პუნქტები.
-Pasted image.png	ჩაწებებული სურათი.png
+Paste	ჩასმა
+Paste (⌘V)	ჩასმა (⌘V)
+Paste Formatting	ფორმატის ჩასმა
+Paste and Match Formatting	ჩასმა ფორმატირების შეთავსებით
+Paste or type an outline. Unindented lines become slide titles; tab-indented lines become bullets.	ჩასვით ან აკრიფეთ სტრუქტურა. შეწევის გარეშე სტრიქონები სლაიდების სათაურები გახდება, ტაბით შეწეული სტრიქონები კი — ბურთულიანი პუნქტები.
+Pasted image.png	ჩასმული სურათი.png
 Path	ტრაექტორია
-Pattern fill	ნიმუშით შევსება
+Pattern fill	პატერნით შევსება
 Pause	პაუზა
 Peek In	კიდიდან შემოსვლა
 Peel Off	აძრობა
@@ -783,7 +783,7 @@ Picture or texture fill	სურათით ან ტექსტურით
 Picture\nStyles	სურათის\nსტილები
 Pictures	სურათები
 Pie	წრიული
-Pin	ქინძისთავი
+Pin	სამაგრი
 Placeholder colour	შესავსები ველის ფერი
 Plan\nBuild\nLaunch	დაგეგმვა\nშექმნა\nგაშვება
 Plaque	დაფა
@@ -802,7 +802,7 @@ Plus	პლუსი
 Plus In	პლუსი შიგნით
 Plus Out	პლუსი გარეთ
 Plus Sign	პლუსის ნიშანი
-Portrait (9:16)	პორტრეტული (9:16)
+Portrait (9:16)	ვერტიკალური (9:16)
 Português	Português
 Position	პოზიცია
 Position Objects	ობიექტების განლაგება
@@ -909,7 +909,7 @@ Ribbon: Tilted Down	ლენტი: ქვემოთ დახრილი
 Ribbon: Tilted Up	ლენტი: ზემოთ დახრილი
 Right	მარჯვნივ
 Right Brace	მარჯვენა ფიგურული ფრჩხილი
-Right Bracket	მარჯვენა ფრჩხილი
+Right Bracket	მარჯვენა კვადრატული ფრჩხილი
 Right Triangle	მართკუთხა სამკუთხედი
 Right-to-Left Text Direction	ტექსტის მიმართულება მარჯვნიდან მარცხნივ
 Ring	რგოლი
