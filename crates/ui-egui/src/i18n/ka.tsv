@@ -168,7 +168,7 @@ Callouts	განმარტებები
 Cameo	კამეო
 Camera capture is not available yet	კამერით გადაღება ჯერ მიუწვდომელია
 Cancel	გაუქმება
-Capitalize Each Word	ყოველი სიტყვა დიდი ასოთი
+Capitalize Each Word	ყოველი სიტყვა მთავრულით
 Caps	მთავრული
 Center	ცენტრში
 Centered	ცენტრში
@@ -492,7 +492,7 @@ Glitter	ბრჭყვიალი
 Glow	ნათება
 Go to	გადასვლა
 Go to Slide	სლაიდზე გადასვლა
-Grab bag	შემთხვევითი ნაკრები
+Grab bag	სხვადასხვა
 Gradient fill	გრადიენტული შევსება
 Gradient stops	გრადიენტის წერტილები
 Gradient…	გრადიენტი…
@@ -670,7 +670,7 @@ Move Slide	სლაიდის გადატანა
 Move Up	ზემოთ გადატანა
 Multiplication Sign	გამრავლების ნიშანი
 Multiply	გამრავლება
-Mute	ხმის გამორთვა
+Mute	დადუმება
 Name	სახელი
 Name (A–Z)	სახელი (ა–ჰ)
 Name:	სახელი:
@@ -798,10 +798,10 @@ Play from\nCurrent Slide	დაკვრა მიმდინარე\nსლ�
 Play from\nStart	დაკვრა\nდასაწყისიდან
 Play/Pause	დაკვრა/პაუზა
 Playback	დაკვრა
-Plus	პლიუსი
-Plus In	პლიუსი შიგნით
-Plus Out	პლიუსი გარეთ
-Plus Sign	პლიუსის ნიშანი
+Plus	პლუსი
+Plus In	პლუსი შიგნით
+Plus Out	პლუსი გარეთ
+Plus Sign	პლუსის ნიშანი
 Portrait (9:16)	პორტრეტული (9:16)
 Português	Português
 Position	მდებარეობა
@@ -1030,9 +1030,9 @@ Smoothly Right	მდორედ მარჯვნივ
 Snap objects to grid	ობიექტების ბადეზე მიმაგრება
 Soft Edge Rectangle	რბილკიდიანი მართკუთხედი
 Soft Edges	რბილი კიდეები
-Solid	მთლიანი
+Solid	უწყვეტი
 Solid fill	ერთფეროვანი შევსება
-Solid line	მთლიანი ხაზი
+Solid line	უწყვეტი ხაზი
 Sort	სორტირება
 Source on GitHub	წყარო GitHub-ზე
 Space	Space
@@ -1169,7 +1169,7 @@ Very Tight	ძალიან მჭიდრო
 Video	ვიდეო
 Video from File…	ვიდეო ფაილიდან…
 View	ჩვენება
-Volume	ხმის სიმაღლე
+Volume	ხმის დონე
 Vortex	გრიგალი
 Waterfall	ჩანჩქერი
 Wave	ტალღა
