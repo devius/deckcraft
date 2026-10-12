@@ -12,8 +12,8 @@
 + Row	+ სტრიქონი
 + Series	+ მწკრივი
 +Bin	+Bin
-100% Stacked Bar	100% დაგროვებითი ზოლოვანი
-100% Stacked Column	100% დაგროვებითი სვეტოვანი
+100% Stacked Bar	100% დასტად ზოლოვანი
+100% Stacked Column	100% დასტად სვეტოვანი
 35mm Slides	35 მმ სლაიდები
 @ribbon:Home	მთავარი
 @ribbon:Insert	ჩასმა
@@ -266,7 +266,7 @@ Custom Path	მორგებული ტრაექტორია
 Custom Show	მორგებული ჩვენება
 Custom Show 1	მორგებული ჩვენება 1
 Custom Shows	მორგებული ჩვენებები
-Custom Slide Show	სლაიდების მორგებული ჩვენება
+Custom Slide Show	მორგებული სლაიდშოუ
 Custom\nShow	მორგებული\nჩვენება
 Cut	ამოჭრა
 Cylinder	ცილინდრი
@@ -276,9 +276,9 @@ Dark Red	მუქი წითელი
 Dark appearance	მუქი იერსახე
 Dark\nMode	ბნელი\nრეჟიმი
 Darken	გამუქება
-Dash	შტრიხი
-Dash Dot	შტრიხ-პუნქტირი
-Dashes	შტრიხები
+Dash	ტირე
+Dash Dot	ტირე-წერტილი
+Dashes	ტირეები
 Database	მონაცემთა ბაზა
 Date	თარიღი
 Date & Time	თარიღი და დრო
@@ -358,11 +358,11 @@ Effect\nOptions	ეფექტის\nპარამეტრები
 Effects	ეფექტები
 Email Address	ელფოსტის მისამართი
 Email address:	ელფოსტის მისამართი:
-Emphasis	გამოკვეთა
+Emphasis	აქცენტირება
 End	End
 End Show	ჩვენების დასრულება
-End of slide show	სლაიდების ჩვენების დასასრული
-End of slide show, click to exit.	სლაიდების ჩვენების დასასრული, დააწკაპუნეთ გასასვლელად.
+End of slide show	სლაიდშოუს დასასრული
+End of slide show, click to exit.	სლაიდშოუს დასასრული, დააწკაპუნეთ გასასვლელად.
 End trim (s):	ბოლოდან მოჭრა (წმ):
 English (United Kingdom)	ინგლისური (გაერთიანებული სამეფო)
 English (United States)	ინგლისური (აშშ)
@@ -408,41 +408,41 @@ Flip Horizontal	ჰორიზონტალურად არეკვლა
 Flip Vertical	ვერტიკალურად არეკვლა
 Float In	შემოცურება
 Float Out	გაცურება
-Flowchart	ბლოკსქემა
-Flowchart: Alternate Process	ბლოკსქემა: ალტერნატიული პროცესი
-Flowchart: Card	ბლოკსქემა: ბარათი
-Flowchart: Collate	ბლოკსქემა: შეკრება
-Flowchart: Connector	ბლოკსქემა: შემაერთებელი
-Flowchart: Data	ბლოკსქემა: მონაცემები
-Flowchart: Decision	ბლოკსქემა: გადაწყვეტილება
-Flowchart: Delay	ბლოკსქემა: დაყოვნება
-Flowchart: Direct Access Storage	ბლოკსქემა: პირდაპირი წვდომის მეხსიერება
-Flowchart: Display	ბლოკსქემა: ეკრანი
-Flowchart: Document	ბლოკსქემა: დოკუმენტი
-Flowchart: Extract	ბლოკსქემა: ამოღება
-Flowchart: Internal Storage	ბლოკსქემა: შიდა მეხსიერება
-Flowchart: Magnetic Disk	ბლოკსქემა: მაგნიტური დისკი
-Flowchart: Manual Input	ბლოკსქემა: ხელით შეყვანა
-Flowchart: Manual Operation	ბლოკსქემა: ხელით ოპერაცია
-Flowchart: Merge	ბლოკსქემა: შერწყმა
-Flowchart: Multidocument	ბლოკსქემა: რამდენიმე დოკუმენტი
-Flowchart: Off-page Connector	ბლოკსქემა: გვერდგარე შემაერთებელი
-Flowchart: Or	ბლოკსქემა: ან
-Flowchart: Predefined Process	ბლოკსქემა: წინასწარ განსაზღვრული პროცესი
-Flowchart: Preparation	ბლოკსქემა: მომზადება
-Flowchart: Process	ბლოკსქემა: პროცესი
-Flowchart: Punched Tape	ბლოკსქემა: პერფოლენტი
-Flowchart: Sequential Access Storage	ბლოკსქემა: მიმდევრობითი წვდომის მეხსიერება
-Flowchart: Sort	ბლოკსქემა: სორტირება
-Flowchart: Stored Data	ბლოკსქემა: შენახული მონაცემები
-Flowchart: Summing Junction	ბლოკსქემა: შემაჯამებელი კვანძი
-Flowchart: Terminator	ბლოკსქემა: დასაწყისი/დასასრული
+Flowchart	ბლოკ-სქემა
+Flowchart: Alternate Process	ბლოკ-სქემა: ალტერნატიული პროცესი
+Flowchart: Card	ბლოკ-სქემა: ბარათი
+Flowchart: Collate	ბლოკ-სქემა: შეკრება
+Flowchart: Connector	ბლოკ-სქემა: შემაერთებელი
+Flowchart: Data	ბლოკ-სქემა: მონაცემები
+Flowchart: Decision	ბლოკ-სქემა: გადაწყვეტილება
+Flowchart: Delay	ბლოკ-სქემა: დაყოვნება
+Flowchart: Direct Access Storage	ბლოკ-სქემა: პირდაპირი წვდომის მეხსიერება
+Flowchart: Display	ბლოკ-სქემა: ეკრანი
+Flowchart: Document	ბლოკ-სქემა: დოკუმენტი
+Flowchart: Extract	ბლოკ-სქემა: ამოღება
+Flowchart: Internal Storage	ბლოკ-სქემა: შიდა მეხსიერება
+Flowchart: Magnetic Disk	ბლოკ-სქემა: მაგნიტური დისკი
+Flowchart: Manual Input	ბლოკ-სქემა: ხელით შეყვანა
+Flowchart: Manual Operation	ბლოკ-სქემა: ხელით ოპერაცია
+Flowchart: Merge	ბლოკ-სქემა: შერწყმა
+Flowchart: Multidocument	ბლოკ-სქემა: რამდენიმე დოკუმენტი
+Flowchart: Off-page Connector	ბლოკ-სქემა: გვერდგარე შემაერთებელი
+Flowchart: Or	ბლოკ-სქემა: ან
+Flowchart: Predefined Process	ბლოკ-სქემა: წინასწარ განსაზღვრული პროცესი
+Flowchart: Preparation	ბლოკ-სქემა: მომზადება
+Flowchart: Process	ბლოკ-სქემა: პროცესი
+Flowchart: Punched Tape	ბლოკ-სქემა: პერფოლენტი
+Flowchart: Sequential Access Storage	ბლოკ-სქემა: მიმდევრობითი წვდომის მეხსიერება
+Flowchart: Sort	ბლოკ-სქემა: სორტირება
+Flowchart: Stored Data	ბლოკ-სქემა: შენახული მონაცემები
+Flowchart: Summing Junction	ბლოკ-სქემა: შემაჯამებელი კვანძი
+Flowchart: Terminator	ბლოკ-სქემა: დასაწყისი/დასასრული
 Fly In	შემოფრენა
 Fly Out	გაფრენა
 Fly Through	გადაფრენა
 Folded Corner	მოკეცილი კუთხე
 Follow the layout	განლაგების მიხედვით
-Followed Hyperlink	გახსნილი ბმული
+Followed Hyperlink	ნანახი ბმული
 Font	შრიფტი
 Font Color	შრიფტის ფერი
 Font Size	შრიფტის ზომა
@@ -591,7 +591,7 @@ Italic	დახრილი
 JPEG image (current slide)	JPEG სურათი (მიმდინარე სლაიდი)
 Join our community on Discord	შემოგვიერთდით Discord-ის საზოგადოებაში
 Join the ArtCraft community on Discord	შემოუერთდით ArtCraft-ის საზოგადოებას Discord-ზე
-Justify	სიგანეზე
+Justify	ორმხრივი სწორება
 L-Shape	L-ფიგურა
 Language	ენა
 Last	ბოლო
@@ -615,10 +615,10 @@ Lightning	ელვა
 Lightning Bolt	ელვა
 Line	ხაზი
 Line Color	ხაზის ფერი
-Line Spacing	ინტერვალი
-Line Spacing Options…	ინტერვალის პარამეტრები…
+Line Spacing	სტრიქონთა დაშორება
+Line Spacing Options…	სტრიქონთა დაშორების პარამეტრები…
 Line delta	სტრიქონების სხვაობა
-Line spacing (lines):	სტრიქონთა ინტერვალი (სტრიქონი):
+Line spacing (lines):	სტრიქონთა დაშორება (სტრიქონი):
 Line with Markers	ხაზოვანი მარკერებით
 Linear	წრფივი
 Lines	ხაზები
@@ -629,8 +629,8 @@ Link	ბმული
 Link…	ბმული…
 List Commands	ბრძანებების სია
 Lock	ჩაკეტვა
-Long Dash	გრძელი შტრიხი
-Long Dash Dot	გრძელი შტრიხ-პუნქტირი
+Long Dash	გრძელი ტირე
+Long Dash Dot	გრძელი ტირე-წერტილი
 Loop continuously until 'Esc'	უწყვეტი გამეორება „Esc“-მდე
 Loop until Stopped	გამეორება შეჩერებამდე
 Loops	მარყუჟები
@@ -742,7 +742,7 @@ Outline View	სტრუქტურის რეჟიმი
 Outline\nView	სტრუქტურის\nრეჟიმი
 Oval	ოვალი
 Oval ends	ოვალური ბოლოები
-Overhead	გრაფოპროექტორი
+Overhead	ოვერჰედი
 PDF document (.pdf)	PDF დოკუმენტი (.pdf)
 PNG images (all slides)	PNG სურათები (ყველა სლაიდი)
 PNG images (current slide)	PNG სურათი (მიმდინარე სლაიდი)
@@ -766,7 +766,7 @@ Paste and Match Formatting	ჩაწებება ფორმატირე�
 Paste or type an outline. Unindented lines become slide titles; tab-indented lines become bullets.	ჩააწებეთ ან აკრიფეთ სტრუქტურა. შეწევის გარეშე სტრიქონები სლაიდების სათაურები გახდება, ტაბით შეწეული სტრიქონები კი — ბურთულიანი პუნქტები.
 Pasted image.png	ჩაწებებული სურათი.png
 Path	ტრაექტორია
-Pattern fill	დაშტრიხვით შევსება
+Pattern fill	ნიმუშით შევსება
 Pause	პაუზა
 Peek In	კიდიდან შემოსვლა
 Peel Off	აძრობა
@@ -804,22 +804,22 @@ Plus Out	პლუსი გარეთ
 Plus Sign	პლუსის ნიშანი
 Portrait (9:16)	პორტრეტული (9:16)
 Português	Português
-Position	მდებარეობა
+Position	პოზიცია
 Position Objects	ობიექტების განლაგება
-Position and Size	მდებარეობა და ზომა
+Position and Size	პოზიცია და ზომა
 Post	გაგზავნა
-Poster Frame	გარეკანის კადრი
+Poster Frame	პოსტერის ჩარჩო
 PowerPoint Presentation (.pptx)	PowerPoint პრეზენტაცია (.pptx)
 Preferences	პარამეტრები
 Preferences…	პარამეტრები…
 Presentation	პრეზენტაცია
 Presentations	პრეზენტაციები
-Presentations and slide shows, rebuilt from scratch in pure Rust.	პრეზენტაციები და სლაიდების ჩვენება, ნულიდან შექმნილი სუფთა Rust-ზე.
+Presentations and slide shows, rebuilt from scratch in pure Rust.	პრეზენტაციები და სლაიდშოუები, ნულიდან შექმნილი სუფთა Rust-ზე.
 Presented by a speaker (full screen)	მომხსენებლის ჩვენება (მთელ ეკრანზე)
-Presenter View	მომხსენებლის რეჟიმი
-Presenter View — DeckCraft	მომხსენებლის რეჟიმი — DeckCraft
+Presenter View	მომხსენებლის ხედი
+Presenter View — DeckCraft	მომხსენებლის ხედი — DeckCraft
 Presenter\nView	მომხსენებლის\nრეჟიმი
-Preset gradients	მზა გრადიენტები
+Preset gradients	გრადიენტების პრესეტები
 Prestige	პრესტიჟი
 Preview	წინასწარი ნახვა
 Previous Slide	წინა სლაიდი
@@ -828,7 +828,7 @@ Properties	თვისებები
 Pulse	პულსაცია
 Punctuation	პუნქტუაცია
 Purple	იისფერი
-Push	გადაწევა
+Push	ბიძგი
 Pyramid	პირამიდა
 Quick Styles	სწრაფი სტილები
 Quick\nStyles	სწრაფი\nსტილები
@@ -888,13 +888,13 @@ Reorder Objects	ობიექტების რიგის შეცვლ�
 Replace straight quotes with smart quotes	სწორი ბრჭყალების ჩანაცვლება ტიპოგრაფიულით
 Reply	პასუხი
 Reply…	პასუხი…
-Reset	გადაყენება
-Reset Background	ფონის საწყისზე დაბრუნება
+Reset	ჩამოყრა
+Reset Background	ფონის ჩამოყრა
 Reset Crop	ჩამოჭრის გაუქმება
-Reset Effects	ეფექტების საწყისზე დაბრუნება
-Reset Picture	სურათის საწყისზე დაბრუნება
-Reset Slide	სლაიდის საწყისზე დაბრუნება
-Reset Slide Background	სლაიდის ფონის საწყისზე დაბრუნება
+Reset Effects	ეფექტების ჩამოყრა
+Reset Picture	სურათის ჩამოყრა
+Reset Slide	სლაიდის ჩამოყრა
+Reset Slide Background	სლაიდის ფონის ჩამოყრა
 Resize shape to fit text	ფიგურის ზომის ტექსტზე მორგება
 Resolve	გადაწყვეტა
 Resolve Thread	თემის გადაწყვეტა
@@ -937,8 +937,8 @@ Saved	შენახულია
 Saved {path}	შენახულია: {path}
 Scatter	წერტილოვანი
 ScreenTip:	მინიშნება:
-Screenshot	ეკრანის სურათი
-Screenshot (not available yet)	ეკრანის სურათი (ჯერ მიუწვდომელია)
+Screenshot	ეკრანის ანაბეჭდი
+Screenshot (not available yet)	ეკრანის ანაბეჭდი (ჯერ მიუწვდომელია)
 Scroll: Horizontal	გრაგნილი: ჰორიზონტალური
 Scroll: Vertical	გრაგნილი: ვერტიკალური
 Search commands (⇧⌘P)	ბრძანებების ძებნა (⇧⌘P)
@@ -967,9 +967,9 @@ Send\nBackward	უკან\nგადატანა
 Sentence case.	წინადადების რეგისტრი.
 Set Text	ტექსტის დაყენება
 Set Up Show…	ჩვენების პარამეტრები…
-Set Up Slide Show	სლაიდების ჩვენების პარამეტრები
-Set Up Slide Show…	სლაიდების ჩვენების პარამეტრები…
-Set Up\nSlide Show	ჩვენების\nპარამეტრები
+Set Up Slide Show	სლაიდშოუს პარამეტრები
+Set Up Slide Show…	სლაიდშოუს პარამეტრები…
+Set Up\nSlide Show	სლაიდშოუს\nპარამეტრები
 Set as Default Shape	ნაგულისხმევ ფიგურად დაყენება
 Shading	ფონი
 Shadow	ჩრდილი
@@ -1002,21 +1002,21 @@ Shrink text on overflow	ტექსტის შემცირება გა
 Simple Frame, White	მარტივი ჩარჩო, თეთრი
 Size	ზომა
 Size & Properties	ზომა და თვისებები
-Slide Master	სლაიდების ნიმუში
+Slide Master	მასტერ-სლაიდი
 Slide Number	სლაიდის ნომერი
-Slide Show	სლაიდების ჩვენება
+Slide Show	სლაიდშოუ
 Slide Size	სლაიდის ზომა
-Slide Sorter	სლაიდების დალაგება
+Slide Sorter	სლაიდების დამხარისხებელი
 Slide number	სლაიდის ნომერი
 Slide timings recorded.	სლაიდების დრო ჩაწერილია.
 Slide {:02}:{:04.1}   Total {:02}:{:02}	სლაიდი {:02}:{:04.1}   სულ {:02}:{:02}
 Slide {} of {}	სლაიდი {} / {}
 Slide {}: {}{}	სლაიდი {}: {}{}
 Slide {}: “{w}”	სლაიდი {}: „{w}“
-Slide\nMaster	სლაიდების\nნიმუში
+Slide\nMaster	მასტერ-\nსლაიდი
 Slide\nNumber	სლაიდის\nნომერი
 Slide\nSize	სლაიდის\nზომა
-Slide\nSorter	სლაიდების\nდალაგება
+Slide\nSorter	სლაიდების\nდამხარისხებელი
 Slides (e.g. 1,3,5):	სლაიდები (მაგ. 1,3,5):
 Slides from Outline	სლაიდები სტრუქტურიდან
 Slides from Outline…	სლაიდები სტრუქტურიდან…
@@ -1046,17 +1046,17 @@ Speech Bubble: Rectangle with Corners Rounded	საუბრის ბუშტ
 Spelling	მართლწერა
 Spin	ბრუნვა
 Spinner	სპინერი
-Split	დაყოფა
-Split Cells	უჯრების დაყოფა
-Split\nCells	უჯრების\nდაყოფა
+Split	გაყოფა
+Split Cells	უჯრების გაყოფა
+Split\nCells	უჯრების\nგაყოფა
 Square	კვადრატი
 Square (1:1)	კვადრატი (1:1)
 Square Dot	კვადრატული წერტილები
-Stacked	დაგროვებითი
-Stacked Area	დაგროვებითი ფართობითი
-Stacked Bar	დაგროვებითი ზოლოვანი
-Stacked Column	დაგროვებითი სვეტოვანი
-Stacked Line	დაგროვებითი ხაზოვანი
+Stacked	დასტად
+Stacked Area	დასტად ფართობითი
+Stacked Bar	დასტად ზოლოვანი
+Stacked Column	დასტად სვეტოვანი
+Stacked Line	დასტად ხაზოვანი
 Standard (4:3)	სტანდარტული (4:3)
 Standard Colors	სტანდარტული ფერები
 Star	ვარსკვლავი
@@ -1123,8 +1123,8 @@ The spelling check is complete. No issues found.	მართლწერის 
 Theme Colors	თემის ფერები
 Theme Gallery	თემების გალერეა
 Themes	თემები
-Thesaurus	სინონიმები
-Thesaurus (coming soon)	სინონიმები (მალე)
+Thesaurus	თეზაურუსი
+Thesaurus (coming soon)	თეზაურუსი (მალე)
 This Document	ეს დოკუმენტი
 Thought	ფიქრი
 Thought Bubble: Cloud	ფიქრის ბუშტი: ღრუბელი
@@ -1185,7 +1185,7 @@ Width:	სიგანე:
 Width: 	სიგანე: 
 Wind	ქარი
 Window	ფანჯარა
-Wipe	გადაწმენდა
+Wipe	წმენდა
 With Previous	წინასთან ერთად
 WordArt	WordArt
 WordArt style {}	WordArt სტილი {}
@@ -1223,7 +1223,7 @@ unknown interface language	ინტერფეისის უცნობი 
 {r} pt glow	{r} პტ ნათება
 {w} pt	{w} პტ
 {} ({} slides)	{} (სლაიდი: {})
-{} Slide Master	სლაიდების ნიმუში: {}
+{} Slide Master	მასტერ-სლაიდი: {}
 {} contributors · {} commits	მონაწილე: {} · კომიტი: {}
 {} presentations	პრეზენტაცია: {}
 {}x{} Table	ცხრილი {}x{}
