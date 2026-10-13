@@ -1232,3 +1232,45 @@ unknown interface language	ინტერფეისის უცნობი 
 ▶ Play All	▶ ყველას დაკვრა
 ◀ Previous	◀ წინა
 ✏ on	✏ ჩართულია
+Print	დაბეჭდვა
+Info	ინფორმაცია
+Compose Text	ტექსტის შედგენა
+Commit Composition	შედგენილი ტექსტის დადასტურება
+Print…	დაბეჭდვა…
+Line: Rising	ხაზი: აღმავალი
+Trapezoid: Uneven Sides	ტრაპეცია: არათანაბარი გვერდები
+Quarter Wedge	მეოთხედი სოლი
+Corner Tabs: Triangles	კუთხის ჩანართები: სამკუთხედები
+Corner Tabs: Squares	კუთხის ჩანართები: კვადრატები
+Corner Tabs: Quarter Circles	კუთხის ჩანართები: მეოთხედი წრეები
+Gear: 6 Teeth	კბილანა: 6 კბილი
+Gear: 9 Teeth	კბილანა: 9 კბილი
+Chart Marker: Cross Lines	დიაგრამის მარკერი: ჯვარედინი ხაზები
+Chart Marker: Star Lines	დიაგრამის მარკერი: ვარსკვლავისებრი ხაზები
+Chart Marker: Plus Lines	დიაგრამის მარკერი: პლუსისებრი ხაზები
+Arrow: Curved Right	ისარი: მრუდი მარჯვნივ
+Arrow: Curved Left	ისარი: მრუდი მარცხნივ
+Arrow: Curved Up	ისარი: მრუდი ზემოთ
+Arrow: Curved Down	ისარი: მრუდი ქვემოთ
+Arrow: Circular	ისარი: წრიული
+Arrow: Circular Counter-clockwise	ისარი: წრიული, საათის ისრის საწინააღმდეგოდ
+Arrow: Circular Two-headed	ისარი: წრიული, ორთავიანი
+Arrow: Swoosh	ისარი: რკალისებრი
+Callout: Left-Right Arrow	ახსნა-წარწერა: ისარი მარცხნივ-მარჯვნივ
+Callout: Up-Down Arrow	ახსნა-წარწერა: ისარი ზემოთ-ქვემოთ
+Callout: Quad Arrow	ახსნა-წარწერა: ოთხმხრივი ისარი
+Flowchart: Offline Storage	ბლოკ-სქემა: ოფლაინ მეხსიერება
+Ribbon: Curved and Tilted Up	ლენტი: მრუდი და ზემოთ დახრილი
+Ribbon: Curved and Tilted Down	ლენტი: მრუდი და ქვემოთ დახრილი
+Ribbon: Left-Right Fold	ლენტი: მარცხნივ-მარჯვნივ მოკეცილი
+Callout: Bent Line	ახსნა-წარწერა: მოხრილი ხაზი
+Callout: Double Bent Line	ახსნა-წარწერა: ორჯერ მოხრილი ხაზი
+Callout: Line with Accent Bar	ახსნა-წარწერა: ხაზი აქცენტის ზოლით
+Callout: Bent Line with Accent Bar	ახსნა-წარწერა: მოხრილი ხაზი აქცენტის ზოლით
+Callout: Double Bent Line with Accent Bar	ახსნა-წარწერა: ორჯერ მოხრილი ხაზი აქცენტის ზოლით
+Callout: Line with No Border	ახსნა-წარწერა: ხაზი ჩარჩოს გარეშე
+Callout: Bent Line with No Border	ახსნა-წარწერა: მოხრილი ხაზი ჩარჩოს გარეშე
+Callout: Double Bent Line with No Border	ახსნა-წარწერა: ორჯერ მოხრილი ხაზი ჩარჩოს გარეშე
+Callout: Line with Border and Accent Bar	ახსნა-წარწერა: ხაზი ჩარჩოთი და აქცენტის ზოლით
+Callout: Bent Line with Border and Accent Bar	ახსნა-წარწერა: მოხრილი ხაზი ჩარჩოთი და აქცენტის ზოლით
+Callout: Double Bent Line with Border and Accent Bar	ახსნა-წარწერა: ორჯერ მოხრილი ხაზი ჩარჩოთი და აქცენტის ზოლით
