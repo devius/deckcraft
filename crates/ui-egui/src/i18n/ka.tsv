@@ -210,8 +210,8 @@ Click to edit Master title style	დაწკაპეთ ნიმუშის 
 Clock	საათი
 Clockwise	საათის ისრის მიმართულებით
 Close	დახურვა
-Close Master View	ნიმუშის რეჟიმის დახურვა
-Close\nMaster View	ნიმუშის რეჟიმის\nდახურვა
+Close Master View	ნიმუშის ხედის დახურვა
+Close\nMaster View	ნიმუშის ხედის\nდახურვა
 Cloud	ღრუბელი
 Clustered Bar	დაჯგუფებული ზოლოვანი
 Clustered Column	დაჯგუფებული სვეტოვანი
@@ -385,7 +385,7 @@ Exported {path}	ექსპორტირებულია: {path}
 Export…	ექსპორტი…
 Fade	მილევა
 Fade in (s):	თანდათან გამოჩენა (წმ):
-Fade out (s):	თანდათან მილევა (წმ):
+Fade out (s):	თანდათან ჩაქრობა (წმ):
 Fall Over	წაქცევა
 Ferris Wheel	ეშმაკის ბორბალი
 File	ფაილი
@@ -398,10 +398,10 @@ First	პირველი
 First Column	პირველი სვეტი
 First Slide	პირველი სლაიდი
 First commit	პირველი კომიტი
-Fit	მორგება
-Fit slide to current window	სლაიდის მორგება მიმდინარე ფანჯარაზე
-Fit to Window	ფანჯარაზე მორგება
-Fit to\nWindow	ფანჯარაზე\nმორგება
+Fit	ჩატევა
+Fit slide to current window	სლაიდის ჩატევა მიმდინარე ფანჯარაში
+Fit to Window	ფანჯარაში ჩატევა
+Fit to\nWindow	ფანჯარაში\nჩატევა
 Flash	გაელვება
 Flip	არეკვლა
 Flip Horizontal	ჰორიზონტალურად არეკვლა
@@ -637,8 +637,8 @@ Loops	მარყუჟები
 Loose	თავისუფალი
 Low	დაბალი
 MIT OR Apache-2.0 · © 2026 ArtCraft Team and the DeckCraft contributors	MIT OR Apache-2.0 · © 2026 ArtCraft Team და DeckCraft-ის მონაწილეები
-Margins (pt)	არშიები (პტ)
-Mark as decorative	დეკორატიულად მონიშვნა
+Margins (pt)	ველები (პტ)
+Mark as decorative	დეკორატიულად მარკირება
 Mark selected text as:	მონიშნული ტექსტის ენა:
 Math	მათემატიკა
 Matrix	მატრიცა
@@ -661,13 +661,13 @@ Morph	გარდასახვა
 Motion	მოძრაობა
 Motion Paths	მოძრაობის ტრაექტორიები
 Move	გადაადგილება
-Move Down	ქვემოთ გადატანა
+Move Down	ჩამოწევა
 Move Insertion Point	კურსორის გადაადგილება
 Move Section	სექციის გადატანა
-Move Section Down	სექციის ქვემოთ გადატანა
-Move Section Up	სექციის ზემოთ გადატანა
+Move Section Down	სექციის ჩამოწევა
+Move Section Up	სექციის აწევა
 Move Slide	სლაიდის გადატანა
-Move Up	ზემოთ გადატანა
+Move Up	აწევა
 Multiplication Sign	გამრავლების ნიშანი
 Multiply	გამრავლება
 Mute	დადუმება
@@ -703,7 +703,7 @@ No notes.	შენიშვნები არ არის.
 No sound: {err}	ხმა არ არის: {err}
 None	არცერთი
 Normal	ჩვეულებრივი
-Not Equal	უტოლობა
+Not Equal	არ უდრის
 Not allowed	აკრძალულია
 Notes	შენიშვნები
 Notes Master	შენიშვნების ნიმუში
@@ -738,8 +738,8 @@ Out Bounce	ხტუნვით გარეთ
 Outer	გარე
 Outline	სტრუქტურა
 Outline (.txt)	სტრუქტურა (.txt)
-Outline View	სტრუქტურის რეჟიმი
-Outline\nView	სტრუქტურის\nრეჟიმი
+Outline View	სტრუქტურის ხედი
+Outline\nView	სტრუქტურის\nხედი
 Oval	ოვალი
 Oval ends	ოვალური ბოლოები
 Overhead	გრაფოპროექტორი
@@ -818,7 +818,7 @@ Presentations and slide shows, rebuilt from scratch in pure Rust.	პრეზ�
 Presented by a speaker (full screen)	მომხსენებლის ჩვენება (მთელ ეკრანზე)
 Presenter View	მომხსენებლის ხედი
 Presenter View — DeckCraft	მომხსენებლის ხედი — DeckCraft
-Presenter\nView	მომხსენებლის\nრეჟიმი
+Presenter\nView	მომხსენებლის\nხედი
 Preset gradients	გრადიენტების პრესეტები
 Prestige	პრესტიჟი
 Preview	წინასწარი ნახვა
@@ -836,8 +836,8 @@ Radar	რადარული
 Radial	რადიალური
 Random	შემთხვევითი
 Random Bars	შემთხვევითი ზოლები
-Reading View	კითხვის რეჟიმი
-Reading\nView	კითხვის\nრეჟიმი
+Reading View	კითხვის ხედი
+Reading\nView	კითხვის\nხედი
 Real name	ნამდვილი სახელი
 Recent	ბოლოდროინდელი
 Record	ჩაწერა
@@ -873,14 +873,14 @@ Remove Background	ფონის მოშორება
 Remove Background (coming soon)	ფონის მოშორება (მალე)
 Remove Section	სექციის წაშლა
 Remove Section & Slides	სექციის და სლაიდების წაშლა
-Remove stop	წერტილის წაშლა
+Remove stop	გადასვლის წერტილის წაშლა
 Remove\nBackground	ფონის\nმოშორება
-Rename	გადარქმევა
-Rename Layout	განლაგების გადარქმევა
-Rename Section	სექციის გადარქმევა
-Rename Section…	სექციის გადარქმევა…
-Rename Slide	სლაიდის გადარქმევა
-Rename…	გადარქმევა…
+Rename	სახელის შეცვლა
+Rename Layout	განლაგების სახელის შეცვლა
+Rename Section	სექციის სახელის შეცვლა
+Rename Section…	სექციის სახელის შეცვლა…
+Rename Slide	სლაიდის სახელის შეცვლა
+Rename…	სახელის შეცვლა…
 Render Slide	სლაიდის რენდერი
 Reopen	ხელახლა გახსნა
 Reorder Animation	ანიმაციის რიგის შეცვლა
@@ -941,8 +941,8 @@ Screenshot	ეკრანის ანაბეჭდი
 Screenshot (not available yet)	ეკრანის ანაბეჭდი (ჯერ მიუწვდომელია)
 Scroll: Horizontal	გრაგნილი: ჰორიზონტალური
 Scroll: Vertical	გრაგნილი: ვერტიკალური
-Search commands (⇧⌘P)	ბრძანებების ძებნა (⇧⌘P)
-Search commands…	ბრძანებების ძებნა…
+Search commands (⇧⌘P)	ბრძანებების ძიება (⇧⌘P)
+Search commands…	ბრძანებების ძიება…
 Section	სექცია
 Seek	პოზიციაზე გადასვლა
 Select	მონიშვნა
@@ -1106,7 +1106,7 @@ Teardrop	წვეთი
 Teeter	რწევა
 Text	ტექსტი
 Text Box	ტექსტური ბლოკი
-Text Box Margins	ტექსტური ბლოკის არშიები
+Text Box Margins	ტექსტური ბლოკის ველები
 Text Direction	ტექსტის მიმართულება
 Text Effects	ტექსტის ეფექტები
 Text Fill	ტექსტის შევსება
@@ -1168,7 +1168,7 @@ Very Loose	ძალიან თავისუფალი
 Very Tight	ძალიან მჭიდრო
 Video	ვიდეო
 Video from File…	ვიდეო ფაილიდან…
-View	ჩვენება
+View	ხედი
 Volume	ხმის დონე
 Vortex	გრიგალი
 Waterfall	ჩანჩქერი
