@@ -265,12 +265,12 @@ mod tests {
             required.extend(deckcraft_color::STANDARD_COLORS.iter().map(|color| color.1));
             required.extend(deckcraft_color::SchemeSlot::THEME.iter().map(|slot| slot.label()));
             required.extend(["@ribbon:Home", "@ribbon:Insert"]);
-            for option in deckcraft_model::anim::TRANSITIONS
+            let transition_labels = deckcraft_model::anim::TRANSITIONS
                 .iter()
-                .flat_map(|effect| effect.4)
-                .chain(deckcraft_model::anim::ANIMATIONS.iter().flat_map(|effect| effect.5))
-            {
-                let label = crate::ribbon::option_label(option);
+                .flat_map(|effect| effect.4.iter().map(|option| (*option, deckcraft_model::anim::transition_option_label(effect.0, option))));
+            let animation_labels =
+                deckcraft_model::anim::ANIMATIONS.iter().flat_map(|effect| effect.5).map(|option| (*option, crate::ribbon::option_label(option)));
+            for (option, label) in transition_labels.chain(animation_labels) {
                 if !label.is_empty() && !label.chars().all(|c| c.is_ascii_digit()) {
                     assert!(catalog.contains_key(&label), "missing effect option: {option}: {label}");
                 }
