@@ -1,0 +1,1318 @@
+# Georgian interface catalog. English source<TAB>translation; \n denotes a line break.
+# Contributor-original translation, MIT OR Apache-2.0.
+  Fixed date (empty = update automatically):	  ფიქსირებული თარიღი (ცარიელი = ავტომატური განახლება):
+  Footer text:	  ქვედა კოლონტიტულის ტექსტი:
+  Present  	  წარდგენა  
+ pt	 პტ
+ — Edited	 — შეცვლილია
+"Not Allowed" Symbol	სიმბოლო „აკრძალულია“
+% of all commits	ყველა კომიტის %
++ New Comment	+ ახალი კომენტარი
++ New Slide	+ ახალი სლაიდი
++ Row	+ სტრიქონი
++ Series	+ მწკრივი
++Bin	+Bin
+100% Stacked Bar	100% დასტად ზოლოვანი
+100% Stacked Column	100% დასტად სვეტოვანი
+35mm Slides	35 მმ სლაიდები
+@ribbon:Home	მთავარი
+@ribbon:Insert	ჩასმა
+@{}: {} PRs, {} commits, +{} / −{} lines (Δ {}), +{} / −{} binary assets, {} – {}	@{}: PR-ები: {}, კომიტები: {}, სტრიქონები: +{} / −{} (Δ {}), ბინარული ფაილები: +{} / −{}, {} – {}
+A3 Paper (297x420 mm)	A3 ქაღალდი (297x420 მმ)
+A4 Paper (210x297 mm)	A4 ქაღალდი (210x297 მმ)
+Aa	Aa
+Abc	აბგ
+About	პროგრამის შესახებ
+About DeckCraft	DeckCraft-ის შესახებ
+Accent 1	აქცენტი 1
+Accent 2	აქცენტი 2
+Accent 3	აქცენტი 3
+Accent 4	აქცენტი 4
+Accent 5	აქცენტი 5
+Accent 6	აქცენტი 6
+Accessibility Checker	ხელმისაწვდომობის შემოწმება
+Across	განივად
+Action	მოქმედება
+Action Button: Custom	მოქმედების ღილაკი: მორგებული
+Action Button: Document	მოქმედების ღილაკი: დოკუმენტი
+Action Button: Get Information	მოქმედების ღილაკი: ინფორმაცია
+Action Button: Go Back	მოქმედების ღილაკი: უკან
+Action Button: Go Back or Previous	მოქმედების ღილაკი: უკან ან წინა
+Action Button: Go Forward or Next	მოქმედების ღილაკი: წინ ან შემდეგი
+Action Button: Go Home	მოქმედების ღილაკი: მთავარი
+Action Button: Go to Beginning	მოქმედების ღილაკი: დასაწყისში
+Action Button: Go to End	მოქმედების ღილაკი: ბოლოში
+Action Button: Help	მოქმედების ღილაკი: დახმარება
+Action Button: Sound	მოქმედების ღილაკი: ხმა
+Action Button: Video	მოქმედების ღილაკი: ვიდეო
+Action Button: {k}	მოქმედების ღილაკი: {k}
+Action Buttons	მოქმედების ღილაკები
+Add Animation	ანიმაციის დამატება
+Add Section	სექციის დამატება
+Add\nAnimation	ანიმაციის\nდამატება
+Address:	მისამართი:
+Adjust Shape	ფიგურის მორგება
+After Previous	წინას შემდეგ
+After:	შემდეგ:
+Airplane	თვითმფრინავი
+Align	სწორება
+Align Bottom	ქვემოთ სწორება
+Align Center	ცენტრში სწორება
+Align Left	მარცხნივ სწორება
+Align Middle	შუაში სწორება
+Align Right	მარჯვნივ სწორება
+Align Text	ტექსტის სწორება
+Align Top	ზემოთ სწორება
+Alt Text	ალტერნატიული ტექსტი
+Alt+	Alt+
+Alt+F9	Alt+F9
+Alt\nText	ალტერნატიული\nტექსტი
+An open-source, clean-room project. Not affiliated with Microsoft.	ღია კოდის, სუფთა ოთახის მეთოდით შექმნილი პროექტი. Microsoft-თან კავშირი არ აქვს.
+Angle	კუთხე
+Animation Gallery	ანიმაციების გალერეა
+Animation Pane	ანიმაციის პანელი
+Animation Styles	ანიმაციის სტილები
+Animation\nPane	ანიმაციის\nპანელი
+Animations	ანიმაციები
+Animation Painter	ანიმაციის ფუნჯი
+Apply Animation	ანიმაციის გამოყენება
+Play/Pause GIF	GIF-ის დაკვრა/პაუზა
+Animations on Slide	ანიმაციები სლაიდზე
+Appear	გამოჩენა
+Apply	გამოყენება
+Apply To All	ყველაზე გამოყენება
+Apply to All	ყველაზე გამოყენება
+Apply\nTo All	ყველაზე\nგამოყენება
+Arc	რკალი
+Arcs	რკალები
+Area	ფართობითი
+Arrange	დალაგება
+Arrow	ისარი
+Arrow at end	ისარი ბოლოში
+Arrow at start	ისარი დასაწყისში
+Arrow: Bent	ისარი: მოხრილი
+Arrow: Bent-Up	ისარი: ზემოთ მოხრილი
+Arrow: Chevron	ისარი: შევრონი
+Arrow: Down	ისარი: ქვემოთ
+Arrow: Left	ისარი: მარცხნივ
+Arrow: Left-Right	ისარი: მარცხნივ-მარჯვნივ
+Arrow: Left-Right-Up	ისარი: მარცხნივ-მარჯვნივ-ზემოთ
+Arrow: Left-Up	ისარი: მარცხნივ-ზემოთ
+Arrow: Notched Right	ისარი: ჭდიანი მარჯვნივ
+Arrow: Pentagon	ისარი: ხუთკუთხედი
+Arrow: Quad	ისარი: ოთხმხრივი
+Arrow: Right	ისარი: მარჯვნივ
+Arrow: Striped Right	ისარი: ზოლიანი მარჯვნივ
+Arrow: U-Turn	ისარი: U-მობრუნება
+Arrow: Up	ისარი: ზემოთ
+Arrow: Up-Down	ისარი: ზემოთ-ქვემოთ
+Arrows	ისრები
+Arrows at both ends	ისრები ორივე ბოლოში
+As One Object	ერთ ობიექტად
+Audio	აუდიო
+Audio from File…	აუდიო ფაილიდან…
+AutoCorrect as you type	ავტოშესწორება აკრეფისას
+Autofit	ავტომორგება
+Automatic	ავტომატური
+B4 (ISO) Paper (250x353 mm)	B4 (ISO) ქაღალდი (250x353 მმ)
+B5 (ISO) Paper (176x250 mm)	B5 (ISO) ქაღალდი (176x250 მმ)
+Background	ფონი
+Background Styles	ფონის სტილები
+Background\nStyles	ფონის\nსტილები
+Backspace	Backspace
+Banded Columns	ზოლიანი სვეტები
+Banded Rows	ზოლიანი სტრიქონები
+Banner	ბანერი
+Basic Cycle	მარტივი ციკლი
+Basic List	მარტივი სია
+Basic Process	მარტივი პროცესი
+Basic Shapes	ძირითადი ფიგურები
+Before text (in):	ტექსტამდე (ინჩი):
+Bevel	რელიეფი
+Binary assets added	დამატებული ბინარული ფაილები
+Binary assets removed	წაშლილი ბინარული ფაილები
+Black Left	შავი მარცხნივ
+Black Pen	შავი კალამი
+Black Right	შავი მარჯვნივ
+Blinds	ჟალუზები
+Block Arc	ბლოკური რკალი
+Block Arrows	ბლოკური ისრები
+Blue	ლურჯი
+Blue Pen	ლურჯი კალამი
+Bold	მუქი
+Bold Flash	მუქი გაელვება
+Both	ორივე
+Bottom	ქვემოთ
+Bounce	ხტუნვა
+Box	ჩარჩო
+Box In	ჩარჩო შიგნით
+Box Out	ჩარჩო გარეთ
+Box and Whisker	ყუთი და ულვაშები
+Brightness	სიკაშკაშე
+Brightness {:+}%	სიკაშკაშე {:+}%
+Bring Forward	წინ გადმოტანა
+Bring to Front	წინა პლანზე გადმოტანა
+Bring\nForward	წინ\nგადმოტანა
+Browsed at a kiosk (full screen)	კიოსკის რეჟიმი (მთელ ეკრანზე)
+Browsed by an individual (window)	ინდივიდუალური დათვალიერება (ფანჯარაში)
+Bubble	ბუშტოვანი
+Bullets	ბურთულები
+Burst	აფეთქება
+By Paragraph	აბზაცების მიხედვით
+Callout: Down Arrow	ახსნა-წარწერა: ისარი ქვემოთ
+Callout: Left Arrow	ახსნა-წარწერა: ისარი მარცხნივ
+Callout: Line	ახსნა-წარწერა: ხაზი
+Callout: Right Arrow	ახსნა-წარწერა: ისარი მარჯვნივ
+Callout: Up Arrow	ახსნა-წარწერა: ისარი ზემოთ
+Callouts	ახსნა-წარწერები
+Cameo	კამეო
+Camera capture is not available yet	კამერით გადაღება ჯერ მიუწვდომელია
+Cancel	გაუქმება
+Capitalize Each Word	ყოველი სიტყვა მთავრულით
+Caps	მთავრული
+Center	ცენტრში
+Centered	ცენტრში
+Change Case	რეგისტრის შეცვლა
+Change Chart Type	დიაგრამის ტიპის შეცვლა
+Change Picture	სურათის შეცვლა
+Change Shape	ფიგურის შეცვლა
+Change\nChart Type	დიაგრამის ტიპის\nშეცვლა
+Character Spacing	სიმბოლოთა ინტერვალი
+Characters	სიმბოლოები
+Chart	დიაგრამა
+Chart Data	დიაგრამის მონაცემები
+Chart Design	დიაგრამის დიზაინი
+Chart Elements	დიაგრამის ელემენტები
+Chart…	დიაგრამა…
+Check Accessibility	ხელმისაწვდომობის შემოწმება
+Check\nAccessibility	ხელმისაწვდომობის\nშემოწმება
+Checkerboard	ჭადრაკის დაფა
+Chevron	შევრონი
+Choose a SmartArt Graphic	აირჩიეთ SmartArt გრაფიკა
+Chord	ქორდა
+Circle	წრე
+Circle In	წრე შიგნით
+Circle Out	წრე გარეთ
+Clear All Formatting	ფორმატირების გასუფთავება
+Click a symbol to insert it at the insertion point.	დაწკაპეთ სიმბოლოზე, რომ ჩაისვას კურსორის ადგილას.
+Click icon to add SmartArt graphic	დაწკაპეთ ხატულაზე SmartArt გრაფიკის დასამატებლად
+Click icon to add chart	დაწკაპეთ ხატულაზე დიაგრამის დასამატებლად
+Click icon to add media	დაწკაპეთ ხატულაზე მედიის დასამატებლად
+Click icon to add picture	დაწკაპეთ ხატულაზე სურათის დასამატებლად
+Click icon to add table	დაწკაპეთ ხატულაზე ცხრილის დასამატებლად
+Click to add first slide	დაწკაპეთ პირველი სლაიდის დასამატებლად
+Click to add notes	დაწკაპეთ შენიშვნების დასამატებლად
+Click to add subtitle	დაწკაპეთ ქვესათაურის დასამატებლად
+Click to add text	დაწკაპეთ ტექსტის დასამატებლად
+Click to add title	დაწკაპეთ სათაურის დასამატებლად
+Click to edit Master text styles	დაწკაპეთ ნიმუშის ტექსტის სტილების შესაცვლელად
+Click to edit Master title style	დაწკაპეთ ნიმუშის სათაურის სტილის შესაცვლელად
+Clock	საათი
+Clockwise	საათის ისრის მიმართულებით
+Close	დახურვა
+Close Master View	ნიმუშის ხედის დახურვა
+Close\nMaster View	ნიმუშის ხედის\nდახურვა
+Cloud	ღრუბელი
+Clustered Bar	დაჯგუფებული ზოლოვანი
+Clustered Column	დაჯგუფებული სვეტოვანი
+Cmd+	Cmd+
+Cmd+,	Cmd+,
+Cmd+-	Cmd+-
+Cmd+=	Cmd+=
+Cmd+F1	Cmd+F1
+Cmd+Shift+P	Cmd+Shift+P
+Collapse the Ribbon	ლენტის ჩაკეცვა
+Color	ფერი
+Color Pulse	ფერის პულსაცია
+Colors	ფერები
+Columns	სვეტები
+Comb	სავარცხელი
+Combo	კომბინირებული
+Command Palette	ბრძანებების პალიტრა
+Comment	კომენტარი
+Comments	კომენტარები
+Commits	კომიტები
+Community Links	საზოგადოების ბმულები
+Company	კომპანია
+Complementary Color	დამატებითი ფერი
+Connect Shapes	ფიგურების დაკავშირება
+Connection Sites	მიერთების წერტილები
+Connector: Curved	შემაერთებელი: მრუდი
+Connector: Elbow	შემაერთებელი: კუთხოვანი
+Connector: Elbow (one bend)	შემაერთებელი: კუთხოვანი (ერთი მოხვევა)
+Content	შიგთავსი
+Contrast	კონტრასტი
+Contrast {:+}%	კონტრასტი {:+}%
+Contributors	მონაწილეები
+Conveyor	კონვეიერი
+Copy	კოპირება
+Corrections	შესწორებები
+Couldn't save AutoRecover information: {e}	ავტოაღდგენის ინფორმაცია ვერ შეინახა: {e}
+Counter Clockwise	საათის ისრის საწინააღმდეგოდ
+Cover	დაფარვა
+Create	შექმნა
+Crop	ჩამოჭრა
+Crop 10% each side	თითო მხარეს 10%-ის ჩამოჭრა
+Crop 20% each side	თითო მხარეს 20%-ის ჩამოჭრა
+Crop to Shape	ფიგურის მიხედვით ჩამოჭრა
+Cross	ჯვარი
+Crush	დაჭმუჭნა
+Ctrl+	Ctrl+
+Cube	კუბი
+Currency	ფულადი
+Curtains	ფარდები
+Custom	მორგებული
+Custom Path	მორგებული ტრაექტორია
+Custom Show	მორგებული ჩვენება
+Custom Show 1	მორგებული ჩვენება 1
+Custom Shows	მორგებული ჩვენებები
+Custom Slide Show	მორგებული სლაიდშოუ
+Custom\nShow	მორგებული\nჩვენება
+Cut	ამოჭრა
+Cylinder	ცილინდრი
+Dark Blue	მუქი ლურჯი
+Dark Mode	ბნელი რეჟიმი
+Dark Red	მუქი წითელი
+Dark appearance	მუქი იერსახე
+Dark\nMode	ბნელი\nრეჟიმი
+Darken	გამუქება
+Dash	ტირე
+Dash Dot	ტირე-წერტილი
+Dashes	ტირეები
+Database	მონაცემთა ბაზა
+Date	თარიღი
+Date & Time	თარიღი და დრო
+Date &\nTime	თარიღი\nდა დრო
+Date and Time	თარიღი და დრო
+Date and time	თარიღი და დრო
+Decagon	ათკუთხედი
+Decision	გადაწყვეტილება
+DeckCraft	DeckCraft
+Decrease Font Size	შრიფტის შემცირება
+Decrease List Level	სიის დონის შემცირება
+Delay:	დაყოვნება:
+Delete	წაშლა
+Delete Columns	სვეტების წაშლა
+Delete Comment	კომენტარის წაშლა
+Delete Layout	განლაგების წაშლა
+Delete Rows	სტრიქონების წაშლა
+Delete Slide	სლაიდის წაშლა
+Delete Table	ცხრილის წაშლა
+Delete Text	ტექსტის წაშლა
+Desaturate	გაუფერულება
+Deselect	მონიშვნის მოხსნა
+Design	დიზაინი
+Design Ideas	დიზაინის იდეები
+Design\nIdeas	დიზაინის\nიდეები
+Deutsch	Deutsch
+Diagonal Stripe	დიაგონალური ზოლი
+Diamond	ბრილიანტი
+Diamond In	ბრილიანტი შიგნით
+Diamond Out	ბრილიანტი გარეთ
+Direction	მიმართულება
+Disappear	გაქრობა
+Discard Recovered Presentations	აღდგენილი პრეზენტაციების უარყოფა
+Display name	საჩვენებელი სახელი
+Dissolve	გადადნობა
+Dissolve In	გადადნობით შემოსვლა
+Dissolve Out	გადადნობით გასვლა
+Distribute	განაწილება
+Distribute Columns	სვეტების თანაბრად განაწილება
+Distribute Horizontally	ჰორიზონტალურად განაწილება
+Distribute Rows	სტრიქონების თანაბრად განაწილება
+Distribute Vertically	ვერტიკალურად განაწილება
+Division Sign	გაყოფის ნიშანი
+Do not Autofit	ავტომორგების გარეშე
+Do you want to save the changes you made to {what}?	შევინახო ცვლილებები: {what}?
+Document	დოკუმენტი
+Dodecagon	თორმეტკუთხედი
+Don't Save	არ შეინახო
+Don't show on title slide	სათაურის სლაიდზე არ ჩანდეს
+Done	მზადაა
+Donut	წრიული
+Doors	კარები
+Double Brace	ორმაგი ფიგურული ფრჩხილი
+Double Bracket	ორმაგი კვადრატული ფრჩხილი
+Double Wave	ორმაგი ტალღა
+Doughnut	რგოლოვანი
+Down	ქვემოთ
+Drape	ჩამოფარება
+Draw	ხატვა
+Drop Shadow Rectangle	ჩრდილიანი მართკუთხედი
+Duplicate	დუბლირება
+Duplicate Selected Slides	მონიშნული სლაიდების დუბლირება
+Duplicate Slide	სლაიდის დუბლირება
+Duration:	ხანგრძლივობა:
+Dynamic Content	დინამიკური შიგთავსი
+Edit	რედაქტირება
+Edit Alt Text…	ალტერნატიული ტექსტის რედაქტირება…
+Edit Data	მონაცემების რედაქტირება
+Edit Shape	ფიგურის რედაქტირება
+Edit Text	ტექსტის რედაქტირება
+Edit the data: first row = series names, first column = categories.	შეცვალეთ მონაცემები: პირველი სტრიქონი = მწკრივების სახელები, პირველი სვეტი = კატეგორიები.
+Edit\nData	მონაცემების\nრედაქტირება
+Edit\nShape	ფიგურის\nრედაქტირება
+Editing	რედაქტირება
+Effect Options	ეფექტის პარამეტრები
+Effect\nOptions	ეფექტის\nპარამეტრები
+Effects	ეფექტები
+Email Address	ელფოსტის მისამართი
+Email address:	ელფოსტის მისამართი:
+Emphasis	აქცენტირება
+End	End
+End Show	ჩვენების დასრულება
+End of slide show	სლაიდშოუს დასასრული
+End of slide show, click to exit.	სლაიდშოუს დასასრული, დაწკაპეთ გასასვლელად.
+End trim (s):	ბოლოდან მოჭრა (წმ):
+English (United Kingdom)	ინგლისური (გაერთიანებული სამეფო)
+English (United States)	ინგლისური (აშშ)
+Enter	Enter
+Entrance	შემოსვლა
+Equals	ტოლობა
+Equation	განტოლება
+Equation Shapes	განტოლების ფიგურები
+Eraser	საშლელი
+Escape	Escape
+Español	Español
+Exciting	შთამბეჭდავი
+Exit	გასვლა
+Expand	გაშლა
+Explosion: 14 Points	აფეთქება: 14 წვერო
+Explosion: 8 Points	აფეთქება: 8 წვერო
+Export	ექსპორტი
+Export the presentation as:	პრეზენტაციის ექსპორტი, როგორც:
+Exported {path}	ექსპორტირებულია: {path}
+Export…	ექსპორტი…
+Fade	მილევა
+Fade in (s):	თანდათან გამოჩენა (წმ):
+Fade out (s):	თანდათან ჩაქრობა (წმ):
+Fall Over	წაქცევა
+Ferris Wheel	ეშმაკის ბორბალი
+File	ფაილი
+Fill	შევსება
+Fill & Line	შევსება და ხაზი
+Fill Color	შევსების ფერი
+Filled Radar	შევსებული რადარული
+Find…	ძებნა…
+First	პირველი
+First Column	პირველი სვეტი
+First Slide	პირველი სლაიდი
+First commit	პირველი კომიტი
+Fit	ჩატევა
+Fit slide to current window	სლაიდის ჩატევა მიმდინარე ფანჯარაში
+Fit to Window	ფანჯარაში ჩატევა
+Fit to\nWindow	ფანჯარაში\nჩატევა
+Flash	გაელვება
+Flip	არეკვლა
+Flip Horizontal	ჰორიზონტალურად არეკვლა
+Flip Vertical	ვერტიკალურად არეკვლა
+Float In	შემოცურება
+Float Out	გაცურება
+Flowchart	ბლოკ-სქემა
+Flowchart: Alternate Process	ბლოკ-სქემა: ალტერნატიული პროცესი
+Flowchart: Card	ბლოკ-სქემა: ბარათი
+Flowchart: Collate	ბლოკ-სქემა: შეკრება
+Flowchart: Connector	ბლოკ-სქემა: შემაერთებელი
+Flowchart: Data	ბლოკ-სქემა: მონაცემები
+Flowchart: Decision	ბლოკ-სქემა: გადაწყვეტილება
+Flowchart: Delay	ბლოკ-სქემა: დაყოვნება
+Flowchart: Direct Access Storage	ბლოკ-სქემა: პირდაპირი წვდომის მეხსიერება
+Flowchart: Display	ბლოკ-სქემა: ეკრანი
+Flowchart: Document	ბლოკ-სქემა: დოკუმენტი
+Flowchart: Extract	ბლოკ-სქემა: ამოღება
+Flowchart: Internal Storage	ბლოკ-სქემა: შიდა მეხსიერება
+Flowchart: Magnetic Disk	ბლოკ-სქემა: მაგნიტური დისკი
+Flowchart: Manual Input	ბლოკ-სქემა: ხელით შეყვანა
+Flowchart: Manual Operation	ბლოკ-სქემა: ხელით ოპერაცია
+Flowchart: Merge	ბლოკ-სქემა: შერწყმა
+Flowchart: Multidocument	ბლოკ-სქემა: რამდენიმე დოკუმენტი
+Flowchart: Off-page Connector	ბლოკ-სქემა: გვერდგარე შემაერთებელი
+Flowchart: Or	ბლოკ-სქემა: ან
+Flowchart: Predefined Process	ბლოკ-სქემა: წინასწარ განსაზღვრული პროცესი
+Flowchart: Preparation	ბლოკ-სქემა: მომზადება
+Flowchart: Process	ბლოკ-სქემა: პროცესი
+Flowchart: Punched Tape	ბლოკ-სქემა: პერფოლენტი
+Flowchart: Sequential Access Storage	ბლოკ-სქემა: მიმდევრობითი წვდომის მეხსიერება
+Flowchart: Sort	ბლოკ-სქემა: სორტირება
+Flowchart: Stored Data	ბლოკ-სქემა: შენახული მონაცემები
+Flowchart: Summing Junction	ბლოკ-სქემა: შემაჯამებელი კვანძი
+Flowchart: Terminator	ბლოკ-სქემა: დასაწყისი/დასასრული
+Fly In	შემოფრენა
+Fly Out	გაფრენა
+Fly Through	გადაფრენა
+Folded Corner	მოკეცილი კუთხე
+Follow the layout	განლაგების მიხედვით
+Followed Hyperlink	ნანახი ბმული
+Font	შრიფტი
+Font Color	შრიფტის ფერი
+Font Size	შრიფტის ზომა
+Fonts	შრიფტები
+Footer	ქვედა კოლონტიტული
+Foreground	წინა პლანი
+Format	ფორმატი
+Format Background	ფონის ფორმატირება
+Format Background…	ფონის ფორმატირება…
+Format Painter	ფორმატის ფუნჯი
+Format Painter (double-click to keep it on)	ფორმატის ფუნჯი (ორმაგი დაწკაპუნებით ჩართული რჩება)
+Format Pane	ფორმატირების პანელი
+Format Shape	ფიგურის ფორმატირება
+Format Shape…	ფიგურის ფორმატირება…
+Format\nBackground	ფონის\nფორმატირება
+Format\nPane	ფორმატირების\nპანელი
+Formatting State	ფორმატირების მდგომარეობა
+Fracture	დამსხვრევა
+Frame	ჩარჩო
+Français	Français
+Freeform	თავისუფალი ფორმა
+From 	-დან 
+From Beginning	დასაწყისიდან
+From Bottom	ქვემოდან
+From Bottom Left	ქვედა მარცხენა კუთხიდან
+From Bottom Right	ქვედა მარჯვენა კუთხიდან
+From Current Slide	მიმდინარე სლაიდიდან
+From Left	მარცხნიდან
+From Right	მარჯვნიდან
+From Top	ზემოდან
+From Top Left	ზედა მარცხენა კუთხიდან
+From Top Right	ზედა მარჯვენა კუთხიდან
+From bottom left	ქვედა მარცხენა კუთხიდან
+From bottom right	ქვედა მარჯვენა კუთხიდან
+From center	ცენტრიდან
+From top left	ზედა მარცხენა კუთხიდან
+From top right	ზედა მარჯვენა კუთხიდან
+From\nBeginning	დასაწყისიდან
+From\nCurrent Slide	მიმდინარე\nსლაიდიდან
+Full	სრული
+Full Page Slides	სრულგვერდიანი სლაიდები
+Funnel	ძაბრი
+Gallery	გალერეა
+General	ზოგადი
+Get Text	ტექსტის მიღება
+Glitter	ბრჭყვიალი
+Glow	ნათება
+Go to	გადასვლა
+Go to Slide	სლაიდზე გადასვლა
+Grab bag	სხვადასხვა
+Gradient fill	გრადიენტული შევსება
+Gradient stops	გრადიენტის წერტილები
+Gradient…	გრადიენტი…
+Grayscale	ნაცრისფერი ტონები
+Greek	ბერძნული
+Green	მწვანე
+Gridlines	ბადე
+Group	დაჯგუფება
+Group Objects	ობიექტების დაჯგუფება
+Grow & Turn	გადიდება და შემობრუნება
+Grow/Shrink	გადიდება/შემცირება
+Guides	დამხმარე ხაზები
+Half	ნახევარი
+Half Frame	ნახევარი ჩარჩო
+Handout Master	დასარიგებელი მასალის ნიმუში
+Handout Master (coming soon)	დასარიგებელი მასალის ნიმუში (მალე)
+Handout\nMaster	დასარიგებელი\nმასალის ნიმუში
+Handouts (1 slide per page)	დასარიგებელი მასალა (1 სლაიდი გვერდზე)
+Handouts (2 slides per page)	დასარიგებელი მასალა (2 სლაიდი გვერდზე)
+Handouts (3 slides per page)	დასარიგებელი მასალა (3 სლაიდი გვერდზე)
+Handouts (4 slides per page)	დასარიგებელი მასალა (4 სლაიდი გვერდზე)
+Handouts (6 slides per page)	დასარიგებელი მასალა (6 სლაიდი გვერდზე)
+Handouts (9 slides per page)	დასარიგებელი მასალა (9 სლაიდი გვერდზე)
+Header	ზედა კოლონტიტული
+Header & Footer	კოლონტიტულები
+Header &\nFooter	კოლონტიტულები
+Header Row	სათაურის სტრიქონი
+Header and Footer	კოლონტიტულები
+Header and Footer…	კოლონტიტულები…
+Heart	გული
+Height	სიმაღლე
+Height (in):	სიმაღლე (ინჩი):
+Height:	სიმაღლე:
+Help	დახმარება
+Heptagon	შვიდკუთხედი
+Hexagon	ექვსკუთხედი
+Hide All	ყველას დამალვა
+Hide Background Graphics	ფონის გრაფიკის დამალვა
+Hide During Show	ჩვენებისას დამალვა
+Hide Slide	სლაიდის დამალვა
+Hide background graphics	ფონის გრაფიკის დამალვა
+Hide\nSlide	სლაიდის\nდამალვა
+Hierarchy	იერარქია
+High	მაღალი
+Highlighter	მარკერი
+Histogram	ჰისტოგრამა
+Home	საწყისი ეკრანი
+Honeycomb	ფიჭა
+Horizontal	ჰორიზონტალური
+Horz In	ჰორიზონტალურად შიგნით
+Horz Out	ჰორიზონტალურად გარეთ
+How would you describe this object and its context to someone who is blind or has low vision?	როგორ აღუწერდით ამ ობიექტს და მის კონტექსტს უსინათლო ან მხედველობადაქვეითებულ ადამიანს?
+Hyperlink	ბმული
+Icons	ხატულები
+In	შიგნით
+In Bounce	ხტუნვით შიგნით
+Include hidden slides	დამალული სლაიდების ჩართვა
+Increase Font Size	შრიფტის გაზრდა
+Increase List Level	სიის დონის გაზრდა
+Ink to Math	მელნიდან ფორმულა
+Ink to Math (coming soon)	მელნიდან ფორმულა (მალე)
+Ink to Shape	მელნიდან ფიგურა
+Ink to Shape (coming soon)	მელნიდან ფიგურა (მალე)
+Ink to Text	მელნიდან ტექსტი
+Ink to Text (coming soon)	მელნიდან ტექსტი (მალე)
+Ink to\nMath	მელნიდან\nფორმულა
+Ink to\nShape	მელნიდან\nფიგურა
+Ink to\nText	მელნიდან\nტექსტი
+Inner	შიდა
+Insert	ჩასმა
+Insert Above	ზემოთ ჩასმა
+Insert Below	ქვემოთ ჩასმა
+Insert Hyperlink	ბმულის ჩასმა
+Insert Layout	განლაგების ჩასმა
+Insert Left	მარცხნივ ჩასმა
+Insert Placeholder	შესავსები ველის ჩასმა
+Insert Right	მარჯვნივ ჩასმა
+Insert Table	ცხრილის ჩასმა
+Insert Table…	ცხრილის ჩასმა…
+Insert picture from file…	სურათის ჩასმა ფაილიდან…
+Insert\nAbove	ზემოთ\nჩასმა
+Insert\nBelow	ქვემოთ\nჩასმა
+Insert\nLayout	განლაგების\nჩასმა
+Insert\nLeft	მარცხნივ\nჩასმა
+Insert\nPlaceholder	შესავსები\nველის ჩასმა
+Insert\nRight	მარჯვნივ\nჩასმა
+Inspect Presentation	პრეზენტაციის შემოწმება
+Inspect Shape	ფიგურის შემოწმება
+Inspect Slide	სლაიდის შემოწმება
+Interface Language	ინტერფეისის ენა
+Interface language:	ინტერფეისის ენა:
+Interface size	ინტერფეისის ზომა
+Isosceles Triangle	ტოლფერდა სამკუთხედი
+Italiano	Italiano
+Italic	დახრილი
+JPEG image (current slide)	JPEG სურათი (მიმდინარე სლაიდი)
+Join our community on Discord	შემოგვიერთდით Discord-ის საზოგადოებაში
+Join the ArtCraft community on Discord	შემოუერთდით ArtCraft-ის საზოგადოებას Discord-ზე
+Justify	ორმხრივი სწორება
+L-Shape	L-ფიგურა
+Language	ენა
+Last	ბოლო
+Last Column	ბოლო სვეტი
+Last Slide	ბოლო სლაიდი
+Last commit	ბოლო კომიტი
+Layout	განლაგება
+Learn More	დაწვრილებით
+Learn\nMore	დაწვრილებით
+Ledger Paper (11x17 in)	Ledger ქაღალდი (11x17 ინჩი)
+Left	მარცხნივ
+Left Brace	მარცხენა ფიგურული ფრჩხილი
+Left Bracket	მარცხენა კვადრატული ფრჩხილი
+Letter Paper (8.5x11 in)	Letter ქაღალდი (8.5x11 ინჩი)
+Liberation Serif	Liberation Serif
+Light Blue	ღია ლურჯი
+Light Green	ღია მწვანე
+Light/Dark appearance	ღია/მუქი იერსახე
+Lighten	გაღიავება
+Lightning	ელვა
+Lightning Bolt	ელვა
+Line	ხაზი
+Line Color	ხაზის ფერი
+Line Spacing	სტრიქონთა დაშორება
+Line Spacing Options…	სტრიქონთა დაშორების პარამეტრები…
+Line delta	სტრიქონების სხვაობა
+Line spacing (lines):	სტრიქონთა დაშორება (სტრიქონი):
+Line with Markers	ხაზოვანი მარკერებით
+Linear	წრფივი
+Lines	ხაზები
+Lines +/−	სტრიქონები +/−
+Lines added	დამატებული სტრიქონები
+Lines deleted	წაშლილი სტრიქონები
+Link	ბმული
+Link…	ბმული…
+List Commands	ბრძანებების სია
+Lock	ჩაკეტვა
+Long Dash	გრძელი ტირე
+Long Dash Dot	გრძელი ტირე-წერტილი
+Loop continuously until 'Esc'	უწყვეტი გამეორება „Esc“-მდე
+Loop until Stopped	გამეორება შეჩერებამდე
+Loops	მარყუჟები
+Loose	თავისუფალი
+Low	დაბალი
+MIT OR Apache-2.0 · © 2026 ArtCraft Team and the DeckCraft contributors	MIT OR Apache-2.0 · © 2026 ArtCraft Team და DeckCraft-ის მონაწილეები
+Margins (pt)	ველები (პტ)
+Mark as decorative	დეკორატიულად მარკირება
+Mark selected text as:	მონიშნული ტექსტის ენა:
+Math	მათემატიკა
+Matrix	მატრიცა
+Maximize content (else ensure fit)	შიგთავსის გადიდება (თორემ ჩატევა)
+Media	მედია
+Media Info	მედიის ინფორმაცია
+Medium	საშუალო
+Merge Cells	უჯრების შერწყმა
+Merge Shapes	ფიგურების გაერთიანება
+Merge\nCells	უჯრების\nშერწყმა
+Merge\nShapes	ფიგურების\nგაერთიანება
+Merged PRs	გაერთიანებული PR-ები
+Middle	შუა
+Minus Sign	მინუსის ნიშანი
+Model	მოდელი
+Models	მოდელები
+Moon	მთვარე
+More Colors… #	სხვა ფერები… #
+Morph	გარდასახვა
+Motion	მოძრაობა
+Motion Paths	მოძრაობის ტრაექტორიები
+Move	გადაადგილება
+Move Down	ჩამოწევა
+Move Insertion Point	კურსორის გადაადგილება
+Move Section	სექციის გადატანა
+Move Section Down	სექციის ჩამოწევა
+Move Section Up	სექციის აწევა
+Move Slide	სლაიდის გადატანა
+Move Up	აწევა
+Multiplication Sign	გამრავლების ნიშანი
+Multiply	გამრავლება
+Mute	დადუმება
+Name	სახელი
+Name (A–Z)	სახელი (ა–ჰ)
+Name:	სახელი:
+New Comment	ახალი კომენტარი
+New Presentation	ახალი პრეზენტაცია
+New Slide	ახალი სლაიდი
+New Slide (⇧⌘N)	ახალი სლაიდი (⇧⌘N)
+New presentation	ახალი პრეზენტაცია
+New show name:	ახალი ჩვენების სახელი:
+New\nComment	ახალი\nკომენტარი
+New\nSlide	ახალი\nსლაიდი
+Next	შემდეგი
+Next Slide	შემდეგი სლაიდი
+Next Window	შემდეგი ფანჯარა
+Next ▶	შემდეგი ▶
+No Color	ფერის გარეშე
+No Fill	შევსების გარეშე
+No Glow	ნათების გარეშე
+No Outline	კონტურის გარეშე
+No Reflection	არეკვლის გარეშე
+No Shadow	ჩრდილის გარეშე
+No Soft Edges	რბილი კიდეების გარეშე
+No accessibility issues found. People with disabilities should not have difficulty reading this document.	ხელმისაწვდომობის პრობლემები ვერ მოიძებნა. შეზღუდული შესაძლებლობის მქონე ადამიანებს ამ დოკუმენტის წაკითხვა არ გაუჭირდებათ.
+No comments on this slide.	ამ სლაიდზე კომენტარები არ არის.
+No contributor data was built into this copy.	ამ ასლში მონაწილეების მონაცემები არ არის ჩაშენებული.
+No fill	შევსების გარეშე
+No line	ხაზის გარეშე
+No model credits were built into this copy.	ამ ასლში მოდელების მონაცემები არ არის ჩაშენებული.
+No notes.	შენიშვნები არ არის.
+No sound: {err}	ხმა არ არის: {err}
+None	არცერთი
+Normal	ჩვეულებრივი
+Not Equal	არ უდრის
+Not allowed	აკრძალულია
+Notes	შენიშვნები
+Notes Master	შენიშვნების ნიმუში
+Notes Master (coming soon)	შენიშვნების ნიმუში (მალე)
+Notes Page	შენიშვნების გვერდი
+Notes Pages	შენიშვნების გვერდები
+Notes\nMaster	შენიშვნების\nნიმუში
+Notes\nPage	შენიშვნების\nგვერდი
+Nudge	მცირედ გადაწევა
+Number of columns:	სვეტების რაოდენობა:
+Number of rows:	სტრიქონების რაოდენობა:
+Numbering	დანომვრა
+Object Color	ობიექტის ფერი
+Objects	ობიექტები
+Octagon	რვაკუთხედი
+On Click	დაწკაპუნებით
+On Click of {name}	დაწკაპუნებით: {name}
+On Click of… (none)	დაწკაპუნებით:… (არცერთი)
+On Mouse Click	თაგუნას დაწკაპუნებით
+On-screen Show (16:10)	ეკრანზე ჩვენება (16:10)
+Open Data	მონაცემების გახსნა
+Open Dialog	დიალოგის გახსნა
+Open Recovered Presentations	აღდგენილი პრეზენტაციების გახსნა
+Open the sample deck	სანიმუშო პრეზენტაციის გახსნა
+Open…	გახსნა…
+Orange	ნარინჯისფერი
+Orbit	ორბიტა
+Order Objects	ობიექტების რიგი
+Origami	ორიგამი
+Out	გარეთ
+Out Bounce	ხტუნვით გარეთ
+Outer	გარე
+Outline	სტრუქტურა
+Outline (.txt)	სტრუქტურა (.txt)
+Outline View	სტრუქტურის ხედი
+Outline\nView	სტრუქტურის\nხედი
+Oval	ოვალი
+Oval ends	ოვალური ბოლოები
+Overhead	გრაფოპროექტორი
+PDF document (.pdf)	PDF დოკუმენტი (.pdf)
+PNG images (all slides)	PNG სურათები (ყველა სლაიდი)
+PNG images (current slide)	PNG სურათი (მიმდინარე სლაიდი)
+PRs	PR-ები
+Page Curl	გვერდის გადაკეცვა
+Page Setup…	გვერდის პარამეტრები…
+PageDown	PageDown
+PageUp	PageUp
+Pan	პანორამა
+Pane	პანელი
+Paragraph	აბზაცი
+Paragraph…	აბზაცი…
+Parallelogram	პარალელოგრამი
+Pareto	პარეტო
+Partial Circle	ნაწილობრივი წრე
+Particles	ნაწილაკები
+Paste	ჩასმა
+Paste (⌘V)	ჩასმა (⌘V)
+Paste Formatting	ფორმატის ჩასმა
+Paste and Match Formatting	ჩასმა ფორმატირების შეთავსებით
+Paste or type an outline. Unindented lines become slide titles; tab-indented lines become bullets.	ჩასვით ან აკრიფეთ სტრუქტურა. შეწევის გარეშე სტრიქონები სლაიდების სათაურები გახდება, ტაბით შეწეული სტრიქონები კი — ბურთულიანი პუნქტები.
+Pasted image.png	ჩასმული სურათი.png
+Path	ტრაექტორია
+Pattern fill	პატერნით შევსება
+Pause	პაუზა
+Peek In	კიდიდან შემოსვლა
+Peel Off	აძრობა
+Pencil	ფანქარი
+Pentagon	ხუთკუთხედი
+Perspective	პერსპექტივა
+Pick a graphic; type one item per line.	აირჩიეთ გრაფიკა; თითო სტრიქონში თითო ელემენტი აკრიფეთ.
+Pick a look for your slides. Ideas are generated on your device.	აირჩიეთ სლაიდების იერსახე. იდეები თქვენს მოწყობილობაზე იქმნება.
+Picture	სურათი
+Picture Format	სურათის ფორმატი
+Picture Styles	სურათის სტილები
+Picture from File…	სურათი ფაილიდან…
+Picture or texture fill	სურათით ან ტექსტურით შევსება
+Picture\nStyles	სურათის\nსტილები
+Pictures	სურათები
+Pie	წრიული
+Pin	სამაგრი
+Placeholder colour	შესავსები ველის ფერი
+Plan\nBuild\nLaunch	დაგეგმვა\nშექმნა\nგაშვება
+Plaque	დაფა
+Play	დაკვრა
+Play Across Slides	დაკვრა სლაიდებს შორის
+Play Full Screen	მთელ ეკრანზე დაკვრა
+Play Narrations	გახმოვანების დაკვრა
+Play from Current Slide	დაკვრა მიმდინარე სლაიდიდან
+Play from Start	დაკვრა დასაწყისიდან
+Play from Start (F5)	დაკვრა დასაწყისიდან (F5)
+Play from\nCurrent Slide	დაკვრა მიმდინარე\nსლაიდიდან
+Play from\nStart	დაკვრა\nდასაწყისიდან
+Play/Pause	დაკვრა/პაუზა
+Playback	დაკვრა
+Plus	პლუსი
+Plus In	პლუსი შიგნით
+Plus Out	პლუსი გარეთ
+Plus Sign	პლუსის ნიშანი
+Portrait (9:16)	ვერტიკალური (9:16)
+Português	Português
+Position	პოზიცია
+Position Objects	ობიექტების განლაგება
+Position and Size	პოზიცია და ზომა
+Post	გაგზავნა
+Poster Frame	პოსტერის ჩარჩო
+PowerPoint Presentation (.pptx)	PowerPoint პრეზენტაცია (.pptx)
+Preferences	პარამეტრები
+Preferences…	პარამეტრები…
+Presentation	პრეზენტაცია
+Presentations	პრეზენტაციები
+Presentations and slide shows, rebuilt from scratch in pure Rust.	პრეზენტაციები და სლაიდშოუები, ნულიდან შექმნილი სუფთა Rust-ზე.
+Presented by a speaker (full screen)	მომხსენებლის ჩვენება (მთელ ეკრანზე)
+Presenter View	მომხსენებლის ხედი
+Presenter View — DeckCraft	მომხსენებლის ხედი — DeckCraft
+Presenter\nView	მომხსენებლის\nხედი
+Preset gradients	გრადიენტების პრესეტები
+Prestige	პრესტიჟი
+Preview	წინასწარი ნახვა
+Previous Slide	წინა სლაიდი
+Print layout:	ბეჭდვის განლაგება:
+Properties	თვისებები
+Pulse	პულსაცია
+Punctuation	პუნქტუაცია
+Purple	იისფერი
+Push	ბიძგი
+Pyramid	პირამიდა
+Quick Styles	სწრაფი სტილები
+Quick\nStyles	სწრაფი\nსტილები
+Radar	რადარული
+Radial	რადიალური
+Random	შემთხვევითი
+Random Bars	შემთხვევითი ზოლები
+Reading View	კითხვის ხედი
+Reading\nView	კითხვის\nხედი
+Real name	ნამდვილი სახელი
+Recent	ბოლოდროინდელი
+Record	ჩაწერა
+Recording narration needs audio capture (coming soon)	გახმოვანების ჩასაწერად საჭიროა ხმის ჩაწერა (მალე)
+Recovered Presentations	აღდგენილი პრეზენტაციები
+Recovered {} from the last session	აღდგენილია წინა სესიიდან: {}
+Rectangle	მართკუთხედი
+Rectangle: Diagonal Corners Rounded	მართკუთხედი: მომრგვალებული დიაგონალური კუთხეები
+Rectangle: Diagonal Corners Snipped	მართკუთხედი: მოჭრილი დიაგონალური კუთხეები
+Rectangle: Rounded Corners	მართკუთხედი: მომრგვალებული კუთხეები
+Rectangle: Single Corner Rounded	მართკუთხედი: ერთი მომრგვალებული კუთხე
+Rectangle: Single Corner Snipped	მართკუთხედი: ერთი მოჭრილი კუთხე
+Rectangle: Top Corners One Rounded and One Snipped	მართკუთხედი: ზედა კუთხეები, ერთი მომრგვალებული და ერთი მოჭრილი
+Rectangle: Top Corners Rounded	მართკუთხედი: მომრგვალებული ზედა კუთხეები
+Rectangle: Top Corners Snipped	მართკუთხედი: მოჭრილი ზედა კუთხეები
+Rectangles	მართკუთხედები
+Rectangular	მართკუთხა
+Red	წითელი
+Red Pen	წითელი კალამი
+Redo	ხელახლა შესრულება
+Redo (⌘Y)	ხელახლა შესრულება (⌘Y)
+Reflected Rounded Rectangle	არეკლილი მომრგვალებული მართკუთხედი
+Reflection	არეკვლა
+Regroup	ხელახლა დაჯგუფება
+Regular Pentagon	წესიერი ხუთკუთხედი
+Rehearse Timings	დროის გაზომვა
+Rehearse\nTimings	დროის\nგაზომვა
+Remove	წაშლა
+Remove All Animations	ყველა ანიმაციის წაშლა
+Remove All Sections	ყველა სექციის წაშლა
+Remove Animation	ანიმაციის წაშლა
+Remove Background	ფონის მოშორება
+Remove Background (coming soon)	ფონის მოშორება (მალე)
+Remove Section	სექციის წაშლა
+Remove Section & Slides	სექციის და სლაიდების წაშლა
+Remove stop	გადასვლის წერტილის წაშლა
+Remove\nBackground	ფონის\nმოშორება
+Rename	სახელის შეცვლა
+Rename Layout	განლაგების სახელის შეცვლა
+Rename Section	სექციის სახელის შეცვლა
+Rename Section…	სექციის სახელის შეცვლა…
+Rename Slide	სლაიდის სახელის შეცვლა
+Rename…	სახელის შეცვლა…
+Render Slide	სლაიდის რენდერი
+Reopen	ხელახლა გახსნა
+Reorder Animation	ანიმაციის რიგის შეცვლა
+Reorder Objects	ობიექტების რიგის შეცვლა
+Replace straight quotes with smart quotes	სწორი ბრჭყალების ჩანაცვლება ტიპოგრაფიულით
+Reply	პასუხი
+Reply…	პასუხი…
+Reset	ჩამოყრა
+Reset Background	ფონის ჩამოყრა
+Reset Crop	ჩამოჭრის გაუქმება
+Reset Effects	ეფექტების ჩამოყრა
+Reset Picture	სურათის ჩამოყრა
+Reset Slide	სლაიდის ჩამოყრა
+Reset Slide Background	სლაიდის ფონის ჩამოყრა
+Resize shape to fit text	ფიგურის ზომის ტექსტზე მორგება
+Resolve	გადაწყვეტა
+Resolve Thread	თემის გადაწყვეტა
+Return	უკან დაბრუნება
+Reveal	გამომჟღავნება
+Reverse the order	რიგის შებრუნება
+Revert	წინა ვერსიაზე დაბრუნება
+Review	განხილვა
+Rewind after Playing	დაკვრის შემდეგ თავში გადახვევა
+Ribbon Tab	ლენტის ჩანართი
+Ribbon: Tilted Down	ლენტი: ქვემოთ დახრილი
+Ribbon: Tilted Up	ლენტი: ზემოთ დახრილი
+Right	მარჯვნივ
+Right Brace	მარჯვენა ფიგურული ფრჩხილი
+Right Bracket	მარჯვენა კვადრატული ფრჩხილი
+Right Triangle	მართკუთხა სამკუთხედი
+Right-to-Left Text Direction	ტექსტის მიმართულება მარჯვნიდან მარცხნივ
+Ring	რგოლი
+Ripple	ტალღები
+Rise Up	ამოწევა
+Rotate	შემობრუნება
+Rotate Left 90°	90°-ით მარცხნივ შემობრუნება
+Rotate Right 90°	90°-ით მარჯვნივ შემობრუნება
+Rotate all text 270°	მთელი ტექსტის 270°-ით შემობრუნება
+Rotate all text 90°	მთელი ტექსტის 90°-ით შემობრუნება
+Rotate with shape	ფიგურასთან ერთად შემობრუნება
+Rotation	შემობრუნება
+Round Dot	მრგვალი წერტილები
+Rounded Diagonal Corner	მომრგვალებული დიაგონალური კუთხე
+Ruler	სახაზავი
+Saturation	გაჯერება
+Saturation {}%	გაჯერება {}%
+Save	შენახვა
+Save (⌘S)	შენახვა (⌘S)
+Save As…	შენახვა როგორც…
+Save AutoRecover Information	ავტოაღდგენის ინფორმაციის შენახვა
+Save as Template…	შაბლონად შენახვა…
+Save to Data	მონაცემებში შენახვა
+Saved	შენახულია
+Saved {path}	შენახულია: {path}
+Scatter	წერტილოვანი
+ScreenTip:	მინიშნება:
+Screenshot	ეკრანის ანაბეჭდი
+Screenshot (not available yet)	ეკრანის ანაბეჭდი (ჯერ მიუწვდომელია)
+Scroll: Horizontal	გრაგნილი: ჰორიზონტალური
+Scroll: Vertical	გრაგნილი: ვერტიკალური
+Search commands (⇧⌘P)	ბრძანებების ძიება (⇧⌘P)
+Search commands…	ბრძანებების ძიება…
+Section	სექცია
+Seek	პოზიციაზე გადასვლა
+Select	მონიშვნა
+Select All	ყველაფრის მონიშვნა
+Select All Text	მთელი ტექსტის მონიშვნა
+Select Cells	უჯრების მონიშვნა
+Select Objects	ობიექტების მონიშვნა
+Select Paragraph	აბზაცის მონიშვნა
+Select Slides	სლაიდების მონიშვნა
+Select Text	ტექსტის მონიშვნა
+Select Word	სიტყვის მონიშვნა
+Select a chart first.	ჯერ აირჩიეთ დიაგრამა.
+Select a shape to format it.	ფორმატირებისთვის აირჩიეთ ფიგურა.
+Select an object on the slide and add an animation from the Animations tab.	აირჩიეთ ობიექტი სლაიდზე და დაამატეთ ანიმაცია ჩანართიდან „ანიმაციები“.
+Selection	მონიშნული
+Selection Pane	მონიშვნის პანელი
+Selection Pane…	მონიშვნის პანელი…
+Selection\nPane	მონიშვნის\nპანელი
+Send Backward	უკან გადატანა
+Send to Back	უკანა პლანზე გადატანა
+Send\nBackward	უკან\nგადატანა
+Sentence case.	წინადადების რეგისტრი.
+Set Text	ტექსტის დაყენება
+Set Up Show…	ჩვენების პარამეტრები…
+Set Up Slide Show	სლაიდშოუს პარამეტრები
+Set Up Slide Show…	სლაიდშოუს პარამეტრები…
+Set Up\nSlide Show	სლაიდშოუს\nპარამეტრები
+Set as Default Shape	ნაგულისხმევ ფიგურად დაყენება
+Shading	ფონი
+Shadow	ჩრდილი
+Shape	ფიგურა
+Shape Effects	ფიგურის ეფექტები
+Shape Fill	ფიგურის შევსება
+Shape Format	ფიგურის ფორმატი
+Shape Gallery	ფიგურების გალერეა
+Shape Outline	ფიგურის კონტური
+Shape Styles	ფიგურის სტილები
+Shape {}	ფიგურა {}
+Shape\nStyles	ფიგურის\nსტილები
+Shapes	ფიგურები
+Shift+	Shift+
+Shift+F9	Shift+F9
+Show	ჩვენება
+Show All	ყველას ჩვენება
+Show Comments	კომენტარების ჩვენება
+Show Media Controls	მედიის მართვის ელემენტების ჩვენება
+Show Slide	სლაიდის ჩვენება
+Show smart guides	ჭკვიანი დამხმარე ხაზების ჩვენება
+Show type	ჩვენების ტიპი
+Show without animation	ჩვენება ანიმაციის გარეშე
+Show without narration	ჩვენება გახმოვანების გარეშე
+Show/Hide	ჩვენება/დამალვა
+Show\nComments	კომენტარების\nჩვენება
+Shred	დაფლეთა
+Shrink & Turn	შემცირება და შემობრუნება
+Shrink text on overflow	ტექსტის შემცირება გადავსებისას
+Simple Frame, White	მარტივი ჩარჩო, თეთრი
+Size	ზომა
+Size & Properties	ზომა და თვისებები
+Slide Master	მასტერ-სლაიდი
+Slide Number	სლაიდის ნომერი
+Slide Show	სლაიდშოუ
+Slide Size	სლაიდის ზომა
+Slide Sorter	სლაიდების დამხარისხებელი
+Slide number	სლაიდის ნომერი
+Slide timings recorded.	სლაიდების დრო ჩაწერილია.
+Slide {:02}:{:04.1}   Total {:02}:{:02}	სლაიდი {:02}:{:04.1}   სულ {:02}:{:02}
+Slide {} of {}	სლაიდი {} / {}
+Slide {}: {}{}	სლაიდი {}: {}{}
+Slide {}: “{w}”	სლაიდი {}: „{w}“
+Slide\nMaster	მასტერ-\nსლაიდი
+Slide\nNumber	სლაიდის\nნომერი
+Slide\nSize	სლაიდის\nზომა
+Slide\nSorter	სლაიდების\nდამხარისხებელი
+Slides (e.g. 1,3,5):	სლაიდები (მაგ. 1,3,5):
+Slides from Outline	სლაიდები სტრუქტურიდან
+Slides from Outline…	სლაიდები სტრუქტურიდან…
+Slides sized for:	სლაიდების ზომა:
+SmartArt	SmartArt
+Smile	ღიმილი
+Smiley Face	მომღიმარი სახე
+Smoothly	მდორედ
+Smoothly Left	მდორედ მარცხნივ
+Smoothly Right	მდორედ მარჯვნივ
+Snap objects to grid	ობიექტების ბადეზე მიმაგრება
+Soft Edge Rectangle	რბილკიდიანი მართკუთხედი
+Soft Edges	რბილი კიდეები
+Solid	უწყვეტი
+Solid fill	ერთფეროვანი შევსება
+Solid line	უწყვეტი ხაზი
+Sort	სორტირება
+Source on GitHub	წყარო GitHub-ზე
+Space	Space
+Spacing after (pt):	ინტერვალი შემდეგ (პტ):
+Spacing before (pt):	ინტერვალი წინ (პტ):
+Special — hanging (in):	სპეციალური — გამოწევა (ინჩი):
+Speech	საუბარი
+Speech Bubble: Oval	საუბრის ბუშტი: ოვალი
+Speech Bubble: Rectangle	საუბრის ბუშტი: მართკუთხედი
+Speech Bubble: Rectangle with Corners Rounded	საუბრის ბუშტი: მომრგვალებულკუთხიანი მართკუთხედი
+Spelling	მართლწერა
+Spin	ბრუნვა
+Spinner	სპინერი
+Split	გაყოფა
+Split Cells	უჯრების გაყოფა
+Split\nCells	უჯრების\nგაყოფა
+Square	კვადრატი
+Square (1:1)	კვადრატი (1:1)
+Square Dot	კვადრატული წერტილები
+Stacked	დასტად
+Stacked Area	დასტად ფართობითი
+Stacked Bar	დასტად ზოლოვანი
+Stacked Column	დასტად სვეტოვანი
+Stacked Line	დასტად ხაზოვანი
+Standard (4:3)	სტანდარტული (4:3)
+Standard Colors	სტანდარტული ფერები
+Star	ვარსკვლავი
+Star: 10 Points	ვარსკვლავი: 10 წვერო
+Star: 12 Points	ვარსკვლავი: 12 წვერო
+Star: 16 Points	ვარსკვლავი: 16 წვერო
+Star: 24 Points	ვარსკვლავი: 24 წვერო
+Star: 32 Points	ვარსკვლავი: 32 წვერო
+Star: 4 Points	ვარსკვლავი: 4 წვერო
+Star: 5 Points	ვარსკვლავი: 5 წვერო
+Star: 6 Points	ვარსკვლავი: 6 წვერო
+Star: 7 Points	ვარსკვლავი: 7 წვერო
+Star: 8 Points	ვარსკვლავი: 8 წვერო
+Stars and Banners	ვარსკვლავები და ბანერები
+Start After Previous	დაწყება წინას შემდეგ
+Start Automatically	ავტომატურად დაწყება
+Start On Click	დაწყება დაწკაპუნებით
+Start With Previous	დაწყება წინასთან ერთად
+Start a conversation	საუბრის დაწყება
+Start time (s):	დაწყების დრო (წმ):
+Start:	დასაწყისი:
+Stealth end	მახვილი ბოლო
+Stock	საბირჟო
+Stop	შეწყვეტა
+Stop Editing Text	ტექსტის რედაქტირების დასრულება
+Strikethrough	გადახაზული
+Strips	ზოლები
+Style {i}	სტილი {i}
+Subscript	ქვედა ინდექსი
+Subtle	სადა
+Sun	მზე
+Sunburst	მზისებრი
+Superscript	ზედა ინდექსი
+Surface	ზედაპირული
+Switch	გადართვა
+Swivel	მობრუნება
+Symbol	სიმბოლო
+System language	სისტემის ენა
+Tab	ტაბულაცია
+Table	ცხრილი
+Table Design	ცხრილის დიზაინი
+Table Style Options	ცხრილის სტილის პარამეტრები
+Table Styles	ცხრილის სტილები
+Table…	ცხრილი…
+Task Pane	ამოცანების პანელი
+Teardrop	წვეთი
+Teeter	რწევა
+Text	ტექსტი
+Text Box	ტექსტური ბლოკი
+Text Box Margins	ტექსტური ბლოკის ველები
+Text Direction	ტექსტის მიმართულება
+Text Effects	ტექსტის ეფექტები
+Text Fill	ტექსტის შევსება
+Text Highlight Color	მარკერის ფერი
+Text Options	ტექსტის პარამეტრები
+Text Outline	ტექსტის კონტური
+Text Shadow	ტექსტის ჩრდილი
+Text/Background - Dark 1	ტექსტი/ფონი - მუქი 1
+Text/Background - Dark 2	ტექსტი/ფონი - მუქი 2
+Text/Background - Light 1	ტექსტი/ფონი - ღია 1
+Text/Background - Light 2	ტექსტი/ფონი - ღია 2
+Text\nBox	ტექსტური\nბლოკი
+The spelling check is complete. No issues found.	მართლწერის შემოწმება დასრულდა. პრობლემები ვერ მოიძებნა.
+Theme Colors	თემის ფერები
+Theme Gallery	თემების გალერეა
+Themes	თემები
+Thesaurus	თეზაურუსი
+Thesaurus (coming soon)	თეზაურუსი (მალე)
+This Document	ეს დოკუმენტი
+Thought	ფიქრი
+Thought Bubble: Cloud	ფიქრის ბუშტი: ღრუბელი
+Through Black	შავის გავლით
+Tight	მჭიდრო
+Timing	დრო
+Top	ზემოთ
+Total Row	ჯამის სტრიქონი
+Transition	გადასვლა
+Transition Gallery	გადასვლების გალერეა
+Transitions	გადასვლები
+Translate	თარგმნა
+Translation needs a language model (not bundled)	თარგმნას ენობრივი მოდელი სჭირდება (არ შედის კომპლექტში)
+Transparency	გამჭვირვალობა
+Trapezoid	ტრაპეცია
+Treemap	ხის რუკა
+Triangle	სამკუთხედი
+Trigger	გამშვები
+Trim	მოჭრა
+Trim Media	მედიის მოჭრა
+Turns	მოხვევები
+Type	ტიპი
+Type Text	ტექსტის აკრეფა
+Type an equation in linear form (e.g. a^2+b^2=c^2, x=(-b±√(b^2-4ac))/2a).	აკრიფეთ განტოლება წრფივი ფორმით (მაგ. a^2+b^2=c^2, x=(-b±√(b^2-4ac))/2a).
+Uncover	გადახსნა
+Underline	ხაზგასმული
+Undo	დაბრუნება
+Undo (⌘Z)	დაბრუნება (⌘Z)
+Ungroup	დაჯგუფების მოხსნა
+Up	ზემოთ
+Use Timings	დროის გამოყენება
+Use timings, if present	დროის გამოყენება, თუ არსებობს
+Username	მომხმარებლის სახელი
+Version	ვერსია
+Version {}	ვერსია {}
+Vert In	ვერტიკალურად შიგნით
+Vert Out	ვერტიკალურად გარეთ
+Vertical	ვერტიკალური
+Vertical alignment	ვერტიკალური სწორება
+Very Loose	ძალიან თავისუფალი
+Very Tight	ძალიან მჭიდრო
+Video	ვიდეო
+Video from File…	ვიდეო ფაილიდან…
+View	ხედი
+Volume	ხმის დონე
+Vortex	გრიგალი
+Waterfall	ჩანჩქერი
+Wave	ტალღა
+Web Page or File	ვებგვერდი ან ფაილი
+Wedge	სოლი
+Weight	სისქე
+Wheel	ბორბალი
+Widescreen (13.333x7.5 in)	ფართოეკრანიანი (13.333x7.5 ინჩი)
+Widescreen (16:9)	ფართოეკრანიანი (16:9)
+Width	სიგანე
+Width (in):	სიგანე (ინჩი):
+Width:	სიგანე:
+Width: 	სიგანე: 
+Wind	ქარი
+Window	ფანჯარა
+Wipe	წმენდა
+With Previous	წინასთან ერთად
+WordArt	WordArt
+WordArt style {}	WordArt სტილი {}
+Words	სიტყვები
+Wrap Text in Shape	ტექსტის გადატანა ფიგურაში
+Wrap text in shape	ტექსტის გადატანა ფიგურაში
+Yellow	ყვითელი
+Your changes will be lost if you don't save them.	თუ ცვლილებებს არ შეინახავთ, ისინი დაიკარგება.
+Your name (comments):	თქვენი სახელი (კომენტარებისთვის):
+Zoom	მასშტაბი
+Zoom In	გადიდება
+Zoom Out	დაპატარავება
+Zoom…	მასშტაბი…
+a) b) c)	ა) ბ) გ)
+a. b. c.	ა. ბ. გ.
+dropped file	გადმოტანილი ფაილი
+i. ii. iii.	i. ii. iii.
+no presentation open	პრეზენტაცია არ არის გახსნილი
+no slides	სლაიდები არ არის
+no text insertion point	ტექსტის კურსორი არ არის
+nothing selected	არაფერია მონიშნული
+nothing to redo	ხელახლა შესასრულებელი არაფერია
+nothing to undo	დასაბრუნებელი არაფერია
+select text or a shape	მონიშნეთ ტექსტი ან ფიგურა
+select two or more objects	მონიშნეთ ორი ან მეტი ობიექტი
+size (pt)	ზომა (პტ)
+tOGGLE cASE	რეგისტრის შებრუნება
+unknown interface language	ინტერფეისის უცნობი ენა
+{ch}  Bullet	{ch}  ბურთულა
+{f} (Body)	{f} (ძირითადი ტექსტი)
+{f} (Headings)	{f} (სათაურები)
+{name}: DeckCraft can't open this kind of file	{name}: DeckCraft-ს ამ ტიპის ფაილის გახსნა არ შეუძლია
+{n} Column{}	{n} სვეტი{}
+{r} pt	{r} პტ
+{r} pt glow	{r} პტ ნათება
+{w} pt	{w} პტ
+{} ({} slides)	{} (სლაიდი: {})
+{} Slide Master	მასტერ-სლაიდი: {}
+{} contributors · {} commits	მონაწილე: {} · კომიტი: {}
+{} presentations	პრეზენტაცია: {}
+{}x{} Table	ცხრილი {}x{}
+“{}” is not available yet.	„{}“ ჯერ მიუწვდომელია.
+−Bin	−Bin
+▶ Play All	▶ ყველას დაკვრა
+◀ Previous	◀ წინა
+✏ on	✏ ჩართულია
+Print	დაბეჭდვა
+Info	ინფორმაცია
+Compose Text	ტექსტის შედგენა
+Commit Composition	შედგენილი ტექსტის დადასტურება
+Print…	დაბეჭდვა…
+Line: Rising	ხაზი: აღმავალი
+Trapezoid: Uneven Sides	ტრაპეცია: არათანაბარი გვერდები
+Quarter Wedge	მეოთხედი სოლი
+Corner Tabs: Triangles	კუთხის ჩანართები: სამკუთხედები
+Corner Tabs: Squares	კუთხის ჩანართები: კვადრატები
+Corner Tabs: Quarter Circles	კუთხის ჩანართები: მეოთხედი წრეები
+Gear: 6 Teeth	კბილანა: 6 კბილი
+Gear: 9 Teeth	კბილანა: 9 კბილი
+Chart Marker: Cross Lines	დიაგრამის მარკერი: ჯვარედინი ხაზები
+Chart Marker: Star Lines	დიაგრამის მარკერი: ვარსკვლავისებრი ხაზები
+Chart Marker: Plus Lines	დიაგრამის მარკერი: პლუსისებრი ხაზები
+Arrow: Curved Right	ისარი: მრუდი მარჯვნივ
+Arrow: Curved Left	ისარი: მრუდი მარცხნივ
+Arrow: Curved Up	ისარი: მრუდი ზემოთ
+Arrow: Curved Down	ისარი: მრუდი ქვემოთ
+Arrow: Circular	ისარი: წრიული
+Arrow: Circular Counter-clockwise	ისარი: წრიული, საათის ისრის საწინააღმდეგოდ
+Arrow: Circular Two-headed	ისარი: წრიული, ორთავიანი
+Arrow: Swoosh	ისარი: რკალისებრი
+Callout: Left-Right Arrow	ახსნა-წარწერა: ისარი მარცხნივ-მარჯვნივ
+Callout: Up-Down Arrow	ახსნა-წარწერა: ისარი ზემოთ-ქვემოთ
+Callout: Quad Arrow	ახსნა-წარწერა: ოთხმხრივი ისარი
+Flowchart: Offline Storage	ბლოკ-სქემა: ოფლაინ მეხსიერება
+Ribbon: Curved and Tilted Up	ლენტი: მრუდი და ზემოთ დახრილი
+Ribbon: Curved and Tilted Down	ლენტი: მრუდი და ქვემოთ დახრილი
+Ribbon: Left-Right Fold	ლენტი: მარცხნივ-მარჯვნივ მოკეცილი
+Callout: Bent Line	ახსნა-წარწერა: მოხრილი ხაზი
+Callout: Double Bent Line	ახსნა-წარწერა: ორჯერ მოხრილი ხაზი
+Callout: Line with Accent Bar	ახსნა-წარწერა: ხაზი აქცენტის ზოლით
+Callout: Bent Line with Accent Bar	ახსნა-წარწერა: მოხრილი ხაზი აქცენტის ზოლით
+Callout: Double Bent Line with Accent Bar	ახსნა-წარწერა: ორჯერ მოხრილი ხაზი აქცენტის ზოლით
+Callout: Line with No Border	ახსნა-წარწერა: ხაზი ჩარჩოს გარეშე
+Callout: Bent Line with No Border	ახსნა-წარწერა: მოხრილი ხაზი ჩარჩოს გარეშე
+Callout: Double Bent Line with No Border	ახსნა-წარწერა: ორჯერ მოხრილი ხაზი ჩარჩოს გარეშე
+Callout: Line with Border and Accent Bar	ახსნა-წარწერა: ხაზი ჩარჩოთი და აქცენტის ზოლით
+Callout: Bent Line with Border and Accent Bar	ახსნა-წარწერა: მოხრილი ხაზი ჩარჩოთი და აქცენტის ზოლით
+Callout: Double Bent Line with Border and Accent Bar	ახსნა-წარწერა: ორჯერ მოხრილი ხაზი ჩარჩოთი და აქცენტის ზოლით
+From Bottom-Left	ქვედა მარცხენა კუთხიდან
+From Bottom-Right	ქვედა მარჯვენა კუთხიდან
+From Top-Left	ზედა მარცხენა კუთხიდან
+From Top-Right	ზედა მარჯვენა კუთხიდან
+Vertical In	ვერტიკალურად შიგნით
+Vertical Out	ვერტიკალურად გარეთ
+Horizontal In	ჰორიზონტალურად შიგნით
+Horizontal Out	ჰორიზონტალურად გარეთ
+Smoothly From Left	მდორედ მარცხნიდან
+Smoothly From Right	მდორედ მარჯვნიდან
+Through Black From Left	შავის გავლით მარცხნიდან
+Through Black From Right	შავის გავლით მარჯვნიდან
+circle	წრე
+diamond	ბრილიანტი
+plus	პლუსი
+Double Left	ორმაგი მარცხნივ
+Double Right	ორმაგი მარჯვნივ
+Single Left	ერთმაგი მარცხნივ
+Single Right	ერთმაგი მარჯვნივ
+Counterclockwise	საათის ისრის საწინააღმდეგოდ
+Diamonds From Left	ბრილიანტები მარცხნიდან
+Diamonds From Right	ბრილიანტები მარჯვნიდან
+Diamonds From Top	ბრილიანტები ზემოდან
+Diamonds From Bottom	ბრილიანტები ქვემოდან
+Hexagons From Left	ექვსკუთხედები მარცხნიდან
+Hexagons From Right	ექვსკუთხედები მარჯვნიდან
+Hexagons From Top	ექვსკუთხედები ზემოდან
+Hexagons From Bottom	ექვსკუთხედები ქვემოდან
+Strips In	ზოლები შიგნით
+Strips Out	ზოლები გარეთ
+Particles In	ნაწილაკები შიგნით
+Particles Out	ნაწილაკები გარეთ
+Zoom and Rotate	მასშტაბირება და შემობრუნება
+In with Bounce	ხტუნვით შიგნით
+Out with Bounce	ხტუნვით გარეთ
+@count:Column	სვეტი
+@count:Columns	სვეტი
+@count:presentations	პრეზენტაცია
+@count:slide	სლაიდი
+@count:slides	სლაიდი
+@count:unsaved presentation	შეუნახავი პრეზენტაცია
+@count:unsaved presentations	შეუნახავი პრეზენტაცია

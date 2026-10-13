@@ -32,6 +32,7 @@ deck and UI icons are original work of the DeckCraft contributors (drawn or gene
 | `crates/fonts/tests/fixtures/legacy-regular.ttf` | DeckCraft contributors | the same family's one-glyph Regular face, built by `make_legacy_font.py` (fontTools as the builder only) | CC0-1.0 | Font lookup by Windows family name tests |
 | `crates/render/tests/fixtures/make_colr_font.py` | DeckCraft contributors | this repository | MIT OR Apache-2.0 | Regenerates the COLR test font |
 | `crates/ui-egui/src/i18n/uk.tsv` | @dmatviichuk, assisted by Codex | Contributor-original Ukrainian translation in this repository; terminology checked against VESUM 6.8.6 and ULIF (validation tools/data are not bundled) | MIT OR Apache-2.0 (`LICENSE-MIT`, `LICENSE-APACHE`) | Ukrainian interface text |
+| `crates/ui-egui/src/i18n/ka.tsv` | Davit Matchakhelidze, assisted by Claude | Contributor-original Georgian translation in this repository, translated from the English source's meaning (no vendor localization used); reviewed by a native speaker | MIT OR Apache-2.0 (`LICENSE-MIT`, `LICENSE-APACHE`) | Georgian interface text |
 
 ## Bundled through dependencies
 

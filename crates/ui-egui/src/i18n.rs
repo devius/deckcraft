@@ -13,22 +13,28 @@ pub enum Language {
     System,
     En,
     Uk,
+    Ka,
 }
 
 impl Language {
-    pub const ALL: [Self; 3] = [Self::System, Self::En, Self::Uk];
+    pub const ALL: [Self; 4] = [Self::System, Self::En, Self::Uk, Self::Ka];
 
     pub fn label(self) -> &'static str {
         match self {
             Self::System => tr("System language"),
             Self::En => "English",
             Self::Uk => "Українська",
+            Self::Ka => "ქართული",
         }
     }
 
     pub fn from_locale(locale: &str) -> Self {
         let language = locale.split(['-', '_', '.', '@']).next().unwrap_or("");
-        if language.eq_ignore_ascii_case("uk") { Self::Uk } else { Self::En }
+        match language.to_ascii_lowercase().as_str() {
+            "uk" => Self::Uk,
+            "ka" => Self::Ka,
+            _ => Self::En,
+        }
     }
 
     pub fn resolve(self, locale: Option<&str>) -> Self {
@@ -49,27 +55,35 @@ pub fn set_current(language: Language) {
 }
 
 const CATALOG: &str = include_str!("i18n/uk.tsv");
+const KA_CATALOG: &str = include_str!("i18n/ka.tsv");
 static UK: OnceLock<HashMap<String, String>> = OnceLock::new();
+static KA: OnceLock<HashMap<String, String>> = OnceLock::new();
 
-fn catalog() -> &'static HashMap<String, String> {
-    UK.get_or_init(|| {
-        CATALOG
-            .lines()
-            .filter(|line| !line.is_empty() && !line.starts_with('#'))
-            .filter_map(|line| line.split_once('\t'))
-            .map(|(source, text)| (source.replace("\\n", "\n"), text.replace("\\n", "\n")))
-            .collect()
-    })
+fn parse_catalog(text: &str) -> HashMap<String, String> {
+    text.lines()
+        .filter(|line| !line.is_empty() && !line.starts_with('#'))
+        .filter_map(|line| line.split_once('\t'))
+        .map(|(source, text)| (source.replace("\\n", "\n"), text.replace("\\n", "\n")))
+        .collect()
+}
+
+/// The catalog of `language`; English has none.
+fn catalog_of(language: Language) -> Option<&'static HashMap<String, String>> {
+    match language {
+        Language::Uk => Some(UK.get_or_init(|| parse_catalog(CATALOG))),
+        Language::Ka => Some(KA.get_or_init(|| parse_catalog(KA_CATALOG))),
+        Language::System | Language::En => None,
+    }
 }
 
 /// Exact lookup at an explicit interface boundary; unknown text falls back to English.
 pub fn tr(text: &str) -> &str {
-    if CURRENT.get() == Language::Uk { catalog().get(text).map(String::as_str).unwrap_or(text) } else { text }
+    catalog_of(CURRENT.get()).and_then(|catalog| catalog.get(text)).map_or(text, String::as_str)
 }
 
 /// Context-specific interface label with the original English source as fallback.
 pub fn tr_context<'a>(source: &'a str, key: &str) -> &'a str {
-    if CURRENT.get() == Language::Uk { catalog().get(key).map(String::as_str).unwrap_or(source) } else { source }
+    catalog_of(CURRENT.get()).and_then(|catalog| catalog.get(key)).map_or(source, String::as_str)
 }
 
 pub fn placeholder_prompt(kind: deckcraft_model::PhType) -> &'static str {
@@ -101,16 +115,17 @@ pub fn format(source: &str, values: &[String]) -> String {
     out
 }
 
-/// Ukrainian integer count forms: 1/21; 2–4/22–24; 0/5–19.
+/// Ukrainian integer count forms: 1/21; 2–4/22–24; 0/5–19. Georgian keeps a noun singular after
+/// every numeral, so its word is the catalog's `@count:<english>` entry whatever `n` is.
 pub fn count(n: usize, english: &str, one: &str, few: &str, many: &str) -> String {
-    let word = if CURRENT.get() == Language::Uk {
-        match (n % 10, n % 100) {
+    let word = match CURRENT.get() {
+        Language::Uk => match (n % 10, n % 100) {
             (1, last) if last != 11 => one,
             (2..=4, last) if !(12..=14).contains(&last) => few,
             _ => many,
-        }
-    } else {
-        english
+        },
+        Language::Ka => tr_context(english, &format!("@count:{english}")),
+        Language::System | Language::En => english,
     };
     format!("{n} {word}")
 }
@@ -130,6 +145,14 @@ pub fn recovered(n: usize) -> String {
 #[cfg(test)]
 mod tests {
     use super::*;
+
+    fn uk() -> &'static HashMap<String, String> {
+        catalog_of(Language::Uk).unwrap()
+    }
+
+    fn ka() -> &'static HashMap<String, String> {
+        catalog_of(Language::Ka).unwrap()
+    }
 
     fn placeholders(text: &str) -> Vec<&str> {
         let mut out = vec![];
@@ -174,10 +197,10 @@ mod tests {
         {
             let label = crate::ribbon::option_label(option);
             if !label.is_empty() && !label.chars().all(|c| c.is_ascii_digit()) {
-                assert!(catalog().contains_key(&label), "missing effect option: {option}: {label}");
+                assert!(uk().contains_key(&label), "missing effect option: {option}: {label}");
             }
         }
-        let missing: Vec<_> = required.into_iter().filter(|key| !catalog().contains_key(*key)).collect();
+        let missing: Vec<_> = required.into_iter().filter(|key| !uk().contains_key(*key)).collect();
         assert!(missing.is_empty(), "missing visible metadata: {missing:?}");
     }
 
@@ -222,7 +245,7 @@ mod tests {
                         })
                         .unwrap();
                     let key: String = serde_json::from_str(&format!("\"{}\"", &tail[..end])).unwrap();
-                    assert!(catalog().contains_key(&key), "missing literal translation: {key}");
+                    assert!(uk().contains_key(&key), "missing literal translation: {key}");
                     rest = &tail[end + 1..];
                 }
             }
@@ -262,7 +285,7 @@ mod tests {
         let db = deckcraft_fonts::FontDb::with_font_dirs(vec![]);
         let face = db.face(deckcraft_fonts::LAST_RESORT_FAMILY, "Regular");
         let letters: std::collections::HashSet<_> =
-            catalog().values().flat_map(|value| value.chars()).chain("ҐґЄєІіЇї".chars()).filter(|c| ('\u{0400}'..='\u{04ff}').contains(c)).collect();
+            uk().values().flat_map(|value| value.chars()).chain("ҐґЄєІіЇї".chars()).filter(|c| ('\u{0400}'..='\u{04ff}').contains(c)).collect();
         for c in letters {
             assert_ne!(face.glyph_for(c), 0, "missing document fallback glyph: {c}");
         }
@@ -353,6 +376,35 @@ mod tests {
         ] {
             assert_eq!(count(n, "slides", "слайд", "слайди", "слайдів"), format!("{n} {word}"));
         }
+        set_current(Language::En);
+    }
+
+    #[test]
+    fn georgian_has_every_ukrainian_key_and_its_own_count_words() {
+        let missing: Vec<_> = uk().keys().filter(|key| !ka().contains_key(*key)).collect();
+        assert!(missing.is_empty(), "missing Georgian: {missing:?}");
+        let mut seen = std::collections::HashSet::new();
+        for line in KA_CATALOG.lines().filter(|line| !line.is_empty() && !line.starts_with('#')) {
+            let (source, text) = line.split_once('\t').unwrap();
+            assert!(seen.insert(source), "duplicate Georgian entry: {source}");
+            assert!(!text.trim().is_empty(), "empty Georgian translation: {source}");
+            assert_eq!(placeholders(source), placeholders(text), "Georgian placeholders: {source}");
+            // Georgian has no capitals in running text: no Mtavruli (U+1C90–U+1CBF).
+            assert!(!text.chars().any(|c| ('\u{1C90}'..='\u{1CBF}').contains(&c)), "Mtavruli in: {source}");
+        }
+        for (locale, expected) in [("ka", Language::Ka), ("ka-GE", Language::Ka), ("ka_GE.UTF-8", Language::Ka), ("KA_ge", Language::Ka)] {
+            assert_eq!(Language::from_locale(locale), expected, "{locale}");
+        }
+        assert_eq!(Language::Ka.label(), "ქართული");
+        set_current(Language::Ka);
+        assert_eq!(tr("File"), "ფაილი");
+        assert_eq!(tr("a user-defined slide title"), "a user-defined slide title");
+        // A Georgian noun stays singular after a numeral.
+        for n in [0, 1, 2, 5, 21, 111] {
+            assert_eq!(count(n, if n == 1 { "slide" } else { "slides" }, "слайд", "слайди", "слайдів"), format!("{n} სლაიდი"));
+        }
+        assert_eq!(count(3, "Columns", "стовпець", "стовпці", "стовпців"), "3 სვეტი");
+        assert_eq!(recovered(2), format("Recovered {} from the last session", &["2 შეუნახავი პრეზენტაცია".to_string()]));
         set_current(Language::En);
     }
 }

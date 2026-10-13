@@ -106,7 +106,7 @@ Presentation content and command IDs retain their original values. Detail:
 | Vietnamese | vi | 0% | none | 3–5 |
 
 Other languages shipped: **Ukrainian (uk)**, with English fallback and bundled Cyrillic glyph
-coverage. PowerPoint for Mac ships 26 languages; additional catalogs and native review remain.
+coverage, and **Georgian (ka)**. PowerPoint for Mac ships 26 languages; additional catalogs and native review remain.
 
 ## Upcoming
 
@@ -142,6 +142,7 @@ app's JSON control channel (`deckcraft --control PORT`).
 | 2026-10-12 | File tab (Backstage) like PowerPoint's (#76): File or Alt+F opens Home, New, Open, Info, Save, Save As, Print, Export, Close, Account and Options over the window, Esc or Back returns, arrows walk the side menu; the start screen is File › Home. Pages run the existing file commands; new `file.info`, print slide ranges (`"1-3, 5"`), Print through a PDF, Ctrl+P, and Close/Ctrl+W ask about unsaved changes |
 | 2026-10-12 | WordArt text warps (`prstTxWarp`): all 40 presets drawn, curves fitted to PowerPoint by observation; warp adjusts round-trip |
 | 2026-10-12 | Render: line widths, dashes and arrowheads inside a group no longer scale with the group's child-coordinate mapping, so a group in a small legacy child space (scale about 1600) draws thin lines instead of covering the slide (#233) |
+| 2026-10-14 | Georgian UI catalog (ka, every key of the Ukrainian catalog plus strings added to main since, native-speaker reviewed); `ka`/`ka-GE` locales select it; counts keep the noun singular |
 | 2026-10-10 | Ukrainian UI catalog, system-language detection and persisted language choice (#15, #30); translated placeholder prompts preserve presentation content |
 | 2026-10-10 | Progress docs restructured to the craftrules standard; full re-measure (breadth 79%, ready ~55%, mainstream ~53%, essentials ~62%, alpha). Landed: Animation Painter (#54), Morph geometry outlines (#27), animated GIF playback (#39), hyperlink colour and following links in the show (#37, #45), date fields in their own format (#36), flipped shapes keep readable text (#35), show transition fix (#46), start screen from the Home button (#49), MCP export lists PDF (#65), OmaStore manifest (#57) |
 | 2026-10-09 | v0.4.0 released. UAX #9 bidi and Arabic shaping (#4), Morph with Words and Characters (#5), tables grow to fit and PDF cell text (#14), rotating log file (#7), DX12 default on Windows (#16), H.264/HEVC overflow hardening (#2), PPTX sniffing anywhere in the zip (#19) |
@@ -157,6 +158,7 @@ app's JSON control channel (`deckcraft --control PORT`).
 | 2026-10-13 | trivial | Progress log: wild text cases |
 | 2026-10-12 | trivial | Progress log: File tab (Backstage, #76) |
 | 2026-10-12 | trivial | Progress log: lines in scaled groups (#233) |
+| 2026-10-14 | minor | Added Georgian (ka) to the languages shipped |
 | 2026-10-10 | minor | Added Ukrainian UI and language selection to the reorganized language summary |
 | 2026-10-10 | minor | Readiness-by-audience table with hours to ~95% for full, mainstream and essentials |
 | 2026-10-10 | minor | Added mainstream practitioner (~53%) and essentials user (~62%); features recomputed from written area weights, ready ~56% → ~55% |
