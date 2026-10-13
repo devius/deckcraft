@@ -184,6 +184,9 @@ pub fn transition_option_label(kind: &str, option: &str) -> String {
         (_, "d") => "Bottom".into(),
         (_, "in") => "In".into(),
         (_, "out") => "Out".into(),
+        (_, "circle") => "Circle".into(),
+        (_, "diamond") => "Diamond".into(),
+        (_, "plus") => "Plus".into(),
         (_, o) => o.to_string(),
     }
 }
@@ -405,9 +408,13 @@ mod option_label_tests {
         assert_eq!(transition_option_label("shred", "particlesOut"), "Particles Out");
         assert_eq!(transition_option_label("zoom", "rotate"), "Zoom and Rotate");
         assert_eq!(transition_option_label("split", "vertIn"), "Vertical In");
+        assert_eq!(transition_option_label("shape", "circle"), "Circle");
+        assert_eq!(transition_option_label("shape", "plus"), "Plus");
         for (id, _, _, _, opts) in TRANSITIONS {
             for o in opts.iter() {
-                assert!(!transition_option_label(id, o).is_empty(), "{id}/{o}");
+                let label = transition_option_label(id, o);
+                // A label, not the file format's lowercase id.
+                assert!(label.starts_with(|c: char| c.is_uppercase()), "{id}/{o}: {label}");
             }
         }
     }
