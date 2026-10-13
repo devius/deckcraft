@@ -38,7 +38,7 @@ translation resources were consulted.
 | Design / Themes | დიზაინი / თემები |
 | Transitions / Animations | გადასვლები / ანიმაციები |
 | Slide Show / From Beginning | სლაიდშოუ / დასაწყისიდან |
-| Review / Spelling | რეცენზირება / მართლწერა |
+| Review / Spelling | განხილვა / მართლწერა |
 | View / Normal | ჩვენება / ჩვეულებრივი |
 | New Slide / Duplicate Slide | ახალი სლაიდი / სლაიდის დუბლირება |
 | Slide Master | მასტერ-სლაიდი |
