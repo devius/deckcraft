@@ -9,7 +9,8 @@ MCP command `app.language` with `{"language":"ka"}` selects it explicitly. The c
 the other interface settings. Slide text, command ids, CLI/MCP/control responses and file paths do
 not change.
 
-`crates/ui-egui/src/i18n/ka.tsv` has all 1,232 entries of the Ukrainian catalog (the same keys). It
+`crates/ui-egui/src/i18n/ka.tsv` has 1,274 entries: all 1,232 keys of the Ukrainian catalog plus 42 labels upstream added since
+(File › Print/Info, IME commands, new preset shapes). It
 covers the ribbon tabs and commands, menus, dialogs, panes, the shape and gallery names, and status
 captions. Diagnostics from lower layers (file import, rendering, media) keep their English wording,
 as in the other languages. It is written from the meaning of the English labels; no proprietary
