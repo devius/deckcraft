@@ -190,6 +190,16 @@ pub fn font_definitions(extra: &[std::sync::Arc<deckcraft_fonts::FontFace>]) -> 
     let mut bold: Vec<String> = names.iter().filter(|(fam, st, _)| *fam == "Inter" && *st == "SemiBold").map(|(_, _, n)| n.clone()).collect();
     bold.extend(defs.families.get(&FontFamily::Proportional).cloned().unwrap_or_default());
     defs.families.insert(FontFamily::Name("bold".into()), bold);
+    // Georgian: no bundled face has it, so an installed one fills in. Always added: the files are
+    // small and a language list shows Georgian in its own script.
+    if let Some(bytes) = system_georgian_font() {
+        defs.font_data.insert("system-georgian".into(), std::sync::Arc::new(FontData::from_static(bytes)));
+        for family in [FontFamily::Proportional, FontFamily::Name("bold".into()), FontFamily::Monospace] {
+            if let Some(list) = defs.families.get_mut(&family) {
+                list.push("system-georgian".into());
+            }
+        }
+    }
     add_fallback_faces(&mut defs, extra);
     // The Japanese interface face (the first one when Inter isn't embedded) hints its en and em
     // dashes, bars thinner than a pixel, down to nothing, so they drew as gaps in interface text;
@@ -220,6 +230,33 @@ pub fn add_fallback_faces(defs: &mut FontDefinitions, faces: &[std::sync::Arc<de
     }
 }
 
+/// An installed Georgian font (SF Georgian, Sylfaen, Noto Sans Georgian or DejaVu Sans; small
+/// files, about 0.1–1 MB), read once. None on the web, which reads no system fonts.
+pub fn system_georgian_font() -> Option<&'static [u8]> {
+    static BYTES: std::sync::OnceLock<Option<Vec<u8>>> = std::sync::OnceLock::new();
+    BYTES
+        .get_or_init(|| {
+            let names: &[&str] = if cfg!(windows) {
+                &["sylfaen.ttf"]
+            } else if cfg!(target_os = "macos") {
+                &["SFGeorgian.ttf", "Supplemental/Arial Unicode.ttf"]
+            } else {
+                &[
+                    "truetype/noto/NotoSansGeorgian-Regular.ttf",
+                    "noto/NotoSansGeorgian-Regular.ttf",
+                    "google-noto/NotoSansGeorgian-Regular.ttf",
+                    "truetype/dejavu/DejaVuSans.ttf",
+                    "dejavu/DejaVuSans.ttf",
+                    "dejavu-sans-fonts/DejaVuSans.ttf",
+                    "TTF/DejaVuSans.ttf",
+                ]
+            };
+            let dirs = deckcraft_fonts::system_font_dirs();
+            names.iter().flat_map(|name| dirs.iter().map(move |dir| dir.join(name))).find_map(|path| std::fs::read(path).ok())
+        })
+        .as_deref()
+}
+
 pub fn bold(size: f32) -> egui::FontId {
     egui::FontId::new(size, FontFamily::Name("bold".into()))
 }
@@ -234,6 +271,18 @@ pub fn to_color32(c: deckcraft_color::Rgba) -> Color32 {
 
 #[cfg(test)]
 mod tests {
+    #[test]
+    fn interface_fonts_cover_georgian_when_an_installed_georgian_face_exists() {
+        // No bundled interface face has Georgian: an installed one fills in.
+        let ctx = egui::Context::default();
+        super::install_fonts(&ctx);
+        ctx.run_ui(egui::RawInput::default(), |_| {}).textures_delta.clear();
+        let covered = ctx.fonts_mut(|fonts| fonts.has_glyphs(&egui::FontId::proportional(14.0), "ქართული"));
+        if super::system_georgian_font().is_some() {
+            assert!(covered, "a Georgian face is installed but the interface lacks Georgian");
+        }
+    }
+
     /// Each character of `text` laid out in the interface fonts at interface sizes, and whether it
     /// has ink (a glyph image).
     fn drawn(text: &str) -> Vec<(char, f32, bool)> {
