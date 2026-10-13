@@ -1274,3 +1274,38 @@ Callout: Double Bent Line with No Border	ახსნა-წარწერა: 
 Callout: Line with Border and Accent Bar	ახსნა-წარწერა: ხაზი ჩარჩოთი და აქცენტის ზოლით
 Callout: Bent Line with Border and Accent Bar	ახსნა-წარწერა: მოხრილი ხაზი ჩარჩოთი და აქცენტის ზოლით
 Callout: Double Bent Line with Border and Accent Bar	ახსნა-წარწერა: ორჯერ მოხრილი ხაზი ჩარჩოთი და აქცენტის ზოლით
+From Bottom-Left	ქვედა მარცხენა კუთხიდან
+From Bottom-Right	ქვედა მარჯვენა კუთხიდან
+From Top-Left	ზედა მარცხენა კუთხიდან
+From Top-Right	ზედა მარჯვენა კუთხიდან
+Vertical In	ვერტიკალურად შიგნით
+Vertical Out	ვერტიკალურად გარეთ
+Horizontal In	ჰორიზონტალურად შიგნით
+Horizontal Out	ჰორიზონტალურად გარეთ
+Smoothly From Left	მდორედ მარცხნიდან
+Smoothly From Right	მდორედ მარჯვნიდან
+Through Black From Left	შავის გავლით მარცხნიდან
+Through Black From Right	შავის გავლით მარჯვნიდან
+circle	წრე
+diamond	ბრილიანტი
+plus	პლუსი
+Double Left	ორმაგი მარცხნივ
+Double Right	ორმაგი მარჯვნივ
+Single Left	ერთმაგი მარცხნივ
+Single Right	ერთმაგი მარჯვნივ
+Counterclockwise	საათის ისრის საწინააღმდეგოდ
+Diamonds From Left	ბრილიანტები მარცხნიდან
+Diamonds From Right	ბრილიანტები მარჯვნიდან
+Diamonds From Top	ბრილიანტები ზემოდან
+Diamonds From Bottom	ბრილიანტები ქვემოდან
+Hexagons From Left	ექვსკუთხედები მარცხნიდან
+Hexagons From Right	ექვსკუთხედები მარჯვნიდან
+Hexagons From Top	ექვსკუთხედები ზემოდან
+Hexagons From Bottom	ექვსკუთხედები ქვემოდან
+Strips In	ზოლები შიგნით
+Strips Out	ზოლები გარეთ
+Particles In	ნაწილაკები შიგნით
+Particles Out	ნაწილაკები გარეთ
+Zoom and Rotate	მასშტაბირება და შემობრუნება
+In with Bounce	ხტუნვით შიგნით
+Out with Bounce	ხტუნვით გარეთ
