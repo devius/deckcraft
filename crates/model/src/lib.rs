@@ -16,6 +16,7 @@ pub mod style;
 pub mod table;
 pub mod text;
 pub mod theme;
+pub mod words;
 
 use std::sync::Arc;
 
@@ -443,6 +444,46 @@ pub fn find_shape_mut(shapes: &mut [Shape], id: ShapeId) -> Option<&mut Shape> {
     rec(shapes, id, 0)
 }
 
+/// The list holding `id` among its siblings: the tree's top level, or a group's children.
+pub fn sibling_list_mut(shapes: &mut Vec<Shape>, id: ShapeId) -> Option<&mut Vec<Shape>> {
+    fn rec(shapes: &mut Vec<Shape>, id: ShapeId, depth: usize) -> Option<&mut Vec<Shape>> {
+        if depth > 64 {
+            return None;
+        }
+        if shapes.iter().any(|s| s.id == id) {
+            return Some(shapes);
+        }
+        for s in shapes.iter_mut() {
+            if let ShapeKind::Group { children, .. } = &mut s.kind
+                && let Some(f) = rec(children, id, depth + 1)
+            {
+                return Some(f);
+            }
+        }
+        None
+    }
+    rec(shapes, id, 0)
+}
+
+/// The group directly holding `id`: `Some(None)` for a top-level shape, `None` when absent.
+pub fn parent_of(shapes: &[Shape], id: ShapeId) -> Option<Option<ShapeId>> {
+    fn rec(shapes: &[Shape], parent: Option<ShapeId>, id: ShapeId, depth: usize) -> Option<Option<ShapeId>> {
+        if depth > 64 {
+            return None;
+        }
+        for s in shapes {
+            if s.id == id {
+                return Some(parent);
+            }
+            if let Some(f) = rec(s.children(), Some(s.id), id, depth + 1) {
+                return Some(f);
+            }
+        }
+        None
+    }
+    rec(shapes, None, id, 0)
+}
+
 /// Background of a slide, layout or master.
 #[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase", tag = "kind")]
@@ -798,6 +839,9 @@ pub struct Presentation {
     pub next_id: u32,
     /// Embedded fonts (family names; bytes in `media`).
     pub embedded_fonts: Vec<(String, MediaId)>,
+    /// Table styles defined in the file (`ppt/tableStyles.xml`).
+    #[serde(skip_serializing_if = "Vec::is_empty")]
+    pub table_styles: Vec<table::TableStyleDef>,
     /// Unmodelled presentation-level XML kept for round-trip.
     #[serde(skip_serializing_if = "Option::is_none")]
     pub raw_ext: Option<String>,

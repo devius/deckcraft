@@ -1048,6 +1048,14 @@ dependencies = [
 ]
 
 [[package]]
+name = "deckcraft-metafile"
+version = "0.6.1"
+dependencies = [
+ "kurbo",
+ "thiserror 2.0.21",
+]
+
+[[package]]
 name = "deckcraft-model"
 version = "0.6.1"
 dependencies = [
@@ -1056,6 +1064,7 @@ dependencies = [
  "serde",
  "serde_json",
  "thiserror 2.0.21",
+ "unicode-segmentation",
 ]
 
 [[package]]
@@ -1104,11 +1113,13 @@ dependencies = [
  "deckcraft-color",
  "deckcraft-fonts",
  "deckcraft-geom",
+ "deckcraft-metafile",
  "deckcraft-model",
  "deckcraft-text",
  "image",
  "kurbo",
  "log",
+ "skrifa 0.47.0",
  "vello_common 0.2.0",
  "vello_cpu 0.2.0",
 ]

@@ -766,3 +766,94 @@ fn a_picture_duotone_round_trips() {
     assert!(matches!(d.base, deckcraft_model::ColorBase::Scheme { slot: SchemeSlot::Accent1 }));
     assert!(matches!(l.base, deckcraft_model::ColorBase::Rgb { rgb } if rgb == Rgba::rgb(250, 240, 200)));
 }
+
+#[test]
+fn line_break_options_round_trip() {
+    let mut p = defaults::new_presentation(None);
+    let first = p.slides[0].id;
+    let s = p.slide_mut(first).expect("slide");
+    let t = s.shapes[0].text.insert(TextBody::from_text("x"));
+    t.paragraphs[0].props.latin_line_break = Some(true);
+    t.paragraphs[0].props.hanging_punct = Some(false);
+    let q = round(&p);
+    let props = &q.slides[0].shapes[0].text.as_ref().expect("text").paragraphs[0].props;
+    assert_eq!(props.latin_line_break, Some(true));
+    assert_eq!(props.hanging_punct, Some(false));
+}
+
+#[test]
+fn a_table_fill_round_trips() {
+    let mut p = defaults::new_presentation(None);
+    let mut t = Table::new(2, 2, 200.0, 40.0);
+    t.background = Some(Fill::solid(ColorRef::rgb(Rgba::rgb(0, 112, 192))));
+    let mut sh = shape(&mut p, "Filled table", 10.0, 10.0, 200.0, 80.0);
+    sh.kind = deckcraft_model::ShapeKind::Table(t);
+    let first = p.slides[0].id;
+    p.slide_mut(first).expect("slide").shapes.push(sh);
+    let q = round(&p);
+    let deckcraft_model::ShapeKind::Table(t) = &by_name(&q.slides[0], "Filled table").kind else { panic!("table") };
+    assert!(
+        matches!(&t.background, Some(Fill::Solid { color }) if matches!(color.base, deckcraft_model::ColorBase::Rgb { rgb } if rgb == Rgba::rgb(0, 112, 192)))
+    );
+}
+
+#[test]
+fn wordart_warps_and_their_adjusts_round_trip() {
+    let mut p = Presentation::default();
+    let cases: [(&str, &str, Vec<f64>); 5] = [
+        ("Arch pour", "textArchUpPour", vec![13_500_000.0, 30_000.0]),
+        ("Wave", "textWave1", vec![18_000.0, -5_000.0]),
+        ("Inflate", "textInflate", vec![30_000.0]),
+        ("Arch", "textArchUp", vec![]),
+        ("Ring", "textRingInside", vec![75_000.0]),
+    ];
+    let mut shapes = vec![];
+    for (i, (name, warp, adj)) in cases.iter().enumerate() {
+        let mut s = shape(&mut p, name, 10.0, 10.0 + 50.0 * i as f64, 300.0, 40.0);
+        let mut body = TextBody::from_text("WordArt");
+        body.body.warp = Some((*warp).into());
+        body.body.warp_adj = adj.clone();
+        s.text = Some(body);
+        shapes.push(s);
+    }
+    Arc::make_mut(&mut p.slides[0]).shapes = shapes;
+    let q = round(&p);
+    for (name, warp, adj) in &cases {
+        let b = &by_name(&q.slides[0], name).text.as_ref().expect("text").body;
+        assert_eq!(b.warp.as_deref(), Some(*warp), "{name}");
+        assert_eq!(&b.warp_adj, adj, "{name}");
+    }
+    // The single-adjust preset is written with the guide name `adj`, two-adjust ones with
+    // `adj1`/`adj2`, and a preset with no adjusts given gets an empty list.
+    let bytes = deckcraft_pptx::export(&p).expect("export");
+    let mut zip = zip::ZipArchive::new(std::io::Cursor::new(bytes)).expect("zip");
+    let mut xml = String::new();
+    std::io::Read::read_to_string(&mut zip.by_name("ppt/slides/slide1.xml").expect("slide"), &mut xml).expect("read");
+    assert!(xml.contains(r#"<a:prstTxWarp prst="textInflate"><a:avLst><a:gd name="adj" fmla="val 30000"/></a:avLst></a:prstTxWarp>"#), "{xml}");
+    assert!(xml.contains(r#"<a:gd name="adj1" fmla="val 13500000"/><a:gd name="adj2" fmla="val 30000"/>"#));
+    assert!(xml.contains(r#"<a:prstTxWarp prst="textArchUp"><a:avLst/></a:prstTxWarp>"#));
+    // A file that gives only `adj2` keeps the preset's default for `adj1`; hostile values are
+    // read as numbers or dropped.
+    let edited = xml
+        .replace(r#"<a:gd name="adj1" fmla="val 13500000"/>"#, "")
+        .replace(r#"<a:gd name="adj" fmla="val 30000"/>"#, r#"<a:gd name="adj" fmla="val NaN"/>"#);
+    let mut out = zip::ZipWriter::new(std::io::Cursor::new(Vec::new()));
+    for i in 0..zip.len() {
+        let mut f = zip.by_index(i).expect("entry");
+        let name = f.name().to_string();
+        let mut data = vec![];
+        std::io::Read::read_to_end(&mut f, &mut data).expect("read");
+        if name == "ppt/slides/slide1.xml" {
+            data = edited.clone().into_bytes();
+        }
+        out.start_file(name, zip::write::SimpleFileOptions::default()).expect("start");
+        std::io::Write::write_all(&mut out, &data).expect("write");
+    }
+    let bytes = out.finish().expect("finish").into_inner();
+    let q = deckcraft_pptx::import(&bytes).expect("import");
+    let pour = &by_name(&q.slides[0], "Arch pour").text.as_ref().expect("text").body;
+    assert_eq!(pour.warp_adj, vec![10_800_000.0, 30_000.0]);
+    let inflate = &by_name(&q.slides[0], "Inflate").text.as_ref().expect("text").body;
+    assert_eq!(inflate.warp.as_deref(), Some("textInflate"));
+    assert!(inflate.warp_adj.is_empty());
+}
