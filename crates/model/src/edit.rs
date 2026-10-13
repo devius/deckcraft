@@ -406,10 +406,18 @@ pub fn end(body: &TextBody) -> Pos {
     (pi, body.paragraphs.get(pi).map(Paragraph::char_len).unwrap_or(0))
 }
 
+/// Does `c` belong to a script that capitalises the first letter of sentences and words?
+/// Georgian doesn't: Unicode maps Mkhedruli to Mtavruli capitals, but those are only for
+/// all-caps text, never for a sentence's or a title's first letter.
+pub fn capitalizes(c: char) -> bool {
+    !matches!(c, '\u{10A0}'..='\u{10FF}' | '\u{1C90}'..='\u{1CBF}' | '\u{2D00}'..='\u{2D2F}')
+}
+
 /// The case Shift+F3 changes `s` to next, as PowerPoint cycles it: lowercase → Capitalize Each
 /// Word → UPPERCASE → lowercase; any other mix goes to UPPERCASE first.
 pub fn next_case(s: &str) -> &'static str {
-    if s == s.to_lowercase() && s.chars().any(char::is_alphabetic) {
+    // Georgian has no title case (see [`capitalizes`]): its lowercase goes straight to UPPERCASE.
+    if s == s.to_lowercase() && s.chars().any(char::is_alphabetic) && change_case(s, "title") != s {
         "title"
     } else if s == s.to_uppercase() && s.chars().any(char::is_alphabetic) {
         "lower"
@@ -429,7 +437,11 @@ pub fn change_case(s: &str, mode: &str) -> String {
             let mut start = true;
             for c in s.chars() {
                 if start && c.is_alphabetic() {
-                    out.extend(c.to_uppercase());
+                    if capitalizes(c) {
+                        out.extend(c.to_uppercase());
+                    } else {
+                        out.extend(c.to_lowercase());
+                    }
                     start = false;
                 } else {
                     out.extend(c.to_lowercase());
@@ -446,7 +458,11 @@ pub fn change_case(s: &str, mode: &str) -> String {
             let mut start = true;
             for c in s.chars() {
                 if start && c.is_alphabetic() {
-                    out.extend(c.to_uppercase());
+                    if capitalizes(c) {
+                        out.extend(c.to_uppercase());
+                    } else {
+                        out.extend(c.to_lowercase());
+                    }
                     start = false;
                 } else {
                     out.extend(c.to_lowercase());
@@ -519,6 +535,12 @@ mod tests {
         assert_eq!(char_move(&b, (0, 17), true), (0, 17));
         assert_eq!(change_case("hello world. again", "sentence"), "Hello world. Again");
         assert_eq!(change_case("hello world", "title"), "Hello World");
+        // Georgian has no sentence or title capitals; UPPERCASE still gives Mtavruli.
+        assert_eq!(change_case("გამარჯობა. როგორ ხარ?", "sentence"), "გამარჯობა. როგორ ხარ?");
+        assert_eq!(change_case("ᲒᲐᲛᲐᲠᲯᲝᲑᲐ ᲛᲡᲝᲤᲚᲘᲝ", "title"), "გამარჯობა მსოფლიო");
+        assert_eq!(change_case("გამარჯობა", "upper"), "ᲒᲐᲛᲐᲠᲯᲝᲑᲐ");
+        assert_eq!(next_case("გამარჯობა"), "upper");
+        assert_eq!(next_case("ᲒᲐᲛᲐᲠᲯᲝᲑᲐ"), "lower");
     }
 
     #[test]
