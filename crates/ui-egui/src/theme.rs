@@ -230,8 +230,31 @@ pub fn add_fallback_faces(defs: &mut FontDefinitions, faces: &[std::sync::Arc<de
     }
 }
 
-/// An installed Georgian font (small files, about 0.1–1 MB), read once. None on wasm.
+/// A Georgian face the web shell supplies (fetched from beside the page; the browser lends none).
+static SUPPLIED_GEORGIAN: std::sync::OnceLock<Vec<u8>> = std::sync::OnceLock::new();
+/// The supplied face arrived and the installed fonts don't have it yet.
+static SUPPLIED_GEORGIAN_NEW: std::sync::atomic::AtomicBool = std::sync::atomic::AtomicBool::new(false);
+
+/// Use `bytes` (a font file) as the Georgian interface face where no installed one is found (the
+/// web); the app installs it on the next frame. Only the first call counts.
+pub fn set_georgian_font(bytes: Vec<u8>) {
+    if SUPPLIED_GEORGIAN.set(bytes).is_ok() {
+        SUPPLIED_GEORGIAN_NEW.store(true, std::sync::atomic::Ordering::Relaxed);
+    }
+}
+
+/// Whether a supplied Georgian face arrived since the last call.
+pub(crate) fn take_new_georgian_font() -> bool {
+    SUPPLIED_GEORGIAN_NEW.swap(false, std::sync::atomic::Ordering::Relaxed)
+}
+
+/// An installed Georgian font (small files, about 0.1–1 MB), read once (none on wasm), else the
+/// supplied one ([`set_georgian_font`]).
 pub fn system_georgian_font() -> Option<&'static [u8]> {
+    installed_georgian_font().or_else(|| SUPPLIED_GEORGIAN.get().map(Vec::as_slice))
+}
+
+fn installed_georgian_font() -> Option<&'static [u8]> {
     static BYTES: std::sync::OnceLock<Option<Vec<u8>>> = std::sync::OnceLock::new();
     BYTES
         .get_or_init(|| {

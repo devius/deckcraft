@@ -749,7 +749,7 @@ impl SlideApp {
         if (ctx.zoom_factor() - scale).abs() > 1e-3 {
             ctx.set_zoom_factor(scale);
         }
-        if !self.styled {
+        if !self.styled || theme::take_new_georgian_font() {
             theme::install_fonts_with(ctx, &self.ui_fonts.faces);
             self.styled = true;
             self.restyle = true;
