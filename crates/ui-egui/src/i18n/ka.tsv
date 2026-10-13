@@ -144,9 +144,9 @@ Bold Flash	მუქი გაელვება
 Both	ორივე
 Bottom	ქვემოთ
 Bounce	ხტუნვა
-Box	ყუთი
-Box In	ყუთი შიგნით
-Box Out	ყუთი გარეთ
+Box	ჩარჩო
+Box In	ჩარჩო შიგნით
+Box Out	ჩარჩო გარეთ
 Box and Whisker	ყუთი და ულვაშები
 Brightness	სიკაშკაშე
 Brightness {:+}%	სიკაშკაშე {:+}%
@@ -159,12 +159,12 @@ Bubble	ბუშტოვანი
 Bullets	ბურთულები
 Burst	აფეთქება
 By Paragraph	აბზაცების მიხედვით
-Callout: Down Arrow	განმარტება: ისარი ქვემოთ
-Callout: Left Arrow	განმარტება: ისარი მარცხნივ
-Callout: Line	განმარტება: ხაზი
-Callout: Right Arrow	განმარტება: ისარი მარჯვნივ
-Callout: Up Arrow	განმარტება: ისარი ზემოთ
-Callouts	განმარტებები
+Callout: Down Arrow	ახსნა-წარწერა: ისარი ქვემოთ
+Callout: Left Arrow	ახსნა-წარწერა: ისარი მარცხნივ
+Callout: Line	ახსნა-წარწერა: ხაზი
+Callout: Right Arrow	ახსნა-წარწერა: ისარი მარჯვნივ
+Callout: Up Arrow	ახსნა-წარწერა: ისარი ზემოთ
+Callouts	ახსნა-წარწერები
 Cameo	კამეო
 Camera capture is not available yet	კამერით გადაღება ჯერ მიუწვდომელია
 Cancel	გაუქმება
@@ -194,19 +194,19 @@ Circle	წრე
 Circle In	წრე შიგნით
 Circle Out	წრე გარეთ
 Clear All Formatting	ფორმატირების გასუფთავება
-Click a symbol to insert it at the insertion point.	დააწკაპუნეთ სიმბოლოზე, რომ ჩაისვას კურსორის ადგილას.
-Click icon to add SmartArt graphic	დააწკაპუნეთ ხატულაზე SmartArt გრაფიკის დასამატებლად
-Click icon to add chart	დააწკაპუნეთ ხატულაზე დიაგრამის დასამატებლად
-Click icon to add media	დააწკაპუნეთ ხატულაზე მედიის დასამატებლად
-Click icon to add picture	დააწკაპუნეთ ხატულაზე სურათის დასამატებლად
-Click icon to add table	დააწკაპუნეთ ხატულაზე ცხრილის დასამატებლად
-Click to add first slide	დააწკაპუნეთ პირველი სლაიდის დასამატებლად
-Click to add notes	დააწკაპუნეთ შენიშვნების დასამატებლად
-Click to add subtitle	დააწკაპუნეთ ქვესათაურის დასამატებლად
-Click to add text	დააწკაპუნეთ ტექსტის დასამატებლად
-Click to add title	დააწკაპუნეთ სათაურის დასამატებლად
-Click to edit Master text styles	დააწკაპუნეთ ნიმუშის ტექსტის სტილების შესაცვლელად
-Click to edit Master title style	დააწკაპუნეთ ნიმუშის სათაურის სტილის შესაცვლელად
+Click a symbol to insert it at the insertion point.	დაწკაპეთ სიმბოლოზე, რომ ჩაისვას კურსორის ადგილას.
+Click icon to add SmartArt graphic	დაწკაპეთ ხატულაზე SmartArt გრაფიკის დასამატებლად
+Click icon to add chart	დაწკაპეთ ხატულაზე დიაგრამის დასამატებლად
+Click icon to add media	დაწკაპეთ ხატულაზე მედიის დასამატებლად
+Click icon to add picture	დაწკაპეთ ხატულაზე სურათის დასამატებლად
+Click icon to add table	დაწკაპეთ ხატულაზე ცხრილის დასამატებლად
+Click to add first slide	დაწკაპეთ პირველი სლაიდის დასამატებლად
+Click to add notes	დაწკაპეთ შენიშვნების დასამატებლად
+Click to add subtitle	დაწკაპეთ ქვესათაურის დასამატებლად
+Click to add text	დაწკაპეთ ტექსტის დასამატებლად
+Click to add title	დაწკაპეთ სათაურის დასამატებლად
+Click to edit Master text styles	დაწკაპეთ ნიმუშის ტექსტის სტილების შესაცვლელად
+Click to edit Master title style	დაწკაპეთ ნიმუშის სათაურის სტილის შესაცვლელად
 Clock	საათი
 Clockwise	საათის ისრის მიმართულებით
 Close	დახურვა
@@ -362,7 +362,7 @@ Emphasis	აქცენტირება
 End	End
 End Show	ჩვენების დასრულება
 End of slide show	სლაიდშოუს დასასრული
-End of slide show, click to exit.	სლაიდშოუს დასასრული, დააწკაპუნეთ გასასვლელად.
+End of slide show, click to exit.	სლაიდშოუს დასასრული, დაწკაპეთ გასასვლელად.
 End trim (s):	ბოლოდან მოჭრა (წმ):
 English (United Kingdom)	ინგლისური (გაერთიანებული სამეფო)
 English (United States)	ინგლისური (აშშ)
@@ -403,7 +403,7 @@ Fit slide to current window	სლაიდის მორგება მი�
 Fit to Window	ფანჯარაზე მორგება
 Fit to\nWindow	ფანჯარაზე\nმორგება
 Flash	გაელვება
-Flip	გადაბრუნება
+Flip	არეკვლა
 Flip Horizontal	ჰორიზონტალურად არეკვლა
 Flip Vertical	ვერტიკალურად არეკვლა
 Float In	შემოცურება
@@ -1077,7 +1077,7 @@ Start On Click	დაწყება დაწკაპუნებით
 Start With Previous	დაწყება წინასთან ერთად
 Start a conversation	საუბრის დაწყება
 Start time (s):	დაწყების დრო (წმ):
-Start:	დაწყება:
+Start:	დასაწყისი:
 Stealth end	მახვილი ბოლო
 Stock	საბირჟო
 Stop	შეწყვეტა
@@ -1092,7 +1092,7 @@ Sunburst	მზისებრი
 Superscript	ზედა ინდექსი
 Surface	ზედაპირული
 Switch	გადართვა
-Swivel	ტრიალი
+Swivel	მობრუნება
 Symbol	სიმბოლო
 System language	სისტემის ენა
 Tab	ტაბულაცია
