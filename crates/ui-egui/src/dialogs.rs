@@ -935,7 +935,7 @@ fn zoom_dialog(app: &mut SlideApp, ui: &mut Ui, d: &mut Dialog) -> bool {
     let mut mode = d.get("mode", "percent");
     let mut percent = d.get("percent", "100");
     ui.label("Zoom to");
-    if ui.radio(mode == "fit", "Fit").clicked() {
+    if ui.radio(mode == "fit", crate::i18n::tr("Fit")).clicked() {
         mode = "fit".into();
     }
     for pct in ZOOM_PRESETS {
@@ -2222,7 +2222,7 @@ fn body(app: &mut SlideApp, ui: &mut Ui, d: &mut Dialog) -> bool {
                 }
                 d.fields.remove("uiScale");
             }
-            ui.label(egui::RichText::new("Editing").font(theme::bold(13.0)));
+            ui.label(egui::RichText::new(crate::i18n::tr("Editing")).font(theme::bold(13.0)));
             ui.checkbox(&mut app.session.prefs.smart_guides, crate::i18n::tr("Show smart guides"));
             ui.checkbox(&mut app.session.prefs.snap_to_grid, crate::i18n::tr("Snap objects to grid"));
             ui.checkbox(&mut app.session.prefs.smart_quotes, crate::i18n::tr("Replace straight quotes with smart quotes"));
