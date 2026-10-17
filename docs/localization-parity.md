@@ -1,6 +1,6 @@
 # Localization parity with PowerPoint
 
-> **Last reviewed:** 2026-10-10 · **Last updated:** 2026-10-12 · **Change:** minor (IME composition and CJK interface text, #101; previous: major, created; string count measured from source, PowerPoint's localizations read from its bundle) · **Target:** Microsoft PowerPoint for Mac 16.113 (Microsoft 365)
+> **Last reviewed:** 2026-10-14 · **Last updated:** 2026-10-14 · **Change:** minor (IME composition underlined in table cells; previous: minor, IME composition and CJK interface text, #101; previous: major, created) · **Target:** Microsoft PowerPoint for Mac 16.113 (Microsoft 365)
 
 DeckCraft's interface supports English and Ukrainian through `crates/ui-egui/src/i18n/uk.tsv`.
 Preferences offers the system language or an explicit choice; desktop choices persist across
@@ -48,8 +48,9 @@ Polish, Russian, Slovak, Swedish, Thai, Turkish and Traditional Chinese.
 
 The UI catalog, system-language setting and Ukrainian integer-count formatting now exist.
 Additional languages still need catalogs, appropriate plural/number formatting and native review.
-IME composition landed with #101 (slide text, notes and text fields; one undo step per composition);
-the hours that included it are kept until the next re-measure.
+IME composition landed with #101 (slide text, table cells, notes and text fields;
+one undo step per composition, underlined in place); the hours that included it are kept until
+the next re-measure.
 
 ## Proofing languages
 
@@ -61,6 +62,7 @@ common misspellings (`crates/engine/src/cmd/review.rs`); see [gaps.md](gaps.md#p
 
 | Date | Change | Summary |
 |---|---|---|
+| 2026-10-14 | minor | IME composition in a table cell is underlined in place; the candidate window sits on that cell's caret |
 | 2026-10-12 | minor | IME composition for Chinese, Japanese and Korean, and interface text in any installed script (#101) |
 | 2026-10-12 | minor | Added Georgian catalog, `ka` locale detection, installed-font UI fallback, Georgian-safe Change Case and dd.mm.yyyy dates |
 | 2026-10-10 | minor | Added Ukrainian catalog, language selection, English fallback, preserved custom prompts and bundled-font coverage |
