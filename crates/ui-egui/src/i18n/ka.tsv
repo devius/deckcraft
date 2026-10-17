@@ -1309,3 +1309,145 @@ Particles Out	ნაწილაკები გარეთ
 Zoom and Rotate	მასშტაბირება და შემობრუნება
 In with Bounce	ხტუნვით შიგნით
 Out with Bounce	ხტუნვით გარეთ
+Grid Options…	ბადის პარამეტრები…
+Set Zoom	მასშტაბის დაყენება
+New Window	ახალი ფანჯარა
+Preview Animations	ანიმაციების წინასწარი ნახვა
+Insert Picture in SmartArt…	სურათის ჩასმა SmartArt-ში…
+Change Picture…	სურათის შეცვლა…
+Reuse Slides…	სლაიდების ხელახლა გამოყენება…
+Browse for Themes…	თემების დათვალიერება…
+Compare…	შედარება…
+Paste Special…	სპეციალური ჩასმა…
+Quick Access Toolbar	სწრაფი წვდომის პანელი
+Replace…	ჩანაცვლება…
+Starter Templates	საწყისი შაბლონები
+Open	გახსნა
+Color At	ფერი წერტილში
+Paste Special	სპეციალური ჩასმა
+Icon Gallery	ხატულების გალერეა
+Photo Album…	ფოტოალბომი…
+Edit Photo Album…	ფოტოალბომის რედაქტირება…
+Action Settings	მოქმედების პარამეტრები
+Text Pane	ტექსტის პანელი
+Edit SmartArt Text	SmartArt-ის ტექსტის რედაქტირება
+Add Shape	ფიგურის დამატება
+Remove Shape	ფიგურის წაშლა
+Promote	დაწინაურება
+Demote	დონით დაწევა
+Change Layout	განლაგების შეცვლა
+Convert to SmartArt	SmartArt-ად გარდაქმნა
+Convert to Text	ტექსტად გარდაქმნა
+Convert to Shapes	ფიგურებად გარდაქმნა
+Insert Picture in SmartArt	სურათის ჩასმა SmartArt-ში
+SmartArt Styles	SmartArt სტილები
+Change Colors	ფერების შეცვლა
+Size and Position…	ზომა და პოზიცია…
+Smooth Corners	კუთხეების დაგლუვება
+Picture Style Gallery	სურათის სტილების გალერეა
+Recolor	ხელახლა შეფერადება
+Recolor Gallery	ხელახლა შეფერადების გალერეა
+Set Transparent Color	გამჭვირვალე ფერის დაყენება
+Add Guide	დამხმარე ხაზის დამატება
+Move Guide	დამხმარე ხაზის გადაადგილება
+Delete Guide	დამხმარე ხაზის წაშლა
+Edit Points	წერტილების რედაქტირება
+Points	წერტილები
+Move Point	წერტილის გადაადგილება
+Add Point	წერტილის დამატება
+Point Type	წერტილის ტიპი
+Move Handle	სახელურის გადაადგილება
+Delete Point	წერტილის წაშლა
+Fonts in Presentation	პრეზენტაციის შრიფტები
+Replace Fonts	შრიფტების ჩანაცვლება
+AutoCorrect Options	ავტოშესწორების პარამეტრები
+Add Font	შრიფტის დამატება
+Rescan Installed Fonts	დაინსტალირებული შრიფტების ხელახლა სკანირება
+Text Transparency	ტექსტის გამჭვირვალობა
+Font…	შრიფტი…
+Text Transform	ტექსტის ტრანსფორმაცია
+Tabs…	ტაბულაცია…
+Variants	ვარიანტები
+Variant Gallery	ვარიანტების გალერეა
+Handout Placeholders	დასარიგებელი მასალის შესავსები ველები
+Notes Placeholders	შენიშვნების შესავსები ველები
+Preserve	შენარჩუნება
+Layout Placeholders	განლაგების შესავსები ველები
+Apply Design Idea	დიზაინის იდეის გამოყენება
+Sound	ხმა
+Borders	ჩარჩოები
+Cell Margins	უჯრის ველები
+Align Cell Text	უჯრის ტექსტის სწორება
+Draw Table	ცხრილის დახატვა
+Table Eraser	ცხრილის საშლელი
+Find	ძებნა
+Replace	ჩანაცვლება
+Next Comment	შემდეგი კომენტარი
+Previous Comment	წინა კომენტარი
+Change Spelling	მართლწერის ჩანაცვლება
+Add to Dictionary	ლექსიკონში დამატება
+Spelling Dictionary	მართლწერის ლექსიკონი
+Insert Synonym	სინონიმის ჩასმა
+Compare	შედარება
+Revisions	ცვლილებები
+Accept Revision	ცვლილების მიღება
+End Review	განხილვის დასრულება
+Artistic Effects	მხატვრული ეფექტები
+Compress Pictures	სურათების შეკუმშვა
+Peek Out	კიდისკენ გასვლა
+Sink Down	ჩაძირვა
+Contract	შეკუმშვა
+Diagonal Down Right	დიაგონალურად ქვემოთ მარჯვნივ
+Diagonal Up Right	დიაგონალურად ზემოთ მარჯვნივ
+Zigzag	ზიგზაგი
+Sine Wave	სინუსოიდა
+Decaying Wave	მილევადი ტალღა
+Heartbeat	გულისცემა
+S Curve 1	S-მრუდი 1
+S Curve 2	S-მრუდი 2
+Stairs Down	კიბე ქვემოთ
+Bounce Right	ხტუნვა მარჯვნივ
+Bounce Left	ხტუნვა მარცხნივ
+Spiral Right	სპირალი მარჯვნივ
+Spiral Left	სპირალი მარცხნივ
+Spring	ზამბარა
+Swoosh	სრიალი
+4 Point Star	4-წვეროიანი ვარსკვლავი
+5 Point Star	5-წვეროიანი ვარსკვლავი
+6 Point Star	6-წვეროიანი ვარსკვლავი
+8 Point Star	8-წვეროიანი ვარსკვლავი
+Crescent Moon	ნახევარმთვარე
+Football	რაგბის ბურთი
+Curved Square	მომრგვალებული კვადრატი
+Horizontal Figure 8	ჰორიზონტალური რვიანი
+Vertical Figure 8	ვერტიკალური რვიანი
+Loop de Loop	მარყუჟების რიგი
+Bean	ლობიოს მარცვალი
+Peanut	არაქისი
+Neutron	ნეიტრონი
+Resume	გაგრძელება
+Black	შავი
+White	თეთრი
+Black on	შავი ჩართულია
+White on	თეთრი ჩართულია
+All slides	ყველა სლაიდი
+All slides on	ყველა სლაიდი ჩართულია
+Zoom on	მასშტაბი ჩართულია
+■ Stop	■ შეჩერება
+ALL pictures black and white	ყველა სურათი შავ-თეთრად
+Captions under pictures	წარწერები სურათების ქვეშ
+Custom character:	მორგებული სიმბოლო:
+Display drawing guides on screen	დამხმარე ხაზების ეკრანზე ჩვენება
+Display grid on screen	ბადის ეკრანზე ჩვენება
+Find what:	რა მოიძებნოს:
+Find whole words only	მხოლოდ მთლიანი სიტყვების ძებნა
+Highlight click	დაწკაპუნების გამოკვეთა
+Lock aspect ratio	თანაფარდობის ჩაკეტვა
+Match case	რეგისტრის გათვალისწინება
+Program:	პროგრამა:
+Replace with:	ჩანაცვლება:
+Snap objects to other objects	ობიექტების მიბმა სხვა ობიექტებზე
+Start at:	დაწყება:
+Text box:	ტექსტური ბლოკი:
+Update	განახლება
+Update automatically	ავტომატური განახლება
