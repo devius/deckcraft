@@ -29,7 +29,7 @@ support partly there), **55–90 h** to parity plus native-speaker review.
 |---|---|---|---|---|---|---|---|---|
 | English | en | ~1,050 / ~1,050 (100%) | yes / yes / no help | full | yes | **full** | yes | 0 |
 | Ukrainian | uk | UI catalog; coverage checked by tests | UI captions; diagnostics retain original wording | Cyrillic; bundled UI fonts tested | no | available; English fallback | no | — |
-| Georgian | ka | 1,309 / 1,309 catalog strings (100%) | UI captions; diagnostics retain original wording | Mkhedruli through system fonts; UI uses an installed Georgian face (none bundled; the web build has none); Change Case keeps Georgian lower case | in progress | available; English fallback | no | — |
+| Georgian | ka | 1,451 / 1,451 catalog strings (100%) | UI captions; diagnostics retain original wording | Mkhedruli through system fonts; UI uses an installed Georgian face (none bundled; the web build has none); Change Case keeps Georgian lower case | in progress | available; English fallback | no | — |
 | Simplified Chinese (Mandarin) | zh-Hans | 0 (0%) | no | renders with system CJK fonts (asset policy excludes Noto CJK from builds); UAX #14 breaking; IME composition (#101); no true vertical layout | no | none | yes | 6–10 (incl. IME) |
 | Spanish | es | 0 (0%) | no | full (Latin) | no | none | yes (es, es-MX) | 3–5 |
 | Hindi | hi | 0 (0%) | no | Devanagari shaping through HarfRust, untested; no bundled Devanagari font | no | none | **no** (Windows only) | 4–7 |

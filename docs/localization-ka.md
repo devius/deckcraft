@@ -1,6 +1,6 @@
 # Georgian interface
 
-> **Last reviewed:** 2026-10-13 · **Last updated:** 2026-10-13 · **Change:** minor (Georgian interface notes and terminology) · **Target:** DeckCraft 0.6.1
+> **Last reviewed:** 2026-10-17 · **Last updated:** 2026-10-17 · **Change:** minor (upstream sync: 1,451 entries; Georgian in Review › Language and Date and Time; previous: minor, Georgian interface notes and terminology) · **Target:** DeckCraft 0.6.1
 
 Choose **Review › Language** or **Preferences… (Cmd+,) › Interface language › ქართული**, or follow a
 Georgian system locale (`ka`, `ka-GE`, `ka_GE.UTF-8`; the system choice is read through
@@ -9,8 +9,9 @@ MCP command `app.language` with `{"language":"ka"}` selects it explicitly. The c
 the other interface settings. Slide text, command ids, CLI/MCP/control responses and file paths do
 not change.
 
-`crates/ui-egui/src/i18n/ka.tsv` has 1,309 entries: all 1,232 keys of the Ukrainian catalog plus 77 labels upstream added since
-(File › Print/Info, IME commands, new preset shapes, transition Effect Options). It
+`crates/ui-egui/src/i18n/ka.tsv` has 1,451 entries: all 1,232 keys of the Ukrainian catalog plus 219 labels upstream added since
+(File › Print/Info, IME commands, new preset shapes, transition Effect Options, SmartArt, Edit
+Points, guides, motion paths, presenter controls, Find and Replace, Photo Album). It
 covers the ribbon tabs and commands, menus, dialogs, panes, the shape and gallery names, and status
 captions. Diagnostics from lower layers (file import, rendering, media) keep their English wording,
 as in the other languages. It is written from the meaning of the English labels; no proprietary
@@ -23,7 +24,8 @@ translation resources were consulted.
   (`ᲐᲑᲒ`). The interface never uses Mtavruli, and commands are verbal nouns (`შენახვა`, `ჩასმა`).
 - **Counts** are count-neutral: the noun comes first and stays singular (`სლაიდი: 5`), so `count()`
   takes a single Georgian form.
-- **Dates:** short date fields use `dd.mm.yyyy`.
+- **Dates:** short date fields use `dd.mm.yyyy`; Insert › Date and Time lists Georgian (`ka-GE`).
+- **Proofing language:** Review › Language lists ქართული (`ka-GE`) for marking Georgian text.
 - **Fonts:** neither the bundle nor craft-fonts has a Georgian face yet. The desktop app adds an
   installed face as a UI fallback (SF Georgian or Arial Unicode on macOS, Sylfaen on Windows, Noto
   Sans Georgian or DejaVu Sans on Linux) and ships nothing. Slide text uses the system font fallback
@@ -40,7 +42,7 @@ translation resources were consulted.
 | Transitions / Animations | გადასვლები / ანიმაციები |
 | Slide Show / From Beginning | სლაიდშოუ / დასაწყისიდან |
 | Review / Spelling | განხილვა / მართლწერა |
-| View / Normal | ჩვენება / ჩვეულებრივი |
+| View / Normal | ხედი / ჩვეულებრივი |
 | New Slide / Duplicate Slide | ახალი სლაიდი / სლაიდის დუბლირება |
 | Slide Master | მასტერ-სლაიდი |
 | Slide Sorter | სლაიდების დამხარისხებელი |
@@ -58,6 +60,8 @@ translation resources were consulted.
 | Hide Slide / Rehearse Timings | სლაიდის დამალვა / დროის გაზომვა |
 | Link / Comments | ბმული / კომენტარები |
 | Section | სექცია |
+| Edit Points / Size and Position… | წერტილების რედაქტირება / ზომა და პოზიცია… |
+| Grid Options… / Guides | ბადის პარამეტრები… / დამხმარე ხაზები |
 
 Please follow this table and the shared ArtCraft Georgian glossary when you add strings. Product and
 format names stay as they are.
@@ -80,4 +84,5 @@ is welcome.
 
 | Date | Change | Summary |
 |---|---|---|
+| 2026-10-17 | minor | Upstream sync: 1,451 entries; Georgian in Review › Language and Date and Time; View is ხედი |
 | 2026-10-13 | minor | Georgian interface notes and terminology |
