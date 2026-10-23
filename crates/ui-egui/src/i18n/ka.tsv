@@ -1451,3 +1451,46 @@ Start at:	დაწყება:
 Text box:	ტექსტური ბლოკი:
 Update	განახლება
 Update automatically	ავტომატური განახლება
+Add a picture or a text box first	ჯერ დაამატეთ სურათი ან ტექსტური ბლოკი
+Animated GIF (.gif)	ანიმირებული GIF (.gif)
+AutoCorrect	ავტოშესწორება
+Bullets and Numbering	ბურთულები და დანომვრა
+Find and Replace	ძებნა და ჩანაცვლება
+Grid Options	ბადის პარამეტრები
+Photo Album	ფოტოალბომი
+Replace Font	შრიფტის ჩანაცვლება
+Size and Position	ზომა და პოზიცია
+Tabs	ტაბულაცია
+Create New Theme Colors	თემის ახალი ფერების შექმნა
+Create New Theme Fonts	თემის ახალი შრიფტების შექმნა
+No Border	ჩარჩოს გარეშე
+All Borders	ყველა ჩარჩო
+Outside Borders	გარე ჩარჩოები
+Inside Borders	შიდა ჩარჩოები
+Top Border	ზედა ჩარჩო
+Bottom Border	ქვედა ჩარჩო
+Left Border	მარცხენა ჩარჩო
+Right Border	მარჯვენა ჩარჩო
+Inside Horizontal Border	შიდა ჰორიზონტალური ჩარჩო
+Inside Vertical Border	შიდა ვერტიკალური ჩარჩო
+Diagonal Down Border	დიაგონალური ჩარჩო ზემოდან ქვემოთ
+Diagonal Up Border	დიაგონალური ჩარჩო ქვემოდან ზემოთ
+Browse for Themes needs the desktop app for now	თემების დათვალიერებას ჯერჯერობით სამაგიდო აპი სჭირდება
+Compare needs the desktop app for now	შედარებას ჯერჯერობით სამაგიდო აპი სჭირდება
+Convert	გარდაქმნა
+Insert Picture	სურათის ჩასმა
+Layouts	განლაგებები
+Default tab stops (in):	ნაგულისხმევი ტაბულაციის გაჩერებები (დუიმი):
+Size (% of text):	ზომა (ტექსტის %):
+Spacing (pt):	ინტერვალი (პტ):
+Eyedropper: click the slide (Esc cancels)	პიპეტი: დაწკაპეთ სლაიდზე (Esc აუქმებს)
+New Photo Album…	ახალი ფოტოალბომი…
+Pass pictures to insert.photoAlbum	სურათები გადაეცით insert.photoAlbum-ს
+Remove Less (tighter)	ნაკლების მოშორება (უფრო მჭიდროდ)
+Remove More (looser)	მეტის მოშორება (უფრო თავისუფლად)
+This slide has no animations	ამ სლაიდზე ანიმაციები არ არის
+Pictures are already at or below that resolution	სურათების გარჩევადობა უკვე ამ დონისაა ან უფრო დაბალია
+lowercase	პატარა ასოები
+UPPERCASE	მთავრული
+Previous	წინა
+SmartArt Design	SmartArt დიზაინი
