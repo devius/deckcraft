@@ -378,14 +378,18 @@ mod tests {
     }
 
     #[test]
-    fn interface_fonts_cover_georgian_when_an_installed_georgian_face_exists() {
-        // No bundled interface face has Georgian: an installed one fills in.
+    fn interface_fonts_draw_georgian() {
         let ctx = egui::Context::default();
         crate::theme::install_fonts(&ctx);
         ctx.run_ui(egui::RawInput::default(), |_| {}).textures_delta.clear();
-        let covered = ctx.fonts_mut(|fonts| fonts.has_glyphs(&egui::FontId::proportional(14.0), "ქართული"));
-        if crate::theme::system_georgian_font().is_some() {
-            assert!(covered, "a Georgian face is installed but the interface lacks Georgian");
+        let font = egui::FontId::proportional(14.0);
+        assert!(ctx.fonts_mut(|fonts| fonts.has_glyphs(&font, "ქართული")), "the interface can't draw Georgian");
+        // With craft-fonts, Noto Sans Georgian draws it, not the monospaced Hack fallback.
+        if deckcraft_fonts::CRAFT_FONTS.iter().any(|f| f.family == "Noto Sans Georgian") {
+            let chain = ctx.fonts_mut(|fonts| fonts.definitions().families.get(&egui::FontFamily::Proportional).cloned().unwrap_or_default());
+            let georgian = chain.iter().position(|name| name.contains("Noto Sans Georgian"));
+            let hack = chain.iter().position(|name| name == "Hack");
+            assert!(georgian.is_some() && georgian < hack, "Noto Sans Georgian must precede Hack: {chain:?}");
         }
     }
 
