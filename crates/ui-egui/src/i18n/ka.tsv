@@ -1494,3 +1494,77 @@ lowercase	პატარა ასოები
 UPPERCASE	მთავრული
 Previous	წინა
 SmartArt Design	SmartArt დიზაინი
+Reuse Slides	სლაიდების ხელახლა გამოყენება
+Number:	რაოდენობა:
+Spacing (in):	დაშორება (დუიმი):
+Accept\nAll	ყველას\nმიღება
+End\nReview	განხილვის\nდასრულება
+Grid\nOptions	ბადის\nპარამეტრები
+Artistic\nEffects	მხატვრული\nეფექტები
+Text\nPane	ტექსტის\nპანელი
+Photo\nAlbum	ფოტოალბომი
+Animation\nPainter	ანიმაციის\nფუნჯი
+New\nWindow	ახალი\nფანჯარა
+Select None	მონიშვნის მოხსნა
+Ignore All	ყველას გამოტოვება
+Delete Repeated Word	განმეორებული სიტყვის წაშლა
+Clear	გასუფთავება
+Replace Fonts…	შრიფტების ჩანაცვლება…
+Reset Style	სტილის ჩამოყრა
+Columns…	სვეტები…
+Reject	უარყოფა
+Accept	მიღება
+Delete Segment	სეგმენტის წაშლა
+Tick at least one slide to insert	ჩასასმელად მონიშნეთ ერთი სლაიდი მაინც
+Keep source formatting	წყაროს ფორმატირების შენარჩუნება
+Hyperlink to:	ბმულის სამიზნე:
+Alt text	ალტერნატიული ტექსტი
+Chart cell	დიაგრამის უჯრა
+SmartArt items	SmartArt-ის ელემენტები
+Automatic bulleted and numbered lists	ავტომატური ბურთულებიანი და დანომრილი სიები
+With	რით
+Tab stop position (in):	ტაბულაციის გაჩერების პოზიცია (დუიმი):
+Pattern	პატერნი
+SmartArt text	SmartArt-ის ტექსტი
+Alignment	სწორება
+Mirror	არეკვლა
+More Columns…	სხვა სვეტები…
+No icons match.	შესაბამისი ხატულა არ მოიძებნა.
+Sound:	ხმა:
+Click a colour in the picture to make it transparent	დაწკაპეთ ფერზე სურათში, რომ გამჭვირვალე გახდეს
+3-D	3D
+Line spacing	სტრიქონთა დაშორება
+Apply to:	გამოყენება:
+Selected text	მონიშნული ტექსტი
+Whole presentation	მთელი პრეზენტაცია
+Mark all text in the presentation as:	პრეზენტაციის მთელი ტექსტის ენა:
+Measurement units:	საზომი ერთეულები:
+Inches	დუიმი
+Centimeters	სანტიმეტრი
+Width (cm):	სიგანე (სმ):
+Height (cm):	სიმაღლე (სმ):
+▶ Play From	▶ დაკვრა აქედან
+Reuse Slides (Keep Source Formatting)…	სლაიდების ხელახლა გამოყენება (წყაროს ფორმატირების შენარჩუნებით)…
+Choosing a presentation to reuse needs the desktop app	ხელახლა გამოსაყენებელი პრეზენტაციის არჩევას სამაგიდო აპი სჭირდება
+Replace:	ჩანაცვლება:
+Color:	ფერი:
+Slides	სლაიდები
+Percent:	პროცენტი:
+  Format:	  ფორმატი:
+Check for Updates…	განახლებების შემოწმება…
+Close Path	ტრაექტორიის შეკვრა
+Open Path	ტრაექტორიის გახსნა
+Delete Surrounding Text	მიმდებარე ტექსტის წაშლა
+Language for All Text	ენა მთელი ტექსტისთვის
+List Slides to Reuse	ხელახლა გამოსაყენებელი სლაიდების ჩამოთვლა
+Reject Revision	ცვლილების უარყოფა
+Segment Type	სეგმენტის ტიპი
+Select Slide Range	სლაიდების დიაპაზონის მონიშვნა
+Add Shape After	ფიგურის დამატება შემდეგ
+Add Shape Before	ფიგურის დამატება წინ
+Add Shape Above	ფიგურის დამატება ზემოთ
+Add Shape Below	ფიგურის დამატება ქვემოთ
+Add Assistant	თანაშემწის დამატება
+Accept All ({})	ყველას მიღება ({})
+Reject All ({})	ყველას უარყოფა ({})
+Inserted {} slides	ჩასმულია სლაიდი: {}
