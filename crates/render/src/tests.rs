@@ -1,3 +1,4 @@
+use super::text_draw::prompt_body;
 use super::{
     Ctx, Fields, Fill, Image, Opts, PathMorph, Point, RENDERER, Rect, Region, RenderOpts, Renderer, Rgba, ShapeState, SlideFields, TextMorph,
     crop_dest, dpi_for_scale, gif_frame, image_dpi, images, morph_path, morph_text, needs_filters, parse_path, pasteboard_region, place_slide,
@@ -975,7 +976,7 @@ fn interface_placeholder_prompts_preserve_custom_prompts_and_document_data() {
     assert_eq!(p, before);
 
     let layout_id = slide.layout;
-    let master = Arc::make_mut(p.masters.first_mut().unwrap());
+    let master = std::sync::Arc::make_mut(p.masters.first_mut().unwrap());
     let layout = master.layouts.iter_mut().find(|layout| layout.id == layout_id).unwrap();
     let shape = layout.shapes.iter_mut().find(|shape| shape.ph_type() == Some(PhType::Title) || shape.ph_type() == Some(PhType::CtrTitle)).unwrap();
     shape.ph.as_mut().unwrap().has_custom_prompt = true;

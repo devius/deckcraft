@@ -225,7 +225,7 @@ pub fn contributors_ui(ui: &mut egui::Ui) {
         }
         ui.separator();
         let field = ui.label(crate::i18n::tr("Sort"));
-        let combo = egui::ComboBox::from_id_salt("credits_sort").selected_text(crate::i18n::tr(v.key.label().0)).show_ui(ui, |ui| {
+        let combo = craft_ui::ComboBox::from_id_salt("credits_sort").selected_text(crate::i18n::tr(v.key.label().0)).show_ui(ui, |ui| {
             for k in SortKey::ALL {
                 if ui.selectable_label(v.key == k, crate::i18n::tr(k.label().0)).clicked() {
                     v.key = k;

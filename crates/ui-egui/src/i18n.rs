@@ -268,8 +268,10 @@ mod tests {
             let transition_labels = deckcraft_model::anim::TRANSITIONS
                 .iter()
                 .flat_map(|effect| effect.4.iter().map(|option| (*option, deckcraft_model::anim::transition_option_label(effect.0, option))));
-            let animation_labels =
-                deckcraft_model::anim::ANIMATIONS.iter().flat_map(|effect| effect.5).map(|option| (*option, crate::ribbon::option_label(option)));
+            let animation_labels = deckcraft_model::anim::ANIMATIONS
+                .iter()
+                .flat_map(|effect| effect.5)
+                .map(|option| (*option, crate::ribbon::transitions::option_label(option)));
             for (option, label) in transition_labels.chain(animation_labels) {
                 if !label.is_empty() && !label.chars().all(|c| c.is_ascii_digit()) {
                     assert!(catalog.contains_key(&label), "missing effect option: {option}: {label}");
@@ -283,19 +285,51 @@ mod tests {
     #[test]
     fn every_literal_translation_call_has_a_catalog_entry() {
         for source in [
+            include_str!("app/files.rs"),
+            include_str!("app/frame.rs"),
             include_str!("canvas.rs"),
-            include_str!("credits.rs"),
+            include_str!("canvas/context_menu.rs"),
             include_str!("dialogs.rs"),
-            include_str!("fillui.rs"),
-            include_str!("lib.rs"),
+            include_str!("dialogs/about.rs"),
+            include_str!("dialogs/body.rs"),
+            include_str!("dialogs/credits.rs"),
+            include_str!("dialogs/find.rs"),
+            include_str!("dialogs/font.rs"),
+            include_str!("dialogs/paragraph.rs"),
+            include_str!("dialogs/tabs.rs"),
+            include_str!("dialogs/zoom.rs"),
             include_str!("media.rs"),
             include_str!("menus.rs"),
-            include_str!("panes.rs"),
+            include_str!("panels/animation.rs"),
+            include_str!("panels/background.rs"),
+            include_str!("panels/comments.rs"),
+            include_str!("panels/fillui.rs"),
+            include_str!("panels/format_shape.rs"),
+            include_str!("panels/selpane.rs"),
+            include_str!("panels/smartart.rs"),
+            include_str!("panels/thumbs.rs"),
             include_str!("ribbon.rs"),
-            include_str!("show.rs"),
+            include_str!("ribbon/animations.rs"),
+            include_str!("ribbon/arrange.rs"),
+            include_str!("ribbon/design.rs"),
+            include_str!("ribbon/draw.rs"),
+            include_str!("ribbon/galleries.rs"),
+            include_str!("ribbon/home.rs"),
+            include_str!("ribbon/insert.rs"),
+            include_str!("ribbon/picture_format.rs"),
+            include_str!("ribbon/playback.rs"),
+            include_str!("ribbon/review.rs"),
+            include_str!("ribbon/shape_format.rs"),
+            include_str!("ribbon/slide_show.rs"),
+            include_str!("ribbon/smartart.rs"),
+            include_str!("ribbon/table.rs"),
+            include_str!("ribbon/title_bar.rs"),
+            include_str!("ribbon/transitions.rs"),
+            include_str!("ribbon/view.rs"),
+            include_str!("show/presenter.rs"),
+            include_str!("show/ui.rs"),
             include_str!("sorter.rs"),
             include_str!("status.rs"),
-            include_str!("thumbs.rs"),
             include_str!("widgets.rs"),
             include_str!("../../../apps/deckcraft/src/main.rs"),
             include_str!("../../../apps/deckcraft-web/src/web.rs"),
