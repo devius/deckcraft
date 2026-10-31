@@ -1,6 +1,6 @@
 # Georgian interface
 
-> **Last reviewed:** 2026-10-17 · **Last updated:** 2026-10-27 · **Change:** minor (upstream sync: 1,568 entries, Noto Sans Georgian from craft-fonts; previous: minor, upstream sync: 1,451 entries; Georgian in Review › Language and Date and Time; previous: minor, Georgian interface notes and terminology) · **Target:** DeckCraft 0.6.1
+> **Last reviewed:** 2026-10-17 · **Last updated:** 2026-10-31 · **Change:** minor (upstream sync: 1,586 entries, Format Shape effect presets and position origin; previous: minor, upstream sync: 1,568 entries, Noto Sans Georgian from craft-fonts) · **Target:** DeckCraft 0.6.1
 
 Choose **Review › Language** or **Preferences… (Cmd+,) › Interface language › ქართული**, or follow a
 Georgian system locale (`ka`, `ka-GE`, `ka_GE.UTF-8`; the system choice is read through
@@ -9,7 +9,7 @@ MCP command `app.language` with `{"language":"ka"}` selects it explicitly. The c
 the other interface settings. Slide text, command ids, CLI/MCP/control responses and file paths do
 not change.
 
-`crates/ui-egui/src/i18n/ka.tsv` has 1,568 entries: all 1,232 keys of the Ukrainian catalog plus 336 labels upstream added since
+`crates/ui-egui/src/i18n/ka.tsv` has 1,586 entries: all 1,232 keys of the Ukrainian catalog plus 354 labels upstream added since
 (File › Print/Info, IME commands, new preset shapes, transition Effect Options, SmartArt, Edit
 Points, guides, motion paths, presenter controls, Find and Replace, Photo Album). It
 covers the ribbon tabs and commands, menus, dialogs, panes, the shape and gallery names, and status
@@ -83,6 +83,7 @@ is welcome.
 
 | Date | Change | Summary |
 |---|---|---|
+| 2026-10-31 | minor | Upstream sync: 1,586 entries; Format Shape effect presets, position origin and Keep mouse cursor visible |
 | 2026-10-27 | minor | Upstream sync: 1,568 entries; Noto Sans Georgian from craft-fonts replaces the installed-font search |
 | 2026-10-17 | minor | Upstream sync: 1,451 entries; Georgian in Review › Language and Date and Time; View is ხედი |
 | 2026-10-13 | minor | Georgian interface notes and terminology |
