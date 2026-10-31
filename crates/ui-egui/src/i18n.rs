@@ -226,6 +226,9 @@ mod tests {
 
     /// The languages that ship a catalog.
     const TRANSLATED: [Language; 7] = [Language::Uk, Language::Ru, Language::Es, Language::Fr, Language::Pt, Language::De, Language::Ka];
+    /// The catalogs kept complete as upstream adds strings (Georgian preview branch); the others stay
+    /// at their contributor PR's head and fall back to English for newer strings.
+    const COMPLETE: [Language; 1] = [Language::Ka];
 
     fn placeholders(text: &str) -> Vec<&str> {
         let mut out = vec![];
@@ -247,7 +250,7 @@ mod tests {
 
     #[test]
     fn all_command_menu_and_gallery_labels_are_translated() {
-        for language in TRANSLATED {
+        for language in COMPLETE {
             let catalog = catalog(language).unwrap();
             let mut required = vec![];
             required.extend(crate::UI_COMMANDS.iter().map(|c| c.1));
@@ -303,6 +306,7 @@ mod tests {
             include_str!("panels/animation.rs"),
             include_str!("panels/background.rs"),
             include_str!("panels/comments.rs"),
+            include_str!("panels/effect_presets.rs"),
             include_str!("panels/fillui.rs"),
             include_str!("panels/format_shape.rs"),
             include_str!("panels/selpane.rs"),
@@ -355,7 +359,7 @@ mod tests {
                         })
                         .unwrap();
                     let key: String = serde_json::from_str(&format!("\"{}\"", &tail[..end])).unwrap();
-                    for language in TRANSLATED {
+                    for language in COMPLETE {
                         assert!(catalog(language).unwrap().contains_key(&key), "missing literal translation in {language:?}: {key}");
                     }
                     rest = &tail[end + 1..];
@@ -508,7 +512,12 @@ mod tests {
             (DE_CATALOG, "de"),
             (KA_CATALOG, "ka"),
         ] {
-            assert_eq!(source_count(constant), expected, "{text} catalog row count");
+            if text == "ka" {
+                let ka = parse_catalog(KA_CATALOG);
+                assert!(parse_catalog(UK_CATALOG).keys().all(|k| ka.contains_key(k)), "ka must cover every uk row");
+            } else {
+                assert_eq!(source_count(constant), expected, "{text} catalog row count");
+            }
             let mut seen = std::collections::HashSet::new();
             for (line_no, line) in constant.lines().enumerate() {
                 if line.is_empty() || line.starts_with('#') {

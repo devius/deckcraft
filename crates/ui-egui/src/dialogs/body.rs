@@ -101,15 +101,18 @@ fn dlg_slide_size(app: &mut SlideApp, ui: &mut Ui, d: &mut Dialog) -> bool {
     }
     let label = ui.label(crate::i18n::tr("Slides sized for:"));
     let preset = d.get("preset", "");
-    let combo = craft_ui::ComboBox::from_id_salt("sizes").selected_text(crate::i18n::tr(if preset.is_empty() { "Custom" } else { &preset })).show_ui(ui, |ui| {
-        for (label, w, h) in deckcraft_model::defaults::SLIDE_SIZES {
-            if ui.selectable_label(preset == *label, crate::i18n::tr(label)).clicked() {
-                d.fields.insert("preset".into(), label.to_string());
-                put_slide_dim(d, "w", *w, ppu);
-                put_slide_dim(d, "h", *h, ppu);
+    let combo = craft_ui::ComboBox::from_id_salt("sizes").selected_text(crate::i18n::tr(if preset.is_empty() { "Custom" } else { &preset })).show_ui(
+        ui,
+        |ui| {
+            for (label, w, h) in deckcraft_model::defaults::SLIDE_SIZES {
+                if ui.selectable_label(preset == *label, crate::i18n::tr(label)).clicked() {
+                    d.fields.insert("preset".into(), label.to_string());
+                    put_slide_dim(d, "w", *w, ppu);
+                    put_slide_dim(d, "h", *h, ppu);
+                }
             }
-        }
-    });
+        },
+    );
     let _ = combo.response.labelled_by(label.id);
     let abbr = unit_abbr(len);
     let (w_seed, h_seed) = (field_of(d, "w"), field_of(d, "h"));
@@ -307,9 +310,7 @@ fn dlg_quit(app: &mut SlideApp, ui: &mut Ui, _d: &mut Dialog) -> bool {
             "პრეზენტაცია",
         )
     };
-    ui.label(
-        egui::RichText::new(crate::i18n::format("Do you want to save the changes you made to {what}?", std::slice::from_ref(&what))).strong(),
-    );
+    ui.label(egui::RichText::new(crate::i18n::format("Do you want to save the changes you made to {what}?", std::slice::from_ref(&what))).strong());
     ui.label(crate::i18n::tr("Your changes will be lost if you don't save them."));
     ui.add_space(8.0);
     let mut done = false;
@@ -322,11 +323,8 @@ fn dlg_quit(app: &mut SlideApp, ui: &mut Ui, _d: &mut Dialog) -> bool {
             done = true;
         }
         ui.with_layout(egui::Layout::right_to_left(egui::Align::Center), |ui| {
-            let save = ui.add(
-                egui::Button::new(egui::RichText::new(crate::i18n::tr("Save")).color(t.accent_text))
-                    .fill(t.accent)
-                    .min_size(vec2(72.0, 24.0)),
-            );
+            let save = ui
+                .add(egui::Button::new(egui::RichText::new(crate::i18n::tr("Save")).color(t.accent_text)).fill(t.accent).min_size(vec2(72.0, 24.0)));
             if save.clicked() || ui.input(|i| i.key_pressed(egui::Key::Enter)) {
                 if app.save_all() {
                     app.quit_confirmed = true;
@@ -1085,9 +1083,7 @@ fn dlg_accessibility(app: &mut SlideApp, ui: &mut Ui, _d: &mut Dialog) -> bool {
     let v = app.session.execute("review.accessibility", &json!({})).unwrap_or_default();
     let list = v.as_array().cloned().unwrap_or_default();
     if list.is_empty() {
-        ui.label(crate::i18n::tr(
-            "No accessibility issues found. People with disabilities should not have difficulty reading this document.",
-        ));
+        ui.label(crate::i18n::tr("No accessibility issues found. People with disabilities should not have difficulty reading this document."));
     }
     egui::ScrollArea::vertical().max_height(300.0).show(ui, |ui| {
         for item in &list {
@@ -1380,25 +1376,24 @@ fn dlg_preferences(app: &mut SlideApp, ui: &mut Ui, d: &mut Dialog) -> bool {
     }
     ui.horizontal(|ui| {
         let label = ui.label(crate::i18n::tr("Interface language:"));
-        let combo =
-            craft_ui::ComboBox::from_id_salt("interface_language").selected_text(app.ui.interface_language.label()).show_ui(ui, |ui| {
-                for language in crate::i18n::Language::ALL {
-                    if ui.selectable_label(app.ui.interface_language == language, crate::i18n::tr(language.label())).clicked() {
-                        let code = match language {
-                            crate::i18n::Language::System => "system",
-                            crate::i18n::Language::En => "en",
-                            crate::i18n::Language::Uk => "uk",
-                            crate::i18n::Language::Ru => "ru",
-                            crate::i18n::Language::Es => "es",
-                            crate::i18n::Language::Fr => "fr",
-                            crate::i18n::Language::Pt => "pt",
-                            crate::i18n::Language::De => "de",
-                            crate::i18n::Language::Ka => "ka",
-                        };
-                        let _ = app.run("app.language", json!({"language": code}));
-                    }
+        let combo = craft_ui::ComboBox::from_id_salt("interface_language").selected_text(app.ui.interface_language.label()).show_ui(ui, |ui| {
+            for language in crate::i18n::Language::ALL {
+                if ui.selectable_label(app.ui.interface_language == language, crate::i18n::tr(language.label())).clicked() {
+                    let code = match language {
+                        crate::i18n::Language::System => "system",
+                        crate::i18n::Language::En => "en",
+                        crate::i18n::Language::Uk => "uk",
+                        crate::i18n::Language::Ru => "ru",
+                        crate::i18n::Language::Es => "es",
+                        crate::i18n::Language::Fr => "fr",
+                        crate::i18n::Language::Pt => "pt",
+                        crate::i18n::Language::De => "de",
+                        crate::i18n::Language::Ka => "ka",
+                    };
+                    let _ = app.run("app.language", json!({"language": code}));
                 }
-            });
+            }
+        });
         let _ = combo.response.labelled_by(label.id);
     });
     ui.label(egui::RichText::new(crate::i18n::tr("General")).font(theme::bold(13.0)));
