@@ -216,13 +216,14 @@ fn size_tab(app: &mut SlideApp, ui: &mut Ui, sh: &deckcraft_model::Shape, x: dec
     ui.label(egui::RichText::new(crate::i18n::tr("Position")).font(theme::bold(13.0)));
     ui.add_enabled_ui(single, |ui| {
         ui.horizontal(|ui| {
-            ui.add_sized(vec2(90.0, 20.0), egui::Label::new("From"));
-            let combo =
-                craft_ui::ComboBox::from_id_salt("fmt-origin").selected_text(if center { "Center" } else { "Top Left Corner" }).show_ui(ui, |ui| {
-                    ui.selectable_value(&mut center, false, "Top Left Corner");
-                    ui.selectable_value(&mut center, true, "Center");
+            ui.add_sized(vec2(90.0, 20.0), egui::Label::new(crate::i18n::tr("From")));
+            let combo = craft_ui::ComboBox::from_id_salt("fmt-origin")
+                .selected_text(crate::i18n::tr(if center { "Center" } else { "Top Left Corner" }))
+                .show_ui(ui, |ui| {
+                    ui.selectable_value(&mut center, false, crate::i18n::tr("Top Left Corner"));
+                    ui.selectable_value(&mut center, true, crate::i18n::tr("Center"));
                 });
-            combo.response.widget_info(|| egui::WidgetInfo::labeled(egui::Role::ComboBox, true, "From"));
+            combo.response.widget_info(|| egui::WidgetInfo::labeled(egui::Role::ComboBox, true, crate::i18n::tr("From")));
         })
     });
     if single {

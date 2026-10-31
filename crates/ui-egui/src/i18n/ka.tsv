@@ -1568,3 +1568,21 @@ Add Assistant	თანაშემწის დამატება
 Accept All ({})	ყველას მიღება ({})
 Reject All ({})	ყველას უარყოფა ({})
 Inserted {} slides	ჩასმულია სლაიდი: {}
+No shadow	ჩრდილის გარეშე
+Outer shadow	გარე ჩრდილი
+Bottom shadow	ქვედა ჩრდილი
+Centered shadow	ცენტრული ჩრდილი
+Inner shadow	შიდა ჩრდილი
+Perspective shadow	პერსპექტიული ჩრდილი
+No glow	ნათების გარეშე
+{} pt glow	{} პტ ნათება
+No soft edges	რბილი კიდეების გარეშე
+{} pt soft edges	{} პტ რბილი კიდეები
+From	ათვლის წერტილი
+Top Left Corner	ზედა მარცხენა კუთხე
+More Picture Styles	სურათის სხვა სტილები
+Scale Height	მასშტაბის სიმაღლე
+Scale Width	მასშტაბის სიგანე
+Keep mouse cursor visible	თაგუნას კურსორის მუდმივად ჩვენება
+Keep Mouse Cursor Visible	თაგუნას კურსორის მუდმივად ჩვენება
+Slide background fill	სლაიდის ფონით შევსება
