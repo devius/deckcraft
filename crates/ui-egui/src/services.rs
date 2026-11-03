@@ -38,6 +38,8 @@ pub type Inbox = std::sync::Arc<std::sync::Mutex<Vec<InboxEvent>>>;
 pub struct Services {
     /// Host locale (OS on desktop, navigator.language on the web).
     pub system_locale: Option<String>,
+    /// Browser-owned presenter popup; absent on native hosts.
+    pub presenter: Option<Box<dyn crate::presenter::Host>>,
     /// Open-file dialog for a purpose (`open`, `picture`, `audio`, `video`) → path.
     pub pick_open: Option<PickFn>,
     /// Save dialog with a suggested name → path.
