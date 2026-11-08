@@ -379,10 +379,10 @@ Exit	გასვლა
 Expand	გაშლა
 Explosion: 14 Points	აფეთქება: 14 წვერო
 Explosion: 8 Points	აფეთქება: 8 წვერო
-Export	ექსპორტი
+Export	ექსპორტირება
 Export the presentation as:	პრეზენტაციის ექსპორტი, როგორც:
 Exported {path}	ექსპორტირებულია: {path}
-Export…	ექსპორტი…
+Export…	ექსპორტირება…
 Fade	მილევა
 Fade in (s):	თანდათან გამოჩენა (წმ):
 Fade out (s):	თანდათან ჩაქრობა (წმ):
@@ -494,7 +494,7 @@ Go to	გადასვლა
 Go to Slide	სლაიდზე გადასვლა
 Grab bag	სხვადასხვა
 Gradient fill	გრადიენტული შევსება
-Gradient stops	გრადიენტის წერტილები
+Gradient stops	გრადიენტის გადასვლის წერტილები
 Gradient…	გრადიენტი…
 Grayscale	ნაცრისფერი ტონები
 Greek	ბერძნული
@@ -524,7 +524,7 @@ Header and Footer	კოლონტიტულები
 Header and Footer…	კოლონტიტულები…
 Heart	გული
 Height	სიმაღლე
-Height (in):	სიმაღლე (ინჩი):
+Height (in):	სიმაღლე (დუიმი):
 Height:	სიმაღლე:
 Help	დახმარება
 Heptagon	შვიდკუთხედი
@@ -539,7 +539,7 @@ Hierarchy	იერარქია
 High	მაღალი
 Highlighter	მარკერი
 Histogram	ჰისტოგრამა
-Home	საწყისი ეკრანი
+Home	მთავარი
 Honeycomb	ფიჭა
 Horizontal	ჰორიზონტალური
 Horz In	ჰორიზონტალურად შიგნით
@@ -839,7 +839,7 @@ Random Bars	შემთხვევითი ზოლები
 Reading View	კითხვის ხედი
 Reading\nView	კითხვის\nხედი
 Real name	ნამდვილი სახელი
-Recent	ბოლოდროინდელი
+Recent	ბოლოს გახსნილი
 Record	ჩაწერა
 Recording narration needs audio capture (coming soon)	გახმოვანების ჩასაწერად საჭიროა ხმის ჩაწერა (მალე)
 Recovered Presentations	აღდგენილი პრეზენტაციები
@@ -1046,7 +1046,7 @@ Speech Bubble: Rectangle with Corners Rounded	საუბრის ბუშტ
 Spelling	მართლწერა
 Spin	ბრუნვა
 Spinner	სპინერი
-Split	გაყოფა
+Split	დაყოფა
 Split Cells	უჯრების გაყოფა
 Split\nCells	უჯრების\nგაყოფა
 Square	კვადრატი
@@ -1180,7 +1180,7 @@ Wheel	ბორბალი
 Widescreen (13.333x7.5 in)	ფართოეკრანიანი (13.333x7.5 ინჩი)
 Widescreen (16:9)	ფართოეკრანიანი (16:9)
 Width	სიგანე
-Width (in):	სიგანე (ინჩი):
+Width (in):	სიგანე (დუიმი):
 Width:	სიგანე:
 Width: 	სიგანე: 
 Wind	ქარი
@@ -1232,11 +1232,11 @@ unknown interface language	ინტერფეისის უცნობი 
 ▶ Play All	▶ ყველას დაკვრა
 ◀ Previous	◀ წინა
 ✏ on	✏ ჩართულია
-Print	დაბეჭდვა
+Print	ბეჭდვა
 Info	ინფორმაცია
 Compose Text	ტექსტის შედგენა
 Commit Composition	შედგენილი ტექსტის დადასტურება
-Print…	დაბეჭდვა…
+Print…	ბეჭდვა…
 Line: Rising	ხაზი: აღმავალი
 Trapezoid: Uneven Sides	ტრაპეცია: არათანაბარი გვერდები
 Quarter Wedge	მეოთხედი სოლი
