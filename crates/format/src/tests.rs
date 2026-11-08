@@ -12,6 +12,31 @@ fn chart_sidecars_are_optional_for_older_native_files() {
 }
 
 #[test]
+fn alternate_run_language_survives_two_native_saves_and_absence() {
+    use deckcraft_model::text::{Paragraph, Run, RunProps, TextBody};
+    let mut p = defaults::new_presentation(None);
+    Arc::make_mut(&mut p.slides[0]).shapes[0].text = Some(TextBody {
+        paragraphs: vec![Paragraph {
+            runs: vec![
+                Run::with("bonjour", RunProps { lang: Some("en-US".into()), alt_lang: Some("fr-FR".into()), ..Default::default() }),
+                Run::with(" plain", RunProps { lang: Some("en-US".into()), ..Default::default() }),
+            ],
+            ..Default::default()
+        }],
+        ..Default::default()
+    });
+    let mut q = load(&save(&p).expect("save")).expect("load");
+    for _ in 0..2 {
+        let runs = &q.slides[0].shapes[0].text.as_ref().expect("text").paragraphs[0].runs;
+        assert_eq!(runs[0].props.lang.as_deref(), Some("en-US"));
+        assert_eq!(runs[0].props.alt_lang.as_deref(), Some("fr-FR"));
+        assert_eq!(runs[1].props.lang.as_deref(), Some("en-US"));
+        assert_eq!(runs[1].props.alt_lang, None);
+        q = load(&save(&q).expect("save again")).expect("load again");
+    }
+}
+
+#[test]
 fn native_save_keeps_chart_relationships_and_payloads() {
     use deckcraft_model::chart::{Chart, ChartKept, ChartPart, ChartRel, ChartType};
     use deckcraft_model::{Shape, ShapeId, ShapeKind};
@@ -45,6 +70,38 @@ fn native_save_keeps_chart_relationships_and_payloads() {
         let ShapeKind::Chart(chart) = &children[0].kind else { panic!("chart") };
         assert_eq!(chart.kept, kept);
         q = load(&save(&q).expect("save again")).expect("load again");
+    }
+}
+
+#[test]
+fn native_table_direction_and_column_text_survive_two_saves() {
+    use deckcraft_model::table::{Cell, Table};
+    use deckcraft_model::{Shape, ShapeId, ShapeKind};
+    use std::sync::Arc;
+
+    for rtl in [Some(true), Some(false), None] {
+        let mut p = defaults::new_presentation(None);
+        let mut table = Table::new(1, 2, 200.0, 30.0);
+        table.rtl = rtl;
+        table.rows[0].cells[0] = Cell::new("Left column");
+        table.rows[0].cells[1] = Cell::new("Right column");
+        let shape = Shape { id: ShapeId(p.alloc_id().expect("id")), kind: ShapeKind::Table(table), ..Default::default() };
+        Arc::make_mut(&mut p.slides[0]).shapes.push(shape);
+        let mut q = load(&save(&p).expect("save")).expect("load");
+        for _ in 0..2 {
+            let table = q.slides[0]
+                .shapes
+                .iter()
+                .find_map(|s| match &s.kind {
+                    ShapeKind::Table(table) => Some(table),
+                    _ => None,
+                })
+                .expect("table shape");
+            assert_eq!(table.rtl, rtl);
+            assert_eq!(table.rows[0].cells[0].text.paragraphs[0].runs[0].text, "Left column");
+            assert_eq!(table.rows[0].cells[1].text.paragraphs[0].runs[0].text, "Right column");
+            q = load(&save(&q).expect("save again")).expect("load again");
+        }
     }
 }
 
@@ -259,6 +316,54 @@ fn a_file_saved_with_non_finite_numbers_reopens() {
     assert_eq!(load(&save(&back).unwrap()).unwrap(), back);
 }
 
+#[test]
+fn reflection_transform_survives_two_native_saves_and_absent_fields_stay_absent() {
+    use deckcraft_model::style::Reflection;
+    use deckcraft_model::{Effects, Shape};
+    let mut p = Presentation::default();
+    let reflection = Reflection {
+        blur: 1.0,
+        start_alpha: 0.5,
+        end_alpha: 0.0,
+        end_pos: 0.75,
+        dist: 2.0,
+        st_pos: Some(20_000),
+        fade_dir: Some(0),
+        sx: Some(75_000),
+        sy: Some(-50_000),
+        kx: Some(600_000),
+        align: Some("bl".into()),
+        rotate_with_shape: Some(false),
+        ..Default::default()
+    };
+    let shape = Shape { effects: Some(Effects { reflection: Some(reflection.clone()), ..Default::default() }), ..Default::default() };
+    Arc::make_mut(&mut p.slides[0]).shapes.push(shape);
+    let once = load(&save(&p).expect("save")).expect("load");
+    let twice = load(&save(&once).expect("save again")).expect("load again");
+    assert_eq!(twice.slides[0].shapes.last().and_then(|s| s.effects.as_ref()).and_then(|e| e.reflection.as_ref()), Some(&reflection));
+
+    let absent = Reflection {
+        blur: 1.0,
+        start_alpha: 1.0,
+        end_alpha: 0.0,
+        end_pos: 1.0,
+        dist: 0.0,
+        st_pos: None,
+        dir: None,
+        fade_dir: None,
+        sx: None,
+        sy: None,
+        kx: None,
+        ky: None,
+        align: None,
+        rotate_with_shape: None,
+    };
+    let shape = Shape { effects: Some(Effects { reflection: Some(absent.clone()), ..Default::default() }), ..Default::default() };
+    Arc::make_mut(&mut p.slides[0]).shapes = vec![shape];
+    let reopened = load(&save(&p).expect("save absent values")).expect("load absent values");
+    assert_eq!(reopened.slides[0].shapes.last().and_then(|s| s.effects.as_ref()).and_then(|e| e.reflection.as_ref()), Some(&absent));
+}
+
 /// Files written before [`finite::Finite`] (plain serde_json: NaN as `null`) open too,
 /// including a `null` inside a tagged enum, where serde reports only the enclosing object.
 #[test]
@@ -344,6 +449,13 @@ fn degenerate_slide_sizes_are_repaired() {
         assert_eq!((p.slide_size.width, p.slide_size.height), want, "{w}x{h}");
         assert_eq!(p.notes_size, Presentation::default().notes_size);
     }
+}
+
+#[test]
+fn repair_bounds_the_notes_page_size() {
+    let mut p = Presentation { notes_size: deckcraft_model::Size::new(1e12, 0.01), ..Default::default() };
+    repair(&mut p);
+    assert_eq!((p.notes_size.width, p.notes_size.height), (4032.0, 72.0));
 }
 
 /// A file whose slide size is null, a string or missing a side (written by hand or by

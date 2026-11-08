@@ -247,6 +247,11 @@ pub fn repair(p: &mut Presentation) {
     if !(p.notes_size.width.is_finite() && p.notes_size.width > 0.0 && p.notes_size.height.is_finite() && p.notes_size.height > 0.0) {
         p.notes_size = Presentation::default().notes_size;
     }
+    // A notes page is bounded like a slide: canvas and handout drawing scale with it.
+    p.notes_size = deckcraft_model::Size::new(
+        p.notes_size.width.clamp(*SLIDE_SIDE.start(), *SLIDE_SIDE.end()),
+        p.notes_size.height.clamp(*SLIDE_SIDE.start(), *SLIDE_SIDE.end()),
+    );
     sane_numbers(p);
 }
 
@@ -495,6 +500,9 @@ fn sane_shadow(s: &mut deckcraft_model::style::Shadow) {
 fn sane_reflection(r: &mut deckcraft_model::style::Reflection) {
     r.blur = effect_size(r.blur, MAX_REFLECTION);
     r.dist = effect_size(r.dist, MAX_REFLECTION);
+    if r.align.as_deref().is_some_and(|v| !matches!(v, "tl" | "t" | "tr" | "l" | "ctr" | "r" | "bl" | "b" | "br")) {
+        r.align = None;
+    }
 }
 
 /// Run properties a list style hands down to the text that inherits it.
@@ -686,7 +694,9 @@ pub fn slides_to_outline(p: &Presentation) -> String {
         out.push_str(&s.title().replace('\n', " "));
         out.push('\n');
         for sh in &s.shapes {
-            if sh.ph_type().is_some_and(|k| k.is_title()) {
+            // The title is the slide's line; footer, date and slide-number placeholders are not
+            // body text (PowerPoint's outline view shows title and body placeholders only).
+            if sh.ph_type().is_some_and(|k| k.is_title() || k.is_footer_kind()) {
                 continue;
             }
             if let Some(t) = &sh.text {
