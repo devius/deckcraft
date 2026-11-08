@@ -246,7 +246,11 @@ pub fn contributors_ui(ui: &mut egui::Ui) {
         }
     });
     let list = sorted(CONTRIBUTORS, v.names, v.key, v.ascending);
-    ui.label(RichText::new(crate::i18n::format("{} contributors · {} commits", &[list.len().to_string(), group(TOTAL_COMMITS).to_string()])).small().weak());
+    ui.label(
+        RichText::new(crate::i18n::format("{} contributors · {} commits", &[list.len().to_string(), group(TOTAL_COMMITS).to_string()]))
+            .small()
+            .weak(),
+    );
     ui.separator();
     if list.is_empty() {
         ui.label(crate::i18n::tr("No contributor data was built into this copy."));
@@ -383,7 +387,8 @@ fn table(ui: &mut egui::Ui, list: &[&Contributor], v: &mut View) {
         .header(h + 4.0, |mut header| {
             for k in SortKey::ALL {
                 header.col(|ui| {
-                    let r = aligned(ui, k != SortKey::Name, |ui| ui.selectable_label(v.key == k, header_text(k))).on_hover_text(crate::i18n::tr(k.label().0));
+                    let r = aligned(ui, k != SortKey::Name, |ui| ui.selectable_label(v.key == k, header_text(k)))
+                        .on_hover_text(crate::i18n::tr(k.label().0));
 
                     if r.clicked() {
                         if v.key == k {
