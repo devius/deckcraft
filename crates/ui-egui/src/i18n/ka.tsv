@@ -1022,6 +1022,7 @@ Slides from Outline	სლაიდები სტრუქტურიდა�
 Slides from Outline…	სლაიდები სტრუქტურიდან…
 Slides sized for:	სლაიდების ზომა:
 SmartArt	SmartArt
+Diagram	სქემა
 Smile	ღიმილი
 Smiley Face	მომღიმარი სახე
 Smoothly	მდორედ
@@ -1188,7 +1189,9 @@ Window	ფანჯარა
 Wipe	წმენდა
 With Previous	წინასთან ერთად
 WordArt	WordArt
+Decorative Text	დეკორატიული ტექსტი
 WordArt style {}	WordArt სტილი {}
+Decorative Text style {}	დეკორატიული ტექსტის სტილი {}
 Words	სიტყვები
 Wrap Text in Shape	ტექსტის გადატანა ფიგურაში
 Wrap text in shape	ტექსტის გადატანა ფიგურაში
@@ -1314,6 +1317,7 @@ Set Zoom	მასშტაბის დაყენება
 New Window	ახალი ფანჯარა
 Preview Animations	ანიმაციების წინასწარი ნახვა
 Insert Picture in SmartArt…	სურათის ჩასმა SmartArt-ში…
+Insert Picture in Diagram…	სურათის ჩასმა სქემაში…
 Change Picture…	სურათის შეცვლა…
 Reuse Slides…	სლაიდების ხელახლა გამოყენება…
 Browse for Themes…	თემების დათვალიერება…
@@ -1331,16 +1335,20 @@ Edit Photo Album…	ფოტოალბომის რედაქტირ�
 Action Settings	მოქმედების პარამეტრები
 Text Pane	ტექსტის პანელი
 Edit SmartArt Text	SmartArt-ის ტექსტის რედაქტირება
+Edit Diagram Text	სქემის ტექსტის რედაქტირება
 Add Shape	ფიგურის დამატება
 Remove Shape	ფიგურის წაშლა
 Promote	დაწინაურება
 Demote	დონით დაწევა
 Change Layout	განლაგების შეცვლა
 Convert to SmartArt	SmartArt-ად გარდაქმნა
+Convert to Diagram	სქემად გარდაქმნა
 Convert to Text	ტექსტად გარდაქმნა
 Convert to Shapes	ფიგურებად გარდაქმნა
 Insert Picture in SmartArt	სურათის ჩასმა SmartArt-ში
+Insert Picture in Diagram	სურათის ჩასმა სქემაში
 SmartArt Styles	SmartArt სტილები
+Diagram Styles	სქემის სტილები
 Change Colors	ფერების შეცვლა
 Size and Position…	ზომა და პოზიცია…
 Smooth Corners	კუთხეების დაგლუვება
@@ -1494,6 +1502,7 @@ lowercase	პატარა ასოები
 UPPERCASE	მთავრული
 Previous	წინა
 SmartArt Design	SmartArt დიზაინი
+Diagram Design	სქემის დიზაინი
 Reuse Slides	სლაიდების ხელახლა გამოყენება
 Number:	რაოდენობა:
 Spacing (in):	დაშორება (დუიმი):
@@ -1521,11 +1530,13 @@ Hyperlink to:	ბმულის სამიზნე:
 Alt text	ალტერნატიული ტექსტი
 Chart cell	დიაგრამის უჯრა
 SmartArt items	SmartArt-ის ელემენტები
+Diagram items	სქემის ელემენტები
 Automatic bulleted and numbered lists	ავტომატური ბურთულებიანი და დანომრილი სიები
 With	რით
 Tab stop position (in):	ტაბულაციის გაჩერების პოზიცია (დუიმი):
 Pattern	პატერნი
 SmartArt text	SmartArt-ის ტექსტი
+Diagram text	სქემის ტექსტი
 Alignment	სწორება
 Mirror	არეკვლა
 More Columns…	სხვა სვეტები…
